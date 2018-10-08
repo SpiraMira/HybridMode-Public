@@ -6,7 +6,7 @@ Motivated by all the folks on dosdude1's Macrumors 10.14 Mojave Unsupported Foru
 
 Motivated by idea by [Pike](https://pikeralpha.wordpress.com/2017/01/30/4398)
 
-# Screen Shots
+## Screen Shots
 
 * "flat" Mode
 
