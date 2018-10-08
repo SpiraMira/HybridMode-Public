@@ -1,10 +1,10 @@
 # HybridMode Patchers
 
-**Fix Light Mode on unsupported machines**
+**Fix Mojave Light Mode on unsupported machines**
 
 Motivated by all the folks on dosdude1's Macrumors 10.14 Mojave Unsupported Forum
 
-Motivated by idea by [Pike](https://pikeralpha.wordpress.com/2017/01/30/4398)
+Motivated by [Pike](https://pikeralpha.wordpress.com/2017/01/30/4398)
 
 ## Screen Shots
 
@@ -20,20 +20,17 @@ Motivated by idea by [Pike](https://pikeralpha.wordpress.com/2017/01/30/4398)
 
 ![alt tag](Resources/hybrid2.png)
 
-* October 3, 2018 :
-    * added screenshots for hybrid (light) mode with vibrant sidebars and (much) better looking title bars and tab bars. 
-    * table columns are translucent but a dark grey, I still don't like - work in progress...
-    * note: actual script hasn't been added yet but screenshots are available below
-* October 2, 2018 : 
-    * added patch-vibrancy.sh. Includes new bbe utility to better patch these binaries (grep and sed can't cut it)
-* October 1, 2018 : 
-    * created this private repo with patch-menubar
+## History
 
-
+* October 8, 2018 : 
+  * start of beta testing
 
 ## Compatibility Testing
 
+NOTE: Open an Issue if you would like to revise this list
+
 |macOS release|version|description|device ID|Status|
+|-------------|-------|-----------|---------|------|
 |10.4.1|18B45D|first GM security update|macbook pro 5,3|Passed|
 |"|"|"|macbook pro 5,2|Testing|
 
@@ -50,17 +47,18 @@ Motivated by idea by [Pike](https://pikeralpha.wordpress.com/2017/01/30/4398)
 6. Restart your device
 7. Voilà - profit!
 
-## In case of error
+## Troubleshooting
 
 * If the system does not boot, restart in [single-user mode](https://support.apple.com/en-bh/HT201573) or with the [recovery partition](https://support.apple.com/en-us/HT201314)
 
-* Find the aprpopriate application backup you created
-* The backup files can be found here:
-
-  ```sh
-  /System/Library/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Versions/Current/HIToolbox.bak
-  /System/Library/Frameworks/AppKit.framework/Versions/Current/AppKit.bak
-  ```
-
+* Find the aprpopriate application backup
 * Overwrite the current application with the backup
-* restart youre computer
+* restart your computer
+
+## TODOs (in no particular order)
+
+* develop scripts and wrappers
+* add a GUI app to wrap this all up neatly
+* keep track of tested machines and gpus
+* add more documentation
+* add more screenshots
