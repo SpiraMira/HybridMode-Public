@@ -20,14 +20,14 @@ Motivated by idea by [Pike](https://pikeralpha.wordpress.com/2017/01/30/4398)
 
 ![alt tag](Resources/hybrid2.png)
 
-- October 3, 2018 : 
-    - added screenshots for hybrid (light) mode with vibrant sidebars and (much) better looking title bars and tab bars. 
-    - table columns are translucent but a dark grey, I still don't like - work in progress...
-    - note: actual script hasn't been added yet but screenshots are available below
-- October 2, 2018 : 
-    - added patch-vibrancy.sh. Includes new bbe utility to better patch these binaries (grep and sed can't cut it)
-- October 1, 2018 : 
-    - created this private repo with patch-menubar
+* October 3, 2018 :
+    * added screenshots for hybrid (light) mode with vibrant sidebars and (much) better looking title bars and tab bars. 
+    * table columns are translucent but a dark grey, I still don't like - work in progress...
+    * note: actual script hasn't been added yet but screenshots are available below
+* October 2, 2018 : 
+    * added patch-vibrancy.sh. Includes new bbe utility to better patch these binaries (grep and sed can't cut it)
+* October 1, 2018 : 
+    * created this private repo with patch-menubar
 
 
 
@@ -52,15 +52,15 @@ Motivated by idea by [Pike](https://pikeralpha.wordpress.com/2017/01/30/4398)
 
 ## In case of error
 
-- If the system does not boot, restart in [single-user mode](https://support.apple.com/en-bh/HT201573) or with the [recovery partition](https://support.apple.com/en-us/HT201314)
+* If the system does not boot, restart in [single-user mode](https://support.apple.com/en-bh/HT201573) or with the [recovery partition](https://support.apple.com/en-us/HT201314)
 
-- Find the aprpopriate application backup you created
-- The backup files can be found here:
+* Find the aprpopriate application backup you created
+* The backup files can be found here:
 
   ```sh
   /System/Library/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Versions/Current/HIToolbox.bak
   /System/Library/Frameworks/AppKit.framework/Versions/Current/AppKit.bak
   ```
 
-- Overwrite the current application with the backup
-- restart youre computer
+* Overwrite the current application with the backup
+* restart youre computer
