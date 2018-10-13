@@ -36,7 +36,7 @@ NOTE: Open an Issue if you would like to revise this list
 
 ## How to use
 
-**NOTE: These instructions are for experienced users. You must be comfortable with the Terminal and shell command lines**
+**NOTE: These instructions are for experienced users. You must be comfortable with the Terminal and shell commands**
 **General purpose installers and wrappers are still in development.  Stay Tuned for upcoming releases**
 
 1. Disable [SIP](https://developer.apple.com/library/content/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html)[*](https://en.wikipedia.org/wiki/System_Integrity_Protection)
