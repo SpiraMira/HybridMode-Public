@@ -16,7 +16,7 @@ So be considerate and follow normal ettiquette when filing issues and problems.
   - [TimothyRLaMora734](https://github.com/TimothyRLaMora734)
   - [webg3](https://github.com/webg3)
   - [junebeetle](https://github.com/junebeetle)
-- All other members of the private repo (where the sausage is made...) I may have forgoten
+- All other members of the private repo (where the sausage is made...) Sorry in advance if I forgot you...
 - See Additional Creds below
 
 ## Lovely Screen Shots
@@ -28,6 +28,8 @@ So be considerate and follow normal ettiquette when filing issues and problems.
 ![alt tag](Resources/coreuihybrid-light-2.png)
 
 ### FullScreen "Hybrid" Dark Mode with solid menubar
+
+![alt tag](Resources/coreuihybrid-dark-2.png)
 
 ![alt tag](Resources/coreuihybrid-dark-1.png)
 
@@ -59,11 +61,13 @@ So be considerate and follow normal ettiquette when filing issues and problems.
 
 Some key frameworks have been pacthed to provide the following effects:
 
-- HIToolbox: a solid menu bar, white in Light and black in Dark.  For a consistent menu bar presentation.
-- AppKit: To reduce transparency across the board (Light and Dark) without the Accessibility/Preferences shortcomings (Dock, Notification panels etc.)
-- CoreUI: turns vibrancy ON for key UI elements by switching to other "materials" (in SystemAppearance.car) that seem to work on our old systems and GPUs.
+| Effect | Framework | Description |
+|--|--|--|
+| Solid menu bar| HIToolbox | a solid menu bar, white in Light and black in Dark.  For a consistent menu bar presentation |
+| Flat appearance with limited transparency | AppKit| To reduce transparency across the board (Light and Dark) without the Accessibility/Preferences shortcomings (Dock, Notification panels etc.) |
+| Hybrid transparency | CoreUI | turns vibrancy ON for key UI elements by switching to other "materials" (in SystemAppearance.car) that seem to work on our old systems and GPUs. |
 
-## Who is this for
+## Who This Is For
 
 - You managed to install Mojave on you unsuported mac
 - You have a non-metal GPU (like all the old macbook pros)
@@ -80,7 +84,7 @@ Some key frameworks have been pacthed to provide the following effects:
 
 see [compatibility table](files/compatibility.md)
 
-## How to use
+## How To Use
 
 **NOTE: These instructions are for experienced users. You must be comfortable with the Terminal and shell command lines.**
 **General purpose installers and wrappers are still in development.  Stay Tuned for upcoming releases**
