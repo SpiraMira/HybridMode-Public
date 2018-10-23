@@ -2,6 +2,10 @@
 
  Various Fixes for Mojave Light Mode on unsupported macs.
 
+This is a labor of love for most of us.  Taking a lot of time out of our busy schedules to serve our community.  
+The effort to debug, test, patch, distribute and (ultimately) maintain all of this is hard and priceless...
+So be considerate and follow normal ettiquette when filing issues and problems.
+
 **Creds to main collaborators:**
 
 - Development
