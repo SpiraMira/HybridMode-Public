@@ -1,0 +1,7 @@
+(allow file-read* (literal "/Library/Preferences/com.apple.ViewBridge.plist"))
+(allow mach-lookup (global-name "com.apple.pictd"))
+(allow mach-lookup (global-name "com.apple.appkit.touchbarlogger"))
+(allow mach-lookup (global-name "com.apple.ServicesTouchBarService"))
+
+;; Temporary while soft linking.
+(allow mach-lookup (global-name "com.apple.sidecar-relay"))

@@ -1,0 +1,757 @@
+#
+#	File:		General
+#
+#	Contains:	xxx put contents here xxx
+#
+#	Version:	xxx put version here xxx
+#
+#	Copyright:	© 2000 by Apple Computer, Inc., all rights reserved.
+#
+#	File Ownership:
+#
+#		DRI:				xxx put dri here xxx
+#
+#		Other Contact:		xxx put other contact here xxx
+#
+#		Technology:			xxx put technology here xxx
+#
+#	Writers:
+#
+#		(lsy)	Larry Yaeger
+#
+#	Change History (most recent first):
+#
+#	  <Ink6>	 5/24/00	lsy		use new CaphackUpperLowerAll to make all the _URL slices prefer
+#									lowercase in all character positions; set endProb of URLPrefixes
+#									to 0; possibly other tweaks in support of URL accuracy
+#	  <Ink5>	 4/13/00	lsy		add per-slice partialprob and maxHypotheses; add URL.dict, but
+#									comment it out in favor of _URL solution; introduce underscore
+#									slice naming convention to reuse Langs in unique slices; add
+#									_URL slices; increase tranProbs to CloseQuote from .3 to .5;
+#									bump file version
+#	  <Ink4>	  2/2/00	lsy		add continueprob and restartprob values; add Letter and Symbol;
+#									adjust starprob for WordLike and SymbolsPart* so
+#									PROPER_CYCLEPROBS can be turned on in Search.c
+#
+
+# [Dictionary	startProb endProb cycleProb continueProb restartProb partialProb
+#				maxHypotheses capHackModeFlags
+#				upperProb lowerProb keepUpperProb makeLowerProb
+#				[keepGroup keepMin]
+#
+#		Dictionary	tranProb
+#		...
+# ]
+
+# These are the capHackModeFlags:
+#
+# CaphackUpperize		( 1)  /* Dynamically create upper transitions from lowers      */
+# CaphackLowerize		( 2)  /* Dynamically create lower transitions from uppers      */
+# CaphackPenalize		( 4)  /* Apply penalties (upper/lowerprob are ALWAYS applied)  */
+# CaphackSpecialCaps	( 8)  /* Use keepupper/makelowerprob instead of caphack values */
+# BiGSliceKeepMinF		(16)  /* Keep at least slice->keepMin of these nodes in bestnodes. */
+# CaphackUse1stCharCase	(32)  /* Apply SpecialCaps penalties to 1st char in word           */
+# CaphackUpperLowerAll	(64)  /* Apply upper/lowerprob to all characters in word		*/
+
+# Some common combinations:
+#
+#  5 = penalize, make uppers only
+# 12 = penalize, use special caps (but not first char)
+# 21 = penalize, make uppers only + keepMin
+# 28 = penalize, use special caps (but not first char) + keepMin (no alternates)
+# 47 = penalize, use special caps, including first char, make alternates
+# 68 = penalize, apply to all (no alternates)
+# 69 = penalize, apply to all, make uppers only
+# 71 = penalize, apply to all, make alternates
+# 84 = penalize, apply to all + keepMin (no alternates)
+# 87 = penalize, apply to all, make alternates + keepMin
+#111 = penalize, apply to all, use special caps, including first char, make alternates
+
+BiGrammar7 General
+
+[CommonWords		   1.	1.  1.	1.	1.	0.05 0	47  .9  1.  1.  .5
+	Punctuation			.6
+	URLPunctuation		.6
+	CloseQuote			.5
+	Hyphen				.25
+	Suffixes			.2
+	CommonWords			.125
+	Words				.125
+	SpellCheckIgnore	.1
+	InkUserDictionary	.1
+	~null1	  			.075
+	~null2				.075
+	~null3				.075
+	~null4				.075
+	~null5				.075
+	Numbers				.05
+]
+
+[Words					.85	1.	1.	1.	1.	0.05	0	47	.9  1.  1.  .5
+	Punctuation			.6
+	URLPunctuation		.6
+	CloseQuote			.5
+	Hyphen				.25
+	Suffixes			.25
+	CommonWords			.125
+	Words				.125
+	SpellCheckIgnore	.1
+	InkUserDictionary	.1
+	~null1				.075
+	~null2				.075
+	~null3				.075
+	~null4				.075
+	~null5				.075
+	Numbers				.05
+]
+
+[SpellCheckIgnore		.7	1.	1.	1.	1.	0.05	0	47	.9	1.	1.	.5
+	Punctuation			.6
+	URLPunctuation		.6
+	CloseQuote			.5
+	Hyphen				.25
+	Suffixes			.25
+	CommonWords			.125
+	Words				.125
+	SpellCheckIgnore	.1
+	InkUserDictionary	.1
+	~null1				.075
+	~null2				.075
+	~null3				.075
+	~null4				.075
+	~null5				.075
+	Numbers				.05
+]
+
+[InkUserDictionary	   1.	1.  1.	1.	1.	0.05   0	47  .9  1.  1.  .5
+	Punctuation			.6
+	URLPunctuation		.6
+	CloseQuote			.5
+	Hyphen				.25
+	Suffixes			.2
+	CommonWords			.125
+	Words				.125
+	SpellCheckIgnore	.1
+	InkUserDictionary	.1
+	~null1				.075
+	~null2				.075
+	~null3				.075
+	~null4				.075
+	~null5				.075
+	Numbers				.05
+]
+
+[~null1					.85	1.  1.	1.	1.	0.05   0	47  .9  1.  1.  .5
+	Punctuation			.6
+	URLPunctuation		.6
+	CloseQuote			.5
+	Hyphen				.25
+	Suffixes			.2
+	CommonWords			.125
+	Words				.125
+	SpellCheckIgnore	.1
+	InkUserDictionary	.1
+	~null1				.075
+	~null2				.075
+	~null3				.075
+	~null4				.075
+	~null5				.075
+	Numbers				.05
+]
+
+[~null2					.85	1.  1.	1.	1.	0.05   0	47  .9  1.  1.  .5
+	Punctuation			.6
+	URLPunctuation		.6
+	CloseQuote			.5
+	Hyphen				.25
+	Suffixes			.2
+	CommonWords			.125
+	Words				.125
+	SpellCheckIgnore	.1
+	InkUserDictionary	.1
+	~null1	  			.075
+	~null2				.075
+	~null3				.075
+	~null4				.075
+	~null5				.075
+	Numbers				.05
+]
+
+[~null3					.85	1.  1.	1.	1.	0.05   0	47  .9  1.  1.  .5
+	Punctuation			.6
+	URLPunctuation		.6
+	CloseQuote			.5
+	Hyphen				.25
+	Suffixes			.2
+	CommonWords			.125
+	Words				.125
+	SpellCheckIgnore	.1
+	InkUserDictionary	.1
+	~null1				.075
+	~null2				.075
+	~null3				.075
+	~null4				.075
+	~null5				.075
+	Numbers				.05
+]
+
+[~null4					.85	1.  1.	1.	1.	0.05   0	47  .9  1.  1.  .5
+	Punctuation			.6
+	URLPunctuation		.6
+	CloseQuote			.5
+	Hyphen				.25
+	Suffixes			.2
+	CommonWords			.125
+	Words				.125
+	SpellCheckIgnore	.1
+	InkUserDictionary	.1
+	~null1				.075
+	~null2				.075
+	~null3				.075
+	~null4				.075
+	~null5				.075
+	Numbers				.05
+]
+
+[~null5					.85	1.  1.	1.	1.	0.05   0	47  .9  1.  1.  .5
+	Punctuation			.6
+	URLPunctuation		.6
+	CloseQuote			.5
+	Hyphen				.25
+	Suffixes			.2
+	CommonWords			.125
+	Words				.125
+	SpellCheckIgnore	.1
+	InkUserDictionary	.1
+	~null1				.075
+	~null2				.075
+	~null3				.075
+	~null4				.075
+	~null5				.075
+	Numbers				.05
+]
+
+[Prefixes				.75	.05  1.	1.	1.	0.05   0	47  .9  1.  1.  .5
+	Hyphen				.25
+	Suffixes			.1
+	CommonWords			.15
+	Words				.225
+	SpellCheckIgnore	.1
+	Prefixes			.15
+	InkUserDictionary	.3
+	~null1				.225
+	~null2				.225
+	~null3				.225
+	~null4				.225
+	~null5				.225
+	Numbers				.05
+]
+
+[Numbers				.8	1.  1.	1.	1.	0.05	0	0  1.  1.  1.  1.
+	CommonWords			.075
+	Words				.075
+	SpellCheckIgnore	.075
+	InkUserDictionary	.075
+	~null1				.075
+	~null2				.075
+	~null3				.075
+	~null4				.075
+	~null5				.075
+	Punctuation			.4
+	URLPunctuation		.4
+	CloseQuote			.3
+	Hyphen				.2
+]
+
+[Letter					.6	1.	1.	0.	0.	0.05	2	16	1.	1.	1.	1.	2	2
+]
+
+[Symbol					.4	1.	1.	0.	0.	0.05	2	16	1.	1.	1.	1.	2	2
+]
+
+#[URL					.65  1.  1.  1.  1.	0.		8	28	.25 1. 1. 1.	3	4
+#	Punctuation			.4
+#	CloseQuote			.3
+#]
+
+[FileURL				.65  1.  1.  1.  1.	0.		8	28	.25 1. 1. 1.	3	4
+	Punctuation			.4
+	CloseQuote			.3
+]
+
+[Money					.65  1.  1.	 1.  1.	0.05	0	0	1. 1. 1. 1.
+	Punctuation			.6
+	CloseQuote			.5
+	Hyphen				.25
+]
+
+[Time					.65  1.  1.	 1.  1.	0.05	0	0	1. 1. 1. 1.
+	Punctuation			.6
+	CloseQuote			.5
+]
+
+[Date					.65  1.  1.  1.  1.	0.05	0	0	1. 1. 1. 1.
+	Punctuation			.6
+	CloseQuote			.5
+]
+
+[Phone					.65  1.  1.  1.  1.	0.05	0	0	1. 1. 1. 1.
+	Punctuation			.6
+	CloseQuote			.5
+]
+
+[PostalCode				.35   1.  .7 1.  1.	0.05    8	0	1. 1. 1. 1.
+	Punctuation			.6
+	CloseQuote			.5
+]
+
+[IDNumbers				.306  1.  .68 1. 1.	0.05	8	4	1. .8 1. .8
+	Hyphen				.3
+	Punctuation			.3
+	CloseQuote			.3
+]
+
+[OpenQuote			   1.   .1  1.	0.5	1.	0.05	0	0 1. 1. 1. 1.
+	CommonWords			.4
+	Words				.35
+	SpellCheckIgnore	.2
+	Prefixes			.3
+	InkUserDictionary	.4
+	~null1				.3
+	~null2				.3
+	~null3				.3
+	~null4				.3
+	~null5				.3
+	Wordlike			.15
+	Numbers				.25
+#	URL					.2
+	Money				.2
+	Time				.2
+	Date				.2
+	Phone				.2
+	PostalCode			.1
+	IDNumbers			.1
+	OpenQuote			.075
+]
+
+[Hyphen					.05  .05   1.	1.	1.	0.05	0	0 1. 1. 1. 1.
+	CommonWords			.4
+	Words				.35
+	SpellCheckIgnore	.2
+	Prefixes			.3
+	Suffixes			.3
+	InkUserDictionary	.4
+	~null1				.3
+	~null2				.3
+	~null3				.3
+	~null4				.3
+	~null5				.3
+	Wordlike			.15
+	Numbers				.25
+	Money				.2
+	IDNumbers			.1
+]
+
+[Punctuation		   0.  1.    1.	1.	1.	0.05	0	5 1. 1. 1. 1.
+	CloseQuote			.5
+	Punctuation			.5
+]
+
+[CloseQuote			   0.  1.    1.	1.	1.	0.05	0	0 1. 1. 1. 1.
+	CloseQuote			.5
+	Punctuation			.5
+]
+
+[Suffixes			   0.  1.  1.	1.	1.	0.05	0	5 .8 1. 1. 1.
+	Punctuation			.6
+	URLPunctuation		.6
+	CloseQuote			.5
+	Hyphen				.25
+	Suffixes			.2
+]
+
+[Wordlike				.39	1.  .65	1.	1.	0.05	8	21  1. 1. 1. 1.    1  4
+	Punctuation			.6
+	URLPunctuation		.6
+	CloseQuote			.5
+	Hyphen				.25
+]
+
+[SymbolsPart1			.231  1.  .55	1.	1.	0.05	8	16 1. 1. 1. 1.    0  4
+	SymbolsPart2		.55
+]
+
+[SymbolsPart2			.231  1.  .55	1.	1.	0.05	8	16 1. 1. 1. 1.    0  4
+	SymbolsPart1		.55
+]
+
+# "Space" should be able to transition to all dictionaries
+# at those dictionaries' startProb, so there is effectively
+# no penalty for prefixing a space token to any string.
+
+[Space				   1.   0.  1.	1.	1.	0.05	0	0 1. 1. 1. 1.
+	CommonWords		   1.0
+	Words				.85
+	SpellCheckIgnore	.7
+	Prefixes			.75
+	InkUserDictionary  1.0
+	~null1				.85
+	~null2				.85
+	~null3				.85
+	~null4				.85
+	~null5				.85
+	Numbers				.8
+	Letter				.6
+	Symbol				.4
+#	URL					.65
+	Money				.65
+	Time				.65
+	Date				.65
+	Phone				.65
+	PostalCode			.5
+	IDNumbers			.45
+	OpenQuote		   1.0
+	Hyphen				.05
+	Wordlike			.39
+	SymbolsPart1		.231
+	SymbolsPart2		.231
+]
+
+[URLPrefixes			1.	0.	1.	1.	1.	0.05	0	71	.25	1. 1. 1.
+	CommonWords_URL		   1.0
+	Words_URL				.85
+	SpellCheckIgnore_URL	.7
+	Prefixes_URL			.75
+	InkUserDictionary_URL  1.0
+	~null1_URL				.85
+	~null2_URL				.85
+	~null3_URL				.85
+	~null4_URL				.85
+	~null5_URL				.85
+	Numbers_URL				.8
+	Wordlike_URL			.39
+	SymbolsPart1_URL		.231
+	SymbolsPart2_URL		.231
+]
+
+[URLSuffixes			0.	1.	1.	1.	0.	0.		0	71	.25	1.	1.	1.
+	CloseQuote			.3
+	Punctuation			.3
+]
+
+[URLPunctuation			0.	0.	1.	1.	0.	0.		0	0	.25	1.	1.	1.
+( .25
+	CommonWords_URL		   1.0
+	Words_URL				.85
+	SpellCheckIgnore_URL	.7
+	Prefixes_URL			.75
+	InkUserDictionary_URL  1.0
+	~null1_URL				.85
+	~null2_URL				.85
+	~null3_URL				.85
+	~null4_URL				.85
+	~null5_URL				.85
+	Numbers_URL				.8
+	Hyphen_URL				.05
+	Wordlike_URL			.39
+	SymbolsPart1_URL		.231
+	SymbolsPart2_URL		.231
+)
+	URLSuffixes				1.
+]
+
+
+# The _URL is stripped from the names of the following slices to provide the Lang name,
+# but is retained for the slice name, so the same Lang can participate in multiple
+# branches of the BiGrammar language model.
+
+# Note: All the _URL slices have zero startProb, endProb, and restartProb, so words
+# can never begin or end with these slices.  All these slices *must* transition to
+# URLSuffixes in order to terminate.  This is done to prevent word.word from being
+# routinely allowed and thus damaging word segmentation for non-URLs.  So while
+# word.word is disallowed, word.word.com, for example, is permitted, thus facilitating
+# URL recognnition without hurting recognition of normal words.
+
+[CommonWords_URL		0.	0.  1.	1.	0.	0.05 0	111	.25  1.  1.  .5
+	Punctuation_URL			.6
+#	CloseQuote_URL			.5
+	Hyphen_URL				.25
+	Suffixes_URL			.2
+	CommonWords_URL			.125
+	Words_URL				.125
+	SpellCheckIgnore_URL	.1
+	InkUserDictionary_URL	.1
+	~null1_URL				.075
+	~null2_URL				.075
+	~null3_URL				.075
+	~null4_URL				.075
+	~null5_URL				.075
+	Numbers_URL				.05
+	
+	URLPunctuation			1.
+]
+
+[Words_URL				0.	0.	1.	1.	0.	0.05	0	111	.25 1.  1.  .5
+	Punctuation_URL			.6
+#	CloseQuote_URL			.5
+	Hyphen_URL				.25
+	Suffixes_URL			.2
+	CommonWords_URL			.125
+	Words_URL				.125
+	SpellCheckIgnore_URL	.1
+	InkUserDictionary_URL	.1
+	~null1_URL				.075
+	~null2_URL				.075
+	~null3_URL				.075
+	~null4_URL				.075
+	~null5_URL				.075
+	Numbers_URL				.05
+	
+	URLPunctuation			1.
+]
+
+[SpellCheckIgnore_URL	0.	0.	1.	1.	0.	0.05	0	111	.25	1.	1.	.5
+	Punctuation_URL			.6
+#	CloseQuote_URL			.5
+	Hyphen_URL				.25
+	Suffixes_URL			.2
+	CommonWords_URL			.125
+	Words_URL				.125
+	SpellCheckIgnore_URL	.1
+	InkUserDictionary_URL	.1
+	~null1_URL				.075
+	~null2_URL				.075
+	~null3_URL				.075
+	~null4_URL				.075
+	~null5_URL				.075
+	Numbers_URL				.05
+	
+	URLPunctuation			1.
+]
+
+[InkUserDictionary_URL	0.	0.  1.	1.	0.	0.05   0	111	.25  1.  1.  .5
+	Punctuation_URL			.6
+#	CloseQuote_URL			.5
+	Hyphen_URL				.25
+	Suffixes_URL			.2
+	CommonWords_URL			.125
+	Words_URL				.125
+	SpellCheckIgnore_URL	.1
+	InkUserDictionary_URL	.1
+	~null1_URL				.075
+	~null2_URL				.075
+	~null3_URL				.075
+	~null4_URL				.075
+	~null5_URL				.075
+	Numbers_URL				.05
+	
+	URLPunctuation			1.
+]
+
+[~null1_URL				0.	0.  1.	1.	0.	0.05   0	111	.25  1.  1.  .5
+	Punctuation_URL			.6
+#	CloseQuote_URL			.5
+	Hyphen_URL				.25
+	Suffixes_URL			.2
+	CommonWords_URL			.125
+	Words_URL				.125
+	SpellCheckIgnore_URL	.1
+	InkUserDictionary_URL	.1
+	~null1_URL				.075
+	~null2_URL				.075
+	~null3_URL				.075
+	~null4_URL				.075
+	~null5_URL				.075
+	Numbers_URL				.05
+	
+	URLPunctuation			1.
+]
+
+[~null2_URL				0.	0.  1.	1.	0.	0.05   0	111	.25 1.  1.  .5
+	Punctuation_URL			.6
+#	CloseQuote_URL			.5
+	Hyphen_URL				.25
+	Suffixes_URL			.2
+	CommonWords_URL			.125
+	Words_URL				.125
+	SpellCheckIgnore_URL	.1
+	InkUserDictionary_URL	.1
+	~null1_URL				.075
+	~null2_URL				.075
+	~null3_URL				.075
+	~null4_URL				.075
+	~null5_URL				.075
+	Numbers_URL				.05
+	
+	URLPunctuation			1.
+]
+
+[~null3_URL				0.	0.  1.	1.	0.	0.05   0	111	.25  1.  1.  .5
+	Punctuation_URL			.6
+#	CloseQuote_URL			.5
+	Hyphen_URL				.25
+	Suffixes_URL			.2
+	CommonWords_URL			.125
+	Words_URL				.125
+	SpellCheckIgnore_URL	.1
+	InkUserDictionary_URL	.1
+	~null1_URL				.075
+	~null2_URL				.075
+	~null3_URL				.075
+	~null4_URL				.075
+	~null5_URL				.075
+	Numbers_URL				.05
+	
+	URLPunctuation			1.
+]
+
+[~null4_URL				0.	0.  1.	1.	0.	0.05   0	111	.25  1.  1.  .5
+	Punctuation_URL			.6
+#	CloseQuote_URL			.5
+	Hyphen_URL				.25
+	Suffixes_URL			.2
+	CommonWords_URL			.125
+	Words_URL				.125
+	SpellCheckIgnore_URL	.1
+	InkUserDictionary_URL	.1
+	~null1_URL				.075
+	~null2_URL				.075
+	~null3_URL				.075
+	~null4_URL				.075
+	~null5_URL				.075
+	Numbers_URL				.05
+	
+	URLPunctuation			1.
+]
+
+[~null5_URL				0.	0.  1.	1.	0.	0.05   0	111	.25  1.  1.  .5
+	Punctuation_URL			.6
+#	CloseQuote_URL			.5
+	Hyphen_URL				.25
+	Suffixes_URL			.2
+	CommonWords_URL			.125
+	Words_URL				.125
+	SpellCheckIgnore_URL	.1
+	InkUserDictionary_URL	.1
+	~null1_URL				.075
+	~null2_URL				.075
+	~null3_URL				.075
+	~null4_URL				.075
+	~null5_URL				.075
+	Numbers_URL				.05
+	
+	URLPunctuation			1.
+]
+
+[Prefixes_URL			0.	0.  1.	1.	0.	0.05   0	111	.25 1.  1.  .5
+	Hyphen_URL				.25
+	Suffixes_URL			.1
+	CommonWords_URL			.15
+	Words_URL				.225
+	SpellCheckIgnore_URL	.1
+	Prefixes_URL			.15
+	InkUserDictionary_URL	.3
+	~null1_URL				.225
+	~null2_URL				.225
+	~null3_URL				.225
+	~null4_URL				.225
+	~null5_URL				.225
+	Numbers_URL				.05
+	
+	URLPunctuation			1.
+]
+
+[Numbers_URL			0.	0.  1.	1.	0.	0.05	0	0  1.  1.  1.  1.
+	CommonWords_URL			.075
+	Words_URL				.075
+	SpellCheckIgnore_URL	.075
+	InkUserDictionary_URL	.075
+	~null1_URL				.075
+	~null2_URL				.075
+	~null3_URL				.075
+	~null4_URL				.075
+	~null5_URL				.075
+	Punctuation_URL			.4
+#	CloseQuote_URL			.3
+	Hyphen_URL				.2
+	
+	URLPunctuation			1.
+]
+
+[Hyphen_URL				0.  0.   1.	1.	0.	0.05	0	0 1. 1. 1. 1.
+	CommonWords_URL			.4
+	Words_URL				.35
+	SpellCheckIgnore_URL	.2
+	Prefixes_URL			.3
+	InkUserDictionary_URL	.4
+	~null1_URL				.3
+	~null2_URL				.3
+	~null3_URL				.3
+	~null4_URL				.3
+	~null5_URL				.3
+	Wordlike_URL			.15
+	Numbers_URL				.25
+	Money_URL				.2
+	IDNumbers_URL			.1
+	
+	URLPunctuation			1.
+]
+
+[Punctuation_URL			0.	0.    1.	1.	1.	0.05	0	69	.25 1. 1. 1.
+#	CloseQuote_URL			.5
+	Punctuation_URL			.5
+	
+	CommonWords_URL		   1.0
+	Words_URL				.85
+	SpellCheckIgnore_URL	.7
+	Prefixes_URL			.75
+	InkUserDictionary_URL  1.0
+	~null1_URL				.85
+	~null2_URL				.85
+	~null3_URL				.85
+	~null4_URL				.85
+	~null5_URL				.85
+	Numbers_URL				.8
+	Hyphen_URL				.05
+	Wordlike				.39
+	SymbolsPart1_URL		.231
+	SymbolsPart2_URL		.231
+	
+	URLPunctuation			1.
+]
+
+#[CloseQuote_URL			0.	0.    1.	1.	1.	0.05	0	0 1. 1. 1. 1.
+#	CloseQuote_URL			.5
+#	Punctuation_URL			.5
+#	
+#	URLPunctuation			1.
+#]
+
+[Suffixes_URL			0.	0.  1.	1.	1.	0.05	0	69	.25 1. 1. 1.
+	Suffixes_URL			.2
+#	CloseQuote_URL			.3
+	Punctuation_URL			.3
+	
+	URLPunctuation			1.
+]
+
+[Wordlike_URL			0.	0.  .65	1.	0.	0.05	8	69	.25 1. 1. 1.
+	Punctuation_URL			.6
+#	CloseQuote_URL			.5
+	Hyphen_URL				.15
+	
+	URLPunctuation			1.
+]
+
+[SymbolsPart1_URL		0.  0.  .55	1.	0.	0.05	8	64	.25 1. 1. 1.
+	SymbolsPart2_URL		.55
+	
+	URLPunctuation			1.
+]
+
+[SymbolsPart2_URL		0.  0.  .55	1.	0.	0.05	8	64	.25 1. 1. 1.
+	SymbolsPart1_URL		.55
+	
+	URLPunctuation			1.
+]
+

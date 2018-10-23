@@ -1,0 +1,131 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <object name="rootObject" class="NSCustomObject" id="1">
+  </object>
+  <array count="13" name="allObjects">
+    <object class="IBCarbonMenu" id="202">
+      <string name="title">Pravopis</string>
+      <int name="menuID">-5000</int>
+      <array count="3" name="items">
+        <object class="IBCarbonMenuItem" id="201">
+          <string name="title">Pravopis…</string>
+          <boolean name="updateSingleItem">TRUE</boolean>
+          <ostype name="command">shsp</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="204">
+          <string name="title">Provjeri pravopis</string>
+          <boolean name="updateSingleItem">TRUE</boolean>
+          <ostype name="command">cksp</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="205">
+          <string name="title">Provjeri pravopis tijekom tipkanja</string>
+          <boolean name="checked">TRUE</boolean>
+          <boolean name="updateSingleItem">TRUE</boolean>
+          <ostype name="command">aspc</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+      </array>
+    </object>
+    <object class="IBCarbonMenuItem" id="200">
+      <boolean name="separator">TRUE</boolean>
+      <boolean name="updateSingleItem">TRUE</boolean>
+      <ostype name="command">sep3</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="181">
+      <string name="title">Zanemari pravopis</string>
+      <boolean name="updateSingleItem">TRUE</boolean>
+      <ostype name="command">igsp</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <reference idRef="201"/>
+    <object class="IBCarbonMenuItem" id="180">
+      <string name="title">Nauči pravopis</string>
+      <boolean name="updateSingleItem">TRUE</boolean>
+      <ostype name="command">lrwd</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="196">
+      <boolean name="separator">TRUE</boolean>
+      <boolean name="updateSingleItem">TRUE</boolean>
+      <ostype name="command">sep2</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="199">
+      <string name="title">Zalijepi</string>
+      <boolean name="updateSingleItem">TRUE</boolean>
+      <ostype name="command">past</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenu" id="182">
+      <string name="title">Izbornik</string>
+      <array count="8" name="items">
+        <reference idRef="181"/>
+        <reference idRef="180"/>
+        <reference idRef="196"/>
+        <object class="IBCarbonMenuItem" id="197">
+          <string name="title">Izreži</string>
+          <boolean name="updateSingleItem">TRUE</boolean>
+          <ostype name="command">cut </ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="198">
+          <string name="title">Kopiraj</string>
+          <boolean name="updateSingleItem">TRUE</boolean>
+          <ostype name="command">copy</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <reference idRef="199"/>
+        <reference idRef="200"/>
+        <object class="IBCarbonMenuItem" id="203">
+          <string name="title">Pravopis</string>
+          <boolean name="updateSingleItem">TRUE</boolean>
+          <ostype name="command">spme</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+          <reference name="submenu" idRef="202"/>
+        </object>
+      </array>
+    </object>
+    <reference idRef="203"/>
+    <reference idRef="198"/>
+    <reference idRef="197"/>
+    <reference idRef="204"/>
+    <reference idRef="205"/>
+  </array>
+  <array count="13" name="allParents">
+    <reference idRef="203"/>
+    <reference idRef="182"/>
+    <reference idRef="182"/>
+    <reference idRef="202"/>
+    <reference idRef="182"/>
+    <reference idRef="182"/>
+    <reference idRef="182"/>
+    <reference idRef="1"/>
+    <reference idRef="182"/>
+    <reference idRef="182"/>
+    <reference idRef="182"/>
+    <reference idRef="202"/>
+    <reference idRef="202"/>
+  </array>
+  <dictionary count="2" name="nameTable">
+    <string>File&apos;s Owner</string>
+    <reference idRef="1"/>
+    <string>SpellCheck</string>
+    <reference idRef="182"/>
+  </dictionary>
+  <string name="targetFramework">IBCarbonFramework</string>
+  <unsigned_int name="nextObjectID">206</unsigned_int>
+</object>

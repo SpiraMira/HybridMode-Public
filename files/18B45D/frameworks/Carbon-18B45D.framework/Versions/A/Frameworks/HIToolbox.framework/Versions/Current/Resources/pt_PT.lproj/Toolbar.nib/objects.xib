@@ -1,0 +1,200 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <object name="rootObject" class="NSCustomObject" id="1">
+  </object>
+  <array count="24" name="allObjects">
+    <object class="IBCarbonStaticText" id="189">
+      <int name="fontStyle">4</int>
+      <string name="title">Arraste os elementos favoritos para a barra de ferramentas…</string>
+      <string name="viewFrame">20 20 440 16 </string>
+      <string name="bounds">20 20 36 460 </string>
+    </object>
+    <object class="IBCarbonMenuItem" id="182">
+      <string name="title">Só ícone</string>
+    </object>
+    <object class="IBCarbonWindow" id="166">
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <boolean name="doesNotCycle">TRUE</boolean>
+      <int name="carbonWindowClass">11</int>
+      <int name="themeBrush">50</int>
+      <int name="scalingMode">1048576</int>
+      <string name="title">Configurar a barra de ferramentas</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="167">
+        <string name="viewFrame">0 0 516 229 </string>
+        <array count="9" name="subviews">
+          <object class="IBCarbonButton" id="180">
+            <ostype name="controlSignature">tcfg</ostype>
+            <int name="controlID">6</int>
+            <ostype name="command">ok  </ostype>
+            <int name="buttonType">1</int>
+            <string name="title">OK</string>
+            <string name="viewFrame">399 189 97 20 </string>
+            <string name="bounds">189 399 209 496 </string>
+          </object>
+          <object class="IBCarbonStaticText" id="181">
+            <ostype name="controlSignature">tcfg</ostype>
+            <int name="controlID">5</int>
+            <string name="title">Mostrar</string>
+            <string name="viewFrame">20 190 51 16 </string>
+            <string name="bounds">190 20 206 71 </string>
+          </object>
+          <object class="IBCarbonPopupButton" id="183">
+            <ostype name="controlSignature">tcfg</ostype>
+            <int name="controlID">1</int>
+            <ostype name="command">dmod</ostype>
+            <object name="menu" class="IBCarbonMenu" id="185">
+              <string name="title">Popup:</string>
+              <array count="3" name="items">
+                <object class="IBCarbonMenuItem" id="184">
+                  <string name="title">Ícone e texto</string>
+                </object>
+                <reference idRef="182"/>
+                <object class="IBCarbonMenuItem" id="186">
+                  <string name="title">Só texto</string>
+                </object>
+              </array>
+            </object>
+            <string name="viewFrame">79 189 125 20 </string>
+            <string name="bounds">189 79 209 204 </string>
+          </object>
+          <object class="IBCarbonSeparator" id="188">
+            <ostype name="controlSignature">tcfg</ostype>
+            <int name="controlID">4</int>
+            <string name="viewFrame">0 175 530 1 </string>
+            <string name="bounds">175 0 176 530 </string>
+          </object>
+          <reference idRef="189"/>
+          <object class="IBCarbonStaticText" id="190">
+            <ostype name="controlSignature">tcfg</ostype>
+            <int name="controlID">7</int>
+            <int name="fontStyle">4</int>
+            <string name="title">… ou arraste o conjunto predefinido para a barra de ferramentas.</string>
+            <int name="justification">-1</int>
+            <string name="viewFrame">20 97 450 16 </string>
+            <string name="bounds">97 20 113 470 </string>
+          </object>
+          <object class="IBCarbonCustom" id="191">
+            <ostype name="controlSignature">tcfg</ostype>
+            <int name="controlID">2</int>
+            <string name="classID">com.apple.hitoolbarview</string>
+            <string name="viewFrame">20 44 476 36 </string>
+            <string name="bounds">44 20 80 496 </string>
+          </object>
+          <object class="IBCarbonCustom" id="192">
+            <ostype name="controlSignature">tcfg</ostype>
+            <int name="controlID">3</int>
+            <string name="classID">com.apple.hitoolbarview</string>
+            <string name="viewFrame">20 121 476 40 </string>
+            <string name="bounds">121 20 161 496 </string>
+          </object>
+          <object class="IBCarbonCheckBox" id="207">
+            <ostype name="controlSignature">tcfg</ostype>
+            <int name="controlID">8</int>
+            <ostype name="command">smal</ostype>
+            <string name="title">Usar tamanho pequeno</string>
+            <string name="viewFrame">210 190 167 18 </string>
+            <string name="bounds">190 210 208 377 </string>
+          </object>
+        </array>
+        <string name="bounds">0 0 229 516 </string>
+      </object>
+      <string name="windowRect">91 83 320 599 </string>
+      <string name="ScreenRectAtEncodeTime">0 0 768 1024 </string>
+    </object>
+    <object class="IBCarbonMenuItem" id="197">
+      <boolean name="separator">TRUE</boolean>
+      <ostype name="command">dszs</ostype>
+    </object>
+    <object class="IBCarbonMenuItem" id="195">
+      <string name="title">Só ícone</string>
+      <ostype name="command">icon</ostype>
+    </object>
+    <object class="IBCarbonMenuItem" id="194">
+      <string name="title">Ícone e texto</string>
+      <ostype name="command">ictx</ostype>
+    </object>
+    <reference idRef="190"/>
+    <object class="IBCarbonMenuItem" id="206">
+      <boolean name="separator">TRUE</boolean>
+      <ostype name="command">cfgs</ostype>
+    </object>
+    <object class="IBCarbonMenuItem" id="204">
+      <string name="title">Usar tamanho pequeno</string>
+      <ostype name="command">smic</ostype>
+    </object>
+    <reference idRef="192"/>
+    <reference idRef="185"/>
+    <object class="IBCarbonMenuItem" id="196">
+      <string name="title">Só texto</string>
+      <ostype name="command">text</ostype>
+    </object>
+    <reference idRef="186"/>
+    <reference idRef="167"/>
+    <reference idRef="184"/>
+    <reference idRef="191"/>
+    <reference idRef="207"/>
+    <reference idRef="188"/>
+    <object class="IBCarbonMenuItem" id="198">
+      <string name="title">Personalizar barra de ferramentas…</string>
+      <ostype name="command">tcfg</ostype>
+    </object>
+    <reference idRef="183"/>
+    <object class="IBCarbonMenuItem" id="209">
+      <string name="title">Ocultar barra de ferramentas</string>
+      <ostype name="command">hdtb</ostype>
+    </object>
+    <reference idRef="181"/>
+    <reference idRef="180"/>
+    <object class="IBCarbonMenu" id="193">
+      <string name="title">Menu</string>
+      <array count="8" name="items">
+        <reference idRef="194"/>
+        <reference idRef="195"/>
+        <reference idRef="196"/>
+        <reference idRef="209"/>
+        <reference idRef="197"/>
+        <reference idRef="204"/>
+        <reference idRef="206"/>
+        <reference idRef="198"/>
+      </array>
+    </object>
+  </array>
+  <array count="24" name="allParents">
+    <reference idRef="167"/>
+    <reference idRef="185"/>
+    <reference idRef="1"/>
+    <reference idRef="193"/>
+    <reference idRef="193"/>
+    <reference idRef="193"/>
+    <reference idRef="167"/>
+    <reference idRef="193"/>
+    <reference idRef="193"/>
+    <reference idRef="167"/>
+    <reference idRef="183"/>
+    <reference idRef="193"/>
+    <reference idRef="185"/>
+    <reference idRef="166"/>
+    <reference idRef="185"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="193"/>
+    <reference idRef="167"/>
+    <reference idRef="193"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="1"/>
+  </array>
+  <dictionary count="3" name="nameTable">
+    <string>ContextMenu</string>
+    <reference idRef="193"/>
+    <string>File&apos;s Owner</string>
+    <reference idRef="1"/>
+    <string>Sheet</string>
+    <reference idRef="166"/>
+  </dictionary>
+  <string name="targetFramework">IBCarbonFramework</string>
+  <unsigned_int name="nextObjectID">210</unsigned_int>
+</object>

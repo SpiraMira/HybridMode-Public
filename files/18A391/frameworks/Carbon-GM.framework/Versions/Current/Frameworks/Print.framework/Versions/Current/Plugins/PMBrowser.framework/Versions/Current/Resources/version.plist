@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildAliasOf</key>
+	<string>PrintCenter</string>
+	<key>BuildVersion</key>
+	<string>87</string>
+	<key>CFBundleShortVersionString</key>
+	<string>14.0</string>
+	<key>CFBundleVersion</key>
+	<string>555.5</string>
+	<key>ProjectName</key>
+	<string>PrintCenter</string>
+	<key>SourceVersion</key>
+	<string>555005000000000</string>
+</dict>
+</plist>

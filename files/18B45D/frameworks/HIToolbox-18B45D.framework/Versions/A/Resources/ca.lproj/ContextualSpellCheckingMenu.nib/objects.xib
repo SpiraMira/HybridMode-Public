@@ -1,0 +1,109 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <object name="rootObject" class="NSCustomObject" id="1">
+  </object>
+  <array count="13" name="allObjects">
+    <object class="IBCarbonMenu" id="202">
+      <string name="title">Ortografia</string>
+      <int name="menuID">-5000</int>
+      <array count="3" name="items">
+        <object class="IBCarbonMenuItem" id="201">
+          <string name="title">Ortografia…</string>
+          <boolean name="updateSingleItem">TRUE</boolean>
+          <ostype name="command">shsp</ostype>
+        </object>
+        <object class="IBCarbonMenuItem" id="204">
+          <string name="title">Revisar l’ortografia</string>
+          <boolean name="updateSingleItem">TRUE</boolean>
+          <ostype name="command">cksp</ostype>
+        </object>
+        <object class="IBCarbonMenuItem" id="205">
+          <string name="title">Revisar l’ortografia en escriure</string>
+          <boolean name="checked">TRUE</boolean>
+          <boolean name="updateSingleItem">TRUE</boolean>
+          <ostype name="command">aspc</ostype>
+        </object>
+      </array>
+    </object>
+    <object class="IBCarbonMenuItem" id="203">
+      <string name="title">Ortografia</string>
+      <boolean name="updateSingleItem">TRUE</boolean>
+      <ostype name="command">spme</ostype>
+      <reference name="submenu" idRef="202"/>
+    </object>
+    <reference idRef="204"/>
+    <object class="IBCarbonMenuItem" id="196">
+      <boolean name="separator">TRUE</boolean>
+      <boolean name="updateSingleItem">TRUE</boolean>
+      <ostype name="command">sep2</ostype>
+    </object>
+    <object class="IBCarbonMenuItem" id="180">
+      <string name="title">Aprendre paraula</string>
+      <boolean name="updateSingleItem">TRUE</boolean>
+      <ostype name="command">lrwd</ostype>
+    </object>
+    <object class="IBCarbonMenuItem" id="200">
+      <boolean name="separator">TRUE</boolean>
+      <boolean name="updateSingleItem">TRUE</boolean>
+      <ostype name="command">sep3</ostype>
+    </object>
+    <object class="IBCarbonMenuItem" id="199">
+      <string name="title">Enganxar</string>
+      <boolean name="updateSingleItem">TRUE</boolean>
+      <ostype name="command">past</ostype>
+    </object>
+    <object class="IBCarbonMenu" id="182">
+      <string name="title">Menú</string>
+      <array count="8" name="items">
+        <object class="IBCarbonMenuItem" id="181">
+          <string name="title">Ignorar la paraula</string>
+          <boolean name="updateSingleItem">TRUE</boolean>
+          <ostype name="command">igsp</ostype>
+        </object>
+        <reference idRef="180"/>
+        <reference idRef="196"/>
+        <object class="IBCarbonMenuItem" id="197">
+          <string name="title">Tallar</string>
+          <boolean name="updateSingleItem">TRUE</boolean>
+          <ostype name="command">cut </ostype>
+        </object>
+        <object class="IBCarbonMenuItem" id="198">
+          <string name="title">Copiar</string>
+          <boolean name="updateSingleItem">TRUE</boolean>
+          <ostype name="command">copy</ostype>
+        </object>
+        <reference idRef="199"/>
+        <reference idRef="200"/>
+        <reference idRef="203"/>
+      </array>
+    </object>
+    <reference idRef="198"/>
+    <reference idRef="201"/>
+    <reference idRef="181"/>
+    <reference idRef="205"/>
+    <reference idRef="197"/>
+  </array>
+  <array count="13" name="allParents">
+    <reference idRef="203"/>
+    <reference idRef="182"/>
+    <reference idRef="202"/>
+    <reference idRef="182"/>
+    <reference idRef="182"/>
+    <reference idRef="182"/>
+    <reference idRef="182"/>
+    <reference idRef="1"/>
+    <reference idRef="182"/>
+    <reference idRef="202"/>
+    <reference idRef="182"/>
+    <reference idRef="202"/>
+    <reference idRef="182"/>
+  </array>
+  <dictionary count="2" name="nameTable">
+    <string>File&apos;s Owner</string>
+    <reference idRef="1"/>
+    <string>SpellCheck</string>
+    <reference idRef="182"/>
+  </dictionary>
+  <string name="targetFramework">IBCarbonFramework</string>
+  <unsigned_int name="nextObjectID">206</unsigned_int>
+</object>

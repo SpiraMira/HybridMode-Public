@@ -1,0 +1,57 @@
+{
+    "Name" = "Text Suite";
+    "Description" = "A set of basic classes for text processing.";
+    "Classes" = {
+        "NSTextStorage" = {
+            "Name" = "text";
+            "Description" = "Rich (styled) text";
+            "Attributes" = {
+                "foregroundColor" = {
+                    "Name" = "color";
+                    "Description" = "The color of the first character.";
+                };
+                "fontName" = {
+                    "Name" = "font";
+                    "Description" = "The name of the font of the first character.";
+                };
+                "fontSize" = {
+                    "Name" = "size";
+                    "Description" = "The size in points of the first character.";
+                };
+            };
+        };
+        "NSAttachmentTextStorage" = {
+            "Name" = "attachment";
+            "Description" = "Represents an inline text attachment.  This class is used mainly for make commands.";
+            "Attributes" = {
+                "filename" = {
+                    "Name" = "file name";
+                    "Description" = "The path to the file for the attachment";
+                };
+            };
+        };
+    };
+    "Synonyms" = {
+        "cha " = {
+            "Name" = "character";
+            "PluralName" = "characters";
+            "Description" = "This subdivides the text into characters.";
+        };
+        "cwor" = {
+            "Name" = "word";
+            "PluralName" = "words";
+            "Description" = "This subdivides the text into words.";
+        };
+        "cpar" = {
+            "Name" = "paragraph";
+            "PluralName" = "paragraphs";
+            "Description" = "This subdivides the text into paragraphs.";
+        };
+        "catr" = {
+            "Name" = "attribute run";
+            "PluralName" = "attribute runs";
+            "Description" = "This subdivides the text into chunks that all have the same attributes.";
+        };
+    };
+}
+

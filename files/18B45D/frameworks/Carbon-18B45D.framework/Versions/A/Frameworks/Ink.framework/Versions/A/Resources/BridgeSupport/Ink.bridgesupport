@@ -1,0 +1,145 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<struct name='InkPoint' type='{InkPoint=&quot;point&quot;{CGPoint}&quot;tabletPointData&quot;{TabletPointRec}&quot;keyModifiers&quot;L}' type64='{InkPoint=&quot;point&quot;{CGPoint}&quot;tabletPointData&quot;{TabletPointRec}&quot;keyModifiers&quot;I}'/>
+<struct name='InkPointPtr' type='{InkPoint=&quot;point&quot;{CGPoint}&quot;tabletPointData&quot;{TabletPointRec}&quot;keyModifiers&quot;L}' type64='{InkPoint=&quot;point&quot;{CGPoint}&quot;tabletPointData&quot;{TabletPointRec}&quot;keyModifiers&quot;I}'/>
+<cftype gettypeid_func='InkStrokeGetTypeID' name='InkStrokeRef' tollfree='__NSCFType' type='^{OpaqueInkStrokeRef=}'/>
+<cftype gettypeid_func='InkTextGetTypeID' name='InkTextRef' tollfree='__NSCFType' type='^{OpaqueInkTextRef=}'/>
+<enum name='kInkAlternateCommand' value='1768844129'/>
+<enum name='kInkDrawInkAndWritingGuides' value='2'/>
+<enum name='kInkDrawInkOnly' value='1'/>
+<enum name='kInkDrawNothing' value='0'/>
+<enum name='kInkDrawingCommand' value='1768844132'/>
+<enum name='kInkGestureClear' value='1668048225'/>
+<enum name='kInkGestureCopy' value='1668247673'/>
+<enum name='kInkGestureCut' value='1668641824'/>
+<enum name='kInkGestureDelete' value='1684368416'/>
+<enum name='kInkGestureEscape' value='1852797985'/>
+<enum name='kInkGestureJoin' value='1785686382'/>
+<enum name='kInkGestureLeftReturn' value='1819440238'/>
+<enum name='kInkGestureLeftSpace' value='1819504739'/>
+<enum name='kInkGesturePaste' value='1885434740'/>
+<enum name='kInkGestureRightReturn' value='1920103534'/>
+<enum name='kInkGestureRightSpace' value='1920168035'/>
+<enum name='kInkGestureSelectAll' value='1935764588'/>
+<enum name='kInkGestureTab' value='1952539168'/>
+<enum name='kInkGestureUndo' value='1970168943'/>
+<enum name='kInkPenLowerSideButtonMask' value='2'/>
+<enum name='kInkPenTipButtonMask' value='1'/>
+<enum name='kInkPenUpperSideButtonMask' value='4'/>
+<enum name='kInkRecognitionDefault' value='3'/>
+<enum name='kInkRecognitionGesture' value='2'/>
+<enum name='kInkRecognitionNone' value='0'/>
+<enum name='kInkRecognitionText' value='1'/>
+<enum name='kInkSeparatorCommand' value='1768844147'/>
+<enum name='kInkSourceApplication' value='2'/>
+<enum name='kInkSourceUser' value='1'/>
+<enum name='kInkTabletPointerCursor' value='2'/>
+<enum name='kInkTabletPointerEraser' value='3'/>
+<enum name='kInkTabletPointerPen' value='1'/>
+<enum name='kInkTabletPointerUnknown' value='0'/>
+<enum name='kInkTerminationAll' value='-1'/>
+<enum name='kInkTerminationDefault' value='15'/>
+<enum name='kInkTerminationNone' value='0'/>
+<enum name='kInkTerminationOutOfProximity' value='2'/>
+<enum name='kInkTerminationRecognizerHorizontalBreak' value='4'/>
+<enum name='kInkTerminationRecognizerVerticalBreak' value='8'/>
+<enum name='kInkTerminationStroke' value='16'/>
+<enum name='kInkTerminationTimeOut' value='1'/>
+<enum name='kInkTextDrawDefault' value='0'/>
+<enum name='kInkTextDrawHonorContext' value='2'/>
+<enum name='kInkTextDrawIgnorePressure' value='1'/>
+<enum name='kInkWriteAnywhere' value='1634630007'/>
+<enum name='kInkWriteAnywhereInApp' value='1634629985'/>
+<enum name='kInkWriteInInkAwareAppsOnly' value='1767993456'/>
+<enum name='kInkWriteNowhere' value='1852798824'/>
+<enum name='kInkWriteNowhereInApp' value='1852798817'/>
+<function name='InkAddStrokeToCurrentPhrase'>
+<arg type='L' type64='Q'/>
+<arg type='^{InkPoint={CGPoint=ff}{TabletPointRec=iiiSSssSsSsss}I}' type64='^{InkPoint={CGPoint=dd}{TabletPointRec=iiiSSssSsSsss}I}'/>
+</function>
+<function name='InkIsPhraseInProgress'>
+<retval type='B'/>
+</function>
+<function name='InkSetApplicationRecognitionMode'>
+<arg type='L' type64='I'/>
+</function>
+<function name='InkSetApplicationWritingMode'>
+<arg type='L' type64='I'/>
+</function>
+<function name='InkSetDrawingMode'>
+<arg type='L' type64='I'/>
+</function>
+<function name='InkSetPhraseTerminationMode'>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+</function>
+<function name='InkStrokeGetPointCount'>
+<arg type='^{OpaqueInkStrokeRef=}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='InkStrokeGetPoints'>
+<arg type='^{OpaqueInkStrokeRef=}'/>
+<arg type='^{InkPoint={CGPoint=ff}{TabletPointRec=iiiSSssSsSsss}I}' type64='^{InkPoint={CGPoint=dd}{TabletPointRec=iiiSSssSsSsss}I}'/>
+<retval type='^{InkPoint={CGPoint=ff}{TabletPointRec=iiiSSssSsSsss}I}' type64='^{InkPoint={CGPoint=dd}{TabletPointRec=iiiSSssSsSsss}I}'/>
+</function>
+<function name='InkStrokeGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='InkTerminateCurrentPhrase'>
+<arg type='L' type64='I'/>
+</function>
+<function name='InkTextAlternatesCount'>
+<arg type='^{OpaqueInkTextRef=}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='InkTextBounds'>
+<arg type='^{OpaqueInkTextRef=}'/>
+<retval type='{CGRect={CGPoint=ff}{CGSize=ff}}' type64='{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+</function>
+<function name='InkTextCopy'>
+<arg type='^{OpaqueInkTextRef=}'/>
+<retval already_retained='true' type='^{OpaqueInkTextRef=}'/>
+</function>
+<function name='InkTextCreateCFString'>
+<arg type='^{OpaqueInkTextRef=}'/>
+<arg type='l' type64='q'/>
+<retval already_retained='true' type='^{__CFString=}'/>
+</function>
+<function name='InkTextCreateFromCFData'>
+<arg type='^{__CFData=}'/>
+<arg type='l' type64='q'/>
+<retval already_retained='true' type='^{OpaqueInkTextRef=}'/>
+</function>
+<function name='InkTextDraw'>
+<arg type='^{OpaqueInkTextRef=}'/>
+<arg type='^{CGContext=}'/>
+<arg type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<arg type='L' type64='I'/>
+</function>
+<function name='InkTextFlatten'>
+<arg type='^{OpaqueInkTextRef=}'/>
+<arg type='^{__CFData=}'/>
+<arg type='l' type64='q'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='InkTextGetStroke'>
+<arg type='^{OpaqueInkTextRef=}'/>
+<arg type='l' type64='q'/>
+<retval type='^{OpaqueInkStrokeRef=}'/>
+</function>
+<function name='InkTextGetStrokeCount'>
+<arg type='^{OpaqueInkTextRef=}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='InkTextGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='InkTextKeyModifiers'>
+<arg type='^{OpaqueInkTextRef=}'/>
+<retval type='L' type64='I'/>
+</function>
+<function name='InkUserWritingMode'>
+<retval type='L' type64='I'/>
+</function>
+</signatures>

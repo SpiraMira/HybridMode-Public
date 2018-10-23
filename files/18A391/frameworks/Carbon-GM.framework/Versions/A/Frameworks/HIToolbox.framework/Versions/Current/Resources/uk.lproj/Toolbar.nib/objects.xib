@@ -1,0 +1,220 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <object name="rootObject" class="NSCustomObject" id="1">
+  </object>
+  <array count="24" name="allObjects">
+    <object class="IBCarbonMenu" id="193">
+      <string name="title">Меню</string>
+      <array count="8" name="items">
+        <object class="IBCarbonMenuItem" id="194">
+          <string name="title">Іконки і текст</string>
+          <ostype name="command">ictx</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="195">
+          <string name="title">Тільки іконки</string>
+          <ostype name="command">icon</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="196">
+          <string name="title">Тільки текст</string>
+          <ostype name="command">text</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="209">
+          <string name="title">Сховати панель інструментів</string>
+          <ostype name="command">hdtb</ostype>
+        </object>
+        <object class="IBCarbonMenuItem" id="197">
+          <boolean name="separator">TRUE</boolean>
+          <ostype name="command">dszs</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="204">
+          <string name="title">Малий розмір</string>
+          <ostype name="command">smic</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="206">
+          <boolean name="separator">TRUE</boolean>
+          <ostype name="command">cfgs</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="198">
+          <string name="title">Настроїти панель інструментів…</string>
+          <ostype name="command">tcfg</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+      </array>
+    </object>
+    <object class="IBCarbonStaticText" id="181">
+      <ostype name="controlSignature">tcfg</ostype>
+      <int name="controlID">5</int>
+      <string name="title">Показувати:</string>
+      <string name="viewFrame">20 191 78 16 </string>
+      <string name="bounds">191 20 207 98 </string>
+    </object>
+    <object class="IBCarbonRootControl" id="167">
+      <string name="viewFrame">0 0 504 229 </string>
+      <array count="9" name="subviews">
+        <object class="IBCarbonButton" id="180">
+          <ostype name="controlSignature">tcfg</ostype>
+          <int name="controlID">6</int>
+          <ostype name="command">ok  </ostype>
+          <int name="buttonType">1</int>
+          <string name="title">Готово</string>
+          <string name="viewFrame">390 189 94 20 </string>
+          <string name="bounds">189 390 209 484 </string>
+        </object>
+        <reference idRef="181"/>
+        <object class="IBCarbonPopupButton" id="183">
+          <ostype name="controlSignature">tcfg</ostype>
+          <int name="controlID">1</int>
+          <ostype name="command">dmod</ostype>
+          <object name="menu" class="IBCarbonMenu" id="185">
+            <string name="title">Спливне вікно:</string>
+            <array count="3" name="items">
+              <object class="IBCarbonMenuItem" id="184">
+                <string name="title">Іконки і текст</string>
+                <string name="helpTagText"></string>
+                <string name="extendedHelpTagText"></string>
+              </object>
+              <object class="IBCarbonMenuItem" id="182">
+                <string name="title">тільки іконки</string>
+                <string name="helpTagText"></string>
+                <string name="extendedHelpTagText"></string>
+              </object>
+              <object class="IBCarbonMenuItem" id="186">
+                <string name="title">тільки текст</string>
+                <string name="helpTagText"></string>
+                <string name="extendedHelpTagText"></string>
+              </object>
+            </array>
+          </object>
+          <string name="viewFrame">105 189 141 20 </string>
+          <string name="bounds">189 105 209 246 </string>
+        </object>
+        <object class="IBCarbonSeparator" id="188">
+          <ostype name="controlSignature">tcfg</ostype>
+          <int name="controlID">4</int>
+          <string name="viewFrame">0 175 504 1 </string>
+          <string name="bounds">175 0 176 504 </string>
+        </object>
+        <object class="IBCarbonStaticText" id="189">
+          <int name="fontStyle">4</int>
+          <string name="title">Перетягніть вибрані елементи на панель інструментів…</string>
+          <string name="viewFrame">20 20 464 16 </string>
+          <string name="bounds">20 20 36 484 </string>
+        </object>
+        <object class="IBCarbonStaticText" id="190">
+          <ostype name="controlSignature">tcfg</ostype>
+          <int name="controlID">7</int>
+          <int name="fontStyle">4</int>
+          <string name="title">… або перетягніть стандартний набір на панель інструментів.</string>
+          <int name="justification">-2</int>
+          <string name="viewFrame">20 97 464 16 </string>
+          <string name="bounds">97 20 113 484 </string>
+        </object>
+        <object class="IBCarbonCustom" id="191">
+          <ostype name="controlSignature">tcfg</ostype>
+          <int name="controlID">2</int>
+          <string name="classID">com.apple.hitoolbarview</string>
+          <string name="viewFrame">20 44 464 36 </string>
+          <string name="bounds">44 20 80 484 </string>
+        </object>
+        <object class="IBCarbonCustom" id="192">
+          <ostype name="controlSignature">tcfg</ostype>
+          <int name="controlID">3</int>
+          <string name="classID">com.apple.hitoolbarview</string>
+          <string name="viewFrame">20 121 464 40 </string>
+          <string name="bounds">121 20 161 484 </string>
+        </object>
+        <object class="IBCarbonCheckBox" id="207">
+          <ostype name="controlSignature">tcfg</ostype>
+          <int name="controlID">8</int>
+          <ostype name="command">smal</ostype>
+          <string name="title">Малий розмір</string>
+          <string name="viewFrame">256 190 111 18 </string>
+          <string name="bounds">190 256 208 367 </string>
+        </object>
+      </array>
+      <string name="bounds">0 0 229 504 </string>
+    </object>
+    <reference idRef="188"/>
+    <reference idRef="182"/>
+    <reference idRef="180"/>
+    <reference idRef="197"/>
+    <reference idRef="183"/>
+    <reference idRef="195"/>
+    <reference idRef="206"/>
+    <reference idRef="194"/>
+    <reference idRef="207"/>
+    <reference idRef="204"/>
+    <reference idRef="186"/>
+    <reference idRef="198"/>
+    <reference idRef="184"/>
+    <reference idRef="190"/>
+    <reference idRef="185"/>
+    <reference idRef="191"/>
+    <reference idRef="189"/>
+    <object class="IBCarbonWindow" id="166">
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <boolean name="doesNotCycle">TRUE</boolean>
+      <int name="carbonWindowClass">11</int>
+      <int name="themeBrush">50</int>
+      <int name="scalingMode">1048576</int>
+      <string name="title">Конфігурування панелі інструментів</string>
+      <reference name="rootControl" idRef="167"/>
+      <string name="windowRect">84 44 313 548 </string>
+      <string name="ScreenRectAtEncodeTime">0 0 768 1024 </string>
+    </object>
+    <reference idRef="192"/>
+    <reference idRef="209"/>
+    <reference idRef="196"/>
+  </array>
+  <array count="24" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="167"/>
+    <reference idRef="166"/>
+    <reference idRef="167"/>
+    <reference idRef="185"/>
+    <reference idRef="167"/>
+    <reference idRef="193"/>
+    <reference idRef="167"/>
+    <reference idRef="193"/>
+    <reference idRef="193"/>
+    <reference idRef="193"/>
+    <reference idRef="167"/>
+    <reference idRef="193"/>
+    <reference idRef="185"/>
+    <reference idRef="193"/>
+    <reference idRef="185"/>
+    <reference idRef="167"/>
+    <reference idRef="183"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="1"/>
+    <reference idRef="167"/>
+    <reference idRef="193"/>
+    <reference idRef="193"/>
+  </array>
+  <dictionary count="3" name="nameTable">
+    <string>ContextMenu</string>
+    <reference idRef="193"/>
+    <string>File&apos;s Owner</string>
+    <reference idRef="1"/>
+    <string>Sheet</string>
+    <reference idRef="166"/>
+  </dictionary>
+  <string name="targetFramework">IBCarbonFramework</string>
+  <unsigned_int name="nextObjectID">210</unsigned_int>
+</object>

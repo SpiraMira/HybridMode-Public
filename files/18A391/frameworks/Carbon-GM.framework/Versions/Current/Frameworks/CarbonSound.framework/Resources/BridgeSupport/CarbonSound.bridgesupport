@@ -1,0 +1,1013 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<struct name='AudioEndianAtom' type='{AudioEndianAtom=&quot;size&quot;l&quot;atomType&quot;L&quot;littleEndian&quot;s}'/>
+<struct name='AudioEndianAtomPtr' type='{AudioEndianAtom=&quot;size&quot;l&quot;atomType&quot;L&quot;littleEndian&quot;s}'/>
+<struct name='AudioFormatAtom' type='{AudioFormatAtom=&quot;size&quot;l&quot;atomType&quot;L&quot;format&quot;L}'/>
+<struct name='AudioFormatAtomPtr' type='{AudioFormatAtom=&quot;size&quot;l&quot;atomType&quot;L&quot;format&quot;L}'/>
+<struct name='AudioInfo' type='{AudioInfo=&quot;capabilitiesFlags&quot;l&quot;reserved&quot;l&quot;numVolumeSteps&quot;S}'/>
+<struct name='AudioInfoPtr' type='{AudioInfo=&quot;capabilitiesFlags&quot;l&quot;reserved&quot;l&quot;numVolumeSteps&quot;S}'/>
+<struct name='AudioSelection' type='{AudioSelection=&quot;unitType&quot;l&quot;selStart&quot;L&quot;selEnd&quot;L}'/>
+<struct name='AudioSelectionPtr' type='{AudioSelection=&quot;unitType&quot;l&quot;selStart&quot;L&quot;selEnd&quot;L}'/>
+<struct name='AudioTerminatorAtom' type='{AudioTerminatorAtom=&quot;size&quot;l&quot;atomType&quot;L}'/>
+<struct name='AudioTerminatorAtomPtr' type='{AudioTerminatorAtom=&quot;size&quot;l&quot;atomType&quot;L}'/>
+<struct name='CmpSoundHeader' type='{CmpSoundHeader=&quot;samplePtr&quot;*&quot;numChannels&quot;L&quot;sampleRate&quot;L&quot;loopStart&quot;L&quot;loopEnd&quot;L&quot;encode&quot;C&quot;baseFrequency&quot;C&quot;numFrames&quot;L&quot;AIFFSampleRate&quot;{Float80}&quot;markerChunk&quot;*&quot;format&quot;L&quot;futureUse2&quot;L&quot;stateVars&quot;^{StateBlock}&quot;leftOverSamples&quot;^{LeftOverBlock}&quot;compressionID&quot;s&quot;packetSize&quot;S&quot;snthID&quot;S&quot;sampleSize&quot;S&quot;sampleArea&quot;[1C]}'/>
+<struct name='CmpSoundHeaderPtr' type='{CmpSoundHeader=&quot;samplePtr&quot;*&quot;numChannels&quot;L&quot;sampleRate&quot;L&quot;loopStart&quot;L&quot;loopEnd&quot;L&quot;encode&quot;C&quot;baseFrequency&quot;C&quot;numFrames&quot;L&quot;AIFFSampleRate&quot;{Float80}&quot;markerChunk&quot;*&quot;format&quot;L&quot;futureUse2&quot;L&quot;stateVars&quot;^{StateBlock}&quot;leftOverSamples&quot;^{LeftOverBlock}&quot;compressionID&quot;s&quot;packetSize&quot;S&quot;snthID&quot;S&quot;sampleSize&quot;S&quot;sampleArea&quot;[1C]}'/>
+<struct name='CompressionInfo' type='{CompressionInfo=&quot;recordSize&quot;l&quot;format&quot;L&quot;compressionID&quot;s&quot;samplesPerPacket&quot;S&quot;bytesPerPacket&quot;S&quot;bytesPerFrame&quot;S&quot;bytesPerSample&quot;S&quot;futureUse1&quot;S}'/>
+<struct name='CompressionInfoPtr' type='{CompressionInfo=&quot;recordSize&quot;l&quot;format&quot;L&quot;compressionID&quot;s&quot;samplesPerPacket&quot;S&quot;bytesPerPacket&quot;S&quot;bytesPerFrame&quot;S&quot;bytesPerSample&quot;S&quot;futureUse1&quot;S}'/>
+<struct name='ConversionBlock' type='{ConversionBlock=&quot;destination&quot;s&quot;unused&quot;s&quot;inputPtr&quot;^{CmpSoundHeader}&quot;outputPtr&quot;^{CmpSoundHeader}}'/>
+<struct name='ConversionBlockPtr' type='{ConversionBlock=&quot;destination&quot;s&quot;unused&quot;s&quot;inputPtr&quot;^{CmpSoundHeader}&quot;outputPtr&quot;^{CmpSoundHeader}}'/>
+<struct name='EQSpectrumBandsRecord' type='{EQSpectrumBandsRecord=&quot;count&quot;s&quot;frequency&quot;^I}'/>
+<struct name='EQSpectrumBandsRecordPtr' type='{EQSpectrumBandsRecord=&quot;count&quot;s&quot;frequency&quot;^I}'/>
+<struct name='ExtSoundHeader' type='{ExtSoundHeader=&quot;samplePtr&quot;*&quot;numChannels&quot;L&quot;sampleRate&quot;L&quot;loopStart&quot;L&quot;loopEnd&quot;L&quot;encode&quot;C&quot;baseFrequency&quot;C&quot;numFrames&quot;L&quot;AIFFSampleRate&quot;{Float80}&quot;markerChunk&quot;*&quot;instrumentChunks&quot;*&quot;AESRecording&quot;*&quot;sampleSize&quot;S&quot;futureUse1&quot;S&quot;futureUse2&quot;L&quot;futureUse3&quot;L&quot;futureUse4&quot;L&quot;sampleArea&quot;[1C]}'/>
+<struct name='ExtSoundHeaderPtr' type='{ExtSoundHeader=&quot;samplePtr&quot;*&quot;numChannels&quot;L&quot;sampleRate&quot;L&quot;loopStart&quot;L&quot;loopEnd&quot;L&quot;encode&quot;C&quot;baseFrequency&quot;C&quot;numFrames&quot;L&quot;AIFFSampleRate&quot;{Float80}&quot;markerChunk&quot;*&quot;instrumentChunks&quot;*&quot;AESRecording&quot;*&quot;sampleSize&quot;S&quot;futureUse1&quot;S&quot;futureUse2&quot;L&quot;futureUse3&quot;L&quot;futureUse4&quot;L&quot;sampleArea&quot;[1C]}'/>
+<struct name='ExtendedScheduledSoundHeader' type='{ExtendedScheduledSoundHeader=&quot;u&quot;(SoundHeaderUnion}&quot;flags&quot;l&quot;reserved&quot;s&quot;callBackParam1&quot;s&quot;callBackParam2&quot;l&quot;startTime&quot;{TimeRecord}&quot;recordSize&quot;l&quot;extendedFlags&quot;l&quot;bufferSize&quot;l&quot;frameCount&quot;l&quot;frameSizesArray&quot;^l&quot;commonFrameSize&quot;l&quot;extensionsPtr&quot;^v&quot;extensionsSize&quot;l&quot;bufferFlags&quot;L&quot;bufferFlagsMask&quot;L}'/>
+<struct name='ExtendedScheduledSoundHeaderPtr' type='{ExtendedScheduledSoundHeader=&quot;u&quot;(SoundHeaderUnion}&quot;flags&quot;l&quot;reserved&quot;s&quot;callBackParam1&quot;s&quot;callBackParam2&quot;l&quot;startTime&quot;{TimeRecord}&quot;recordSize&quot;l&quot;extendedFlags&quot;l&quot;bufferSize&quot;l&quot;frameCount&quot;l&quot;frameSizesArray&quot;^l&quot;commonFrameSize&quot;l&quot;extensionsPtr&quot;^v&quot;extensionsSize&quot;l&quot;bufferFlags&quot;L&quot;bufferFlagsMask&quot;L}'/>
+<struct name='ExtendedSoundComponentData' type='{ExtendedSoundComponentData=&quot;desc&quot;{SoundComponentData}&quot;recordSize&quot;l&quot;extendedFlags&quot;l&quot;bufferSize&quot;l&quot;frameCount&quot;l&quot;frameSizesArray&quot;^l&quot;commonFrameSize&quot;l&quot;extensionsPtr&quot;^v&quot;extensionsSize&quot;l&quot;bufferFlags&quot;L&quot;bufferFlagsMask&quot;L}'/>
+<struct name='ExtendedSoundComponentDataPtr' type='{ExtendedSoundComponentData=&quot;desc&quot;{SoundComponentData}&quot;recordSize&quot;l&quot;extendedFlags&quot;l&quot;bufferSize&quot;l&quot;frameCount&quot;l&quot;frameSizesArray&quot;^l&quot;commonFrameSize&quot;l&quot;extensionsPtr&quot;^v&quot;extensionsSize&quot;l&quot;bufferFlags&quot;L&quot;bufferFlagsMask&quot;L}'/>
+<struct name='ExtendedSoundParamBlock' type='{ExtendedSoundParamBlock=&quot;pb&quot;{SoundParamBlock}&quot;reserved&quot;s&quot;extendedFlags&quot;l&quot;bufferSize&quot;l&quot;frameCount&quot;l&quot;frameSizesArray&quot;^l&quot;commonFrameSize&quot;l&quot;extensionsPtr&quot;^v&quot;extensionsSize&quot;l&quot;bufferFlags&quot;L&quot;bufferFlagsMask&quot;L}'/>
+<struct name='ExtendedSoundParamBlockPtr' type='{ExtendedSoundParamBlock=&quot;pb&quot;{SoundParamBlock}&quot;reserved&quot;s&quot;extendedFlags&quot;l&quot;bufferSize&quot;l&quot;frameCount&quot;l&quot;frameSizesArray&quot;^l&quot;commonFrameSize&quot;l&quot;extensionsPtr&quot;^v&quot;extensionsSize&quot;l&quot;bufferFlags&quot;L&quot;bufferFlagsMask&quot;L}'/>
+<struct name='LeftOverBlock' type='{LeftOverBlock=&quot;count&quot;L&quot;sampleArea&quot;[32c]}'/>
+<struct name='LeftOverBlockPtr' type='{LeftOverBlock=&quot;count&quot;L&quot;sampleArea&quot;[32c]}'/>
+<struct name='LevelMeterInfo' type='{LevelMeterInfo=&quot;numChannels&quot;s&quot;leftMeter&quot;C&quot;rightMeter&quot;C}'/>
+<struct name='LevelMeterInfoPtr' type='{LevelMeterInfo=&quot;numChannels&quot;s&quot;leftMeter&quot;C&quot;rightMeter&quot;C}'/>
+<struct name='ModRef' type='{ModRef=&quot;modNumber&quot;S&quot;modInit&quot;l}'/>
+<struct name='SCStatus' type='{SCStatus=&quot;scStartTime&quot;L&quot;scEndTime&quot;L&quot;scCurrentTime&quot;L&quot;scChannelBusy&quot;B&quot;scChannelDisposed&quot;B&quot;scChannelPaused&quot;B&quot;scUnused&quot;B&quot;scChannelAttributes&quot;L&quot;scCPULoad&quot;l}'/>
+<struct name='SCStatusPtr' type='{SCStatus=&quot;scStartTime&quot;L&quot;scEndTime&quot;L&quot;scCurrentTime&quot;L&quot;scChannelBusy&quot;B&quot;scChannelDisposed&quot;B&quot;scChannelPaused&quot;B&quot;scUnused&quot;B&quot;scChannelAttributes&quot;L&quot;scCPULoad&quot;l}'/>
+<struct name='SMStatus' type='{SMStatus=&quot;smMaxCPULoad&quot;s&quot;smNumChannels&quot;s&quot;smCurCPULoad&quot;s}'/>
+<struct name='SMStatusPtr' type='{SMStatus=&quot;smMaxCPULoad&quot;s&quot;smNumChannels&quot;s&quot;smCurCPULoad&quot;s}'/>
+<struct name='SPB' type='{SPB=&quot;inRefNum&quot;l&quot;count&quot;L&quot;milliseconds&quot;L&quot;bufferLength&quot;L&quot;bufferPtr&quot;*&quot;completionRoutine&quot;^?&quot;interruptRoutine&quot;^?&quot;userLong&quot;l&quot;error&quot;s&quot;unused1&quot;l}'/>
+<struct name='ScheduledSoundHeader' type='{ScheduledSoundHeader=&quot;u&quot;(SoundHeaderUnion}&quot;flags&quot;l&quot;reserved&quot;s&quot;callBackParam1&quot;s&quot;callBackParam2&quot;l&quot;startTime&quot;{TimeRecord}}'/>
+<struct name='ScheduledSoundHeaderPtr' type='{ScheduledSoundHeader=&quot;u&quot;(SoundHeaderUnion}&quot;flags&quot;l&quot;reserved&quot;s&quot;callBackParam1&quot;s&quot;callBackParam2&quot;l&quot;startTime&quot;{TimeRecord}}'/>
+<struct name='Snd2ListPtr' type='{Snd2ListResource=&quot;format&quot;s&quot;refCount&quot;s&quot;numCommands&quot;s&quot;commandPart&quot;[1{SndCommand}&quot;dataPart&quot;[1C]}'/>
+<struct name='Snd2ListResource' type='{Snd2ListResource=&quot;format&quot;s&quot;refCount&quot;s&quot;numCommands&quot;s&quot;commandPart&quot;[1{SndCommand}&quot;dataPart&quot;[1C]}'/>
+<struct name='SndChannel' type='{SndChannel=&quot;nextChan&quot;^{SndChannel}&quot;firstMod&quot;*&quot;callBack&quot;^?&quot;userInfo&quot;l&quot;wait&quot;l&quot;cmdInProgress&quot;{SndCommand}&quot;flags&quot;s&quot;qLength&quot;s&quot;qHead&quot;s&quot;qTail&quot;s&quot;queue&quot;[128{SndCommand}}'/>
+<struct name='SndCommand' type='{SndCommand=&quot;cmd&quot;S&quot;param1&quot;s&quot;param2&quot;l}'/>
+<struct name='SndInputCmpParam' type='{SndInputCmpParam=&quot;ioCompletion&quot;^?&quot;ioInterrupt&quot;^?&quot;ioResult&quot;s&quot;pad&quot;s&quot;ioReqCount&quot;L&quot;ioActCount&quot;L&quot;ioBuffer&quot;*&quot;ioMisc&quot;*}'/>
+<struct name='SndListPtr' type='{SndListResource=&quot;format&quot;s&quot;numModifiers&quot;s&quot;modifierPart&quot;[1{ModRef}&quot;numCommands&quot;s&quot;commandPart&quot;[1{SndCommand}&quot;dataPart&quot;[1C]}'/>
+<struct name='SndListResource' type='{SndListResource=&quot;format&quot;s&quot;numModifiers&quot;s&quot;modifierPart&quot;[1{ModRef}&quot;numCommands&quot;s&quot;commandPart&quot;[1{SndCommand}&quot;dataPart&quot;[1C]}'/>
+<struct name='SoundAudioCodecPropertyRequestParams' type='{SoundAudioCodecPropertyRequestParams=&quot;propertyClass&quot;L&quot;propertyID&quot;L&quot;propertyDataSize&quot;L&quot;propertyData&quot;^v&quot;propertyRequestFlags&quot;L&quot;propertyDataType&quot;L&quot;propertyRequestResult&quot;l}'/>
+<struct name='SoundComponentData' type='{SoundComponentData=&quot;flags&quot;l&quot;format&quot;L&quot;numChannels&quot;s&quot;sampleSize&quot;s&quot;sampleRate&quot;L&quot;sampleCount&quot;l&quot;buffer&quot;*&quot;reserved&quot;l}'/>
+<struct name='SoundComponentDataPtr' type='{SoundComponentData=&quot;flags&quot;l&quot;format&quot;L&quot;numChannels&quot;s&quot;sampleSize&quot;s&quot;sampleRate&quot;L&quot;sampleCount&quot;l&quot;buffer&quot;*&quot;reserved&quot;l}'/>
+<struct name='SoundComponentLink' type='{SoundComponentLink=&quot;description&quot;{ComponentDescription}&quot;mixerID&quot;^{OpaqueSoundSource}&quot;linkID&quot;^^{OpaqueSoundSource}}'/>
+<struct name='SoundComponentLinkPtr' type='{SoundComponentLink=&quot;description&quot;{ComponentDescription}&quot;mixerID&quot;^{OpaqueSoundSource}&quot;linkID&quot;^^{OpaqueSoundSource}}'/>
+<struct name='SoundHeader' type='{SoundHeader=&quot;samplePtr&quot;*&quot;length&quot;L&quot;sampleRate&quot;L&quot;loopStart&quot;L&quot;loopEnd&quot;L&quot;encode&quot;C&quot;baseFrequency&quot;C&quot;sampleArea&quot;[1C]}'/>
+<struct name='SoundHeaderPtr' type='{SoundHeader=&quot;samplePtr&quot;*&quot;length&quot;L&quot;sampleRate&quot;L&quot;loopStart&quot;L&quot;loopEnd&quot;L&quot;encode&quot;C&quot;baseFrequency&quot;C&quot;sampleArea&quot;[1C]}'/>
+<struct name='SoundInfoList' type='{SoundInfoList=&quot;count&quot;s&quot;infoHandle&quot;^*}'/>
+<struct name='SoundInfoListPtr' type='{SoundInfoList=&quot;count&quot;s&quot;infoHandle&quot;^*}'/>
+<struct name='SoundParamBlock' type='{SoundParamBlock=&quot;recordSize&quot;l&quot;desc&quot;{SoundComponentData}&quot;rateMultiplier&quot;L&quot;leftVolume&quot;s&quot;rightVolume&quot;s&quot;quality&quot;l&quot;filter&quot;^{ComponentInstanceRecord}&quot;moreRtn&quot;^?&quot;completionRtn&quot;^?&quot;refCon&quot;l&quot;result&quot;s}'/>
+<struct name='SoundSlopeAndInterceptPtr' type='{SoundSlopeAndInterceptRecord=&quot;slope&quot;d&quot;intercept&quot;d&quot;minClip&quot;d&quot;maxClip&quot;d}'/>
+<struct name='SoundSlopeAndInterceptRecord' type='{SoundSlopeAndInterceptRecord=&quot;slope&quot;d&quot;intercept&quot;d&quot;minClip&quot;d&quot;maxClip&quot;d}'/>
+<struct name='StateBlock' type='{StateBlock=&quot;stateVar&quot;[64s]}'/>
+<struct name='StateBlockPtr' type='{StateBlock=&quot;stateVar&quot;[64s]}'/>
+<opaque name='SPB' type='^{SPB=}'/>
+<opaque name='SPBPtr' type='^{SPB=}'/>
+<opaque name='SndChannel' type='^{SndChannel=}'/>
+<opaque name='SndChannelPtr' type='^{SndChannel=}'/>
+<opaque name='SndInputCmpParam' type='^{SndInputCmpParam=}'/>
+<opaque name='SndInputCmpParamPtr' type='^{SndInputCmpParam=}'/>
+<opaque name='SoundConverter' type='^{OpaqueSoundConverter=}'/>
+<opaque name='SoundParamBlock' type='^{SoundParamBlock=}'/>
+<opaque name='SoundParamBlockPtr' type='^{SoundParamBlock=}'/>
+<opaque name='SoundSource' type='^{OpaqueSoundSource=}'/>
+<enum name='audioAllChannels' value='0'/>
+<enum name='audioDoesIndependentChannels' value='4'/>
+<enum name='audioDoesMono' value='1'/>
+<enum name='audioDoesStereo' value='2'/>
+<enum name='audioLeftChannel' value='1'/>
+<enum name='audioMuted' value='1'/>
+<enum name='audioRightChannel' value='2'/>
+<enum name='audioUnmuted' value='0'/>
+<enum name='availableCmd' value='24'/>
+<enum name='bufferCmd' value='81'/>
+<enum name='callBackCmd' value='13'/>
+<enum name='clockComponentCmd' value='50'/>
+<enum name='cmpSH' value='254'/>
+<enum name='dataOffsetFlag' value='32768'/>
+<enum name='eightToThree' value='2'/>
+<enum name='extSH' value='255'/>
+<enum name='firstSoundFormat' value='1'/>
+<enum name='fixedCompression' value='-1'/>
+<enum name='flushCmd' value='4'/>
+<enum name='getClockComponentCmd' value='51'/>
+<enum name='getRateMultiplierCmd' value='87'/>
+<enum name='getVolumeCmd' value='47'/>
+<enum name='initChanLeft' value='2'/>
+<enum name='initChanRight' value='3'/>
+<enum name='initCompMask' value='65280'/>
+<enum name='initMACE3' value='768'/>
+<enum name='initMACE6' value='1024'/>
+<enum name='initMono' value='128'/>
+<enum name='initNoDrop' value='8'/>
+<enum name='initNoInterp' value='4'/>
+<enum name='initPanMask' value='3'/>
+<enum name='initSRateMask' value='48'/>
+<enum name='initStereo' value='192'/>
+<enum name='initStereoMask' value='192'/>
+<enum name='k16BitBigEndianFormat' value='1953984371'/>
+<enum name='k16BitIn' value='4'/>
+<enum name='k16BitLittleEndianFormat' value='1936684916'/>
+<enum name='k16BitNativeEndianFormat' value='1936684916'/>
+<enum name='k16BitNonNativeEndianFormat' value='1953984371'/>
+<enum name='k16BitOut' value='1024'/>
+<enum name='k24BitFormat' value='1768829492'/>
+<enum name='k32BitFormat' value='1768829746'/>
+<enum name='k32BitLittleEndianFormat' value='842231401'/>
+<enum name='k8BitOffsetBinaryFormat' value='1918990112'/>
+<enum name='k8BitRawIn' value='1'/>
+<enum name='k8BitRawOut' value='256'/>
+<enum name='k8BitTwosIn' value='2'/>
+<enum name='k8BitTwosOut' value='512'/>
+<enum name='kALawCompression' value='1634492791'/>
+<enum name='kASCSubType' value='1634951968'/>
+<enum name='kAVDisplayHeadphoneInsert' value='1'/>
+<enum name='kAVDisplayHeadphoneRemove' value='0'/>
+<enum name='kAVDisplayPlainTalkInsert' value='3'/>
+<enum name='kAVDisplayPlainTalkRemove' value='2'/>
+<enum name='kActionMask' value='16711680'/>
+<enum name='kAudioComponentType' value='1633970543'/>
+<enum name='kAudioEndianAtomType' value='1701733473'/>
+<enum name='kAudioFormatAtomType' value='1718775137'/>
+<enum name='kAudioTerminatorAtomType' value='0'/>
+<enum name='kAudioVBRAtomType' value='1986163297'/>
+<enum name='kAudioVisionHeadphoneSubType' value='1952803944'/>
+<enum name='kAudioVisionSpeakerSubType' value='1952803939'/>
+<enum name='kAwacsPhoneSubType' value='1752197230'/>
+<enum name='kAwacsSubType' value='1635213667'/>
+<enum name='kBestQuality' value='1'/>
+<enum name='kBlueBoxSubType' value='1651732068'/>
+<enum name='kCDSource' value='1667506208'/>
+<enum name='kCDXA2Compression' value='1667528754'/>
+<enum name='kCDXA4Compression' value='1667528756'/>
+<enum name='kClassicSubType' value='1668047219'/>
+<enum name='kConverterSubType' value='1668247158'/>
+<enum name='kCreateSoundSource' value='262144'/>
+<enum name='kDAVInSource' value='1768186230'/>
+<enum name='kDSPSubType' value='1685286944'/>
+<enum name='kDVAudioFormat' value='1685480289'/>
+<enum name='kDVDSource' value='1685480545'/>
+<enum name='kDVIIntelIMAFormat' value='1836253201'/>
+<enum name='kDelegatedSoundComponentSelectors' value='256'/>
+<enum name='kDirectSoundSnifferSubType' value='1685287790'/>
+<enum name='kDirectSoundSubType' value='1685286500'/>
+<enum name='kEqualizerSubType' value='1701929324'/>
+<enum name='kExtMicSource' value='1701669219'/>
+<enum name='kExtendedSoundBufferFlagsValid' value='32'/>
+<enum name='kExtendedSoundBufferIsDiscontinuous' value='1'/>
+<enum name='kExtendedSoundBufferIsFirstBuffer' value='2'/>
+<enum name='kExtendedSoundBufferSizeValid' value='2'/>
+<enum name='kExtendedSoundCommonFrameSizeValid' value='8'/>
+<enum name='kExtendedSoundData' value='16384'/>
+<enum name='kExtendedSoundExtensionsValid' value='16'/>
+<enum name='kExtendedSoundFrameSizesValid' value='4'/>
+<enum name='kExtendedSoundSampleCountNotValid' value='1'/>
+<enum name='kFloat32Format' value='1718367026'/>
+<enum name='kFloat64Format' value='1718367796'/>
+<enum name='kFullMPEGLay3Format' value='778924083'/>
+<enum name='kFullVolume' value='256'/>
+<enum name='kGCAwacsSubType' value='1635215203'/>
+<enum name='kHALCustomComponentSubType' value='1751215224'/>
+<enum name='kHighQuality' value='4194304'/>
+<enum name='kIMACompression' value='1768775988'/>
+<enum name='kInputMask' value='255'/>
+<enum name='kIntMicSource' value='1768778083'/>
+<enum name='kInvalidSource' value='-1'/>
+<enum name='kLittleEndianFormat' value='1936684916'/>
+<enum name='kMACE3Compression' value='1296122675'/>
+<enum name='kMACE6Compression' value='1296122678'/>
+<enum name='kMPEG4AudioFormat' value='1836069985'/>
+<enum name='kMPEGLayer3Format' value='1836253269'/>
+<enum name='kMediaBaySource' value='1835164025'/>
+<enum name='kMicrophoneArray' value='1835623265'/>
+<enum name='kMicrosoftADPCMFormat' value='1836253186'/>
+<enum name='kMicrosoftGSMCompression' value='1836253233'/>
+<enum name='kMiddleC' value='60'/>
+<enum name='kMixer16SubType' value='1835628663'/>
+<enum name='kMixer8SubType' value='1835628642'/>
+<enum name='kMixerType' value='1835628658'/>
+<enum name='kModemSource' value='1836016749'/>
+<enum name='kNoChannelConversion' value='16'/>
+<enum name='kNoDecompression' value='32'/>
+<enum name='kNoMixing' value='1'/>
+<enum name='kNoRealtimeProcessing' value='128'/>
+<enum name='kNoSampleFormatConversion' value='8'/>
+<enum name='kNoSampleRateConversion' value='2'/>
+<enum name='kNoSampleSizeConversion' value='4'/>
+<enum name='kNoSoundComponentChain' value='131072'/>
+<enum name='kNoSoundComponentType' value='707406378'/>
+<enum name='kNoSource' value='1852796517'/>
+<enum name='kNoVolume' value='0'/>
+<enum name='kNoVolumeConversion' value='64'/>
+<enum name='kNonInterleavedBuffer' value='512'/>
+<enum name='kNonPagingMixer' value='1024'/>
+<enum name='kNonRealTime' value='8388608'/>
+<enum name='kOffsetBinary' value='1918990112'/>
+<enum name='kOutputMask' value='65280'/>
+<enum name='kOutputShift' value='8'/>
+<enum name='kPCCardSource' value='1885564192'/>
+<enum name='kPagingMixer' value='4096'/>
+<enum name='kPassThrough' value='65536'/>
+<enum name='kPhilipsFaderSubType' value='1953915254'/>
+<enum name='kQDesign2Compression' value='1363430706'/>
+<enum name='kQDesignCompression' value='1363430723'/>
+<enum name='kQUALCOMMCompression' value='1365470320'/>
+<enum name='kRCAInSource' value='1769104225'/>
+<enum name='kRate16SubType' value='1918989431'/>
+<enum name='kRate8SubType' value='1918989410'/>
+<enum name='kRateConvert' value='131072'/>
+<enum name='kReverse' value='65536'/>
+<enum name='kSGSToneSubType' value='1936159536'/>
+<enum name='kSSpLocalizationSubType' value='1936614451'/>
+<enum name='kScheduledSoundDoCallBack' value='2'/>
+<enum name='kScheduledSoundDoScheduled' value='1'/>
+<enum name='kScheduledSoundExtendedHdr' value='4'/>
+<enum name='kScheduledSource' value='256'/>
+<enum name='kSimpleBeepID' value='1'/>
+<enum name='kSinger2SubType' value='1936615218'/>
+<enum name='kSingerSubType' value='1936289383'/>
+<enum name='kSndInputGetDeviceInfoSelect' value='7'/>
+<enum name='kSndInputGetStatusSelect' value='6'/>
+<enum name='kSndInputInitHardwareSelect' value='9'/>
+<enum name='kSndInputPauseRecordingSelect' value='3'/>
+<enum name='kSndInputReadAsyncSelect' value='1'/>
+<enum name='kSndInputReadSyncSelect' value='2'/>
+<enum name='kSndInputResumeRecordingSelect' value='4'/>
+<enum name='kSndInputSetDeviceInfoSelect' value='8'/>
+<enum name='kSndInputStopRecordingSelect' value='5'/>
+<enum name='kSndSourceSubType' value='1936684402'/>
+<enum name='kSoundAudioCodecPropertyWritableFlag' value='1'/>
+<enum name='kSoundBlasterSubType' value='1935830131'/>
+<enum name='kSoundCodecInfoCanChangeOutputRate' value='8'/>
+<enum name='kSoundCodecInfoFixedCompression' value='1'/>
+<enum name='kSoundCodecInfoHasRestrictedInputRates' value='4'/>
+<enum name='kSoundCodecInfoRequiresExternalFraming' value='16'/>
+<enum name='kSoundCodecInfoResourceType' value='1936615023'/>
+<enum name='kSoundCodecInfoVariableCompression' value='2'/>
+<enum name='kSoundCodecInfoVariableDuration' value='32'/>
+<enum name='kSoundComponentAddSourceSelect' value='257'/>
+<enum name='kSoundComponentBits' value='16777215'/>
+<enum name='kSoundComponentGetInfoSelect' value='259'/>
+<enum name='kSoundComponentGetSourceDataSelect' value='4'/>
+<enum name='kSoundComponentGetSourceSelect' value='3'/>
+<enum name='kSoundComponentInitOutputDeviceSelect' value='1'/>
+<enum name='kSoundComponentPPCType' value='1852401268'/>
+<enum name='kSoundComponentPauseSourceSelect' value='263'/>
+<enum name='kSoundComponentPlaySourceBufferSelect' value='264'/>
+<enum name='kSoundComponentRemoveSourceSelect' value='258'/>
+<enum name='kSoundComponentSetInfoSelect' value='260'/>
+<enum name='kSoundComponentSetOutputSelect' value='5'/>
+<enum name='kSoundComponentSetSourceSelect' value='2'/>
+<enum name='kSoundComponentStartSourceSelect' value='261'/>
+<enum name='kSoundComponentStopSourceSelect' value='262'/>
+<enum name='kSoundComponentType' value='1936287348'/>
+<enum name='kSoundCompressor' value='1935896429'/>
+<enum name='kSoundConverterDidntFillBuffer' value='1'/>
+<enum name='kSoundConverterHasLeftOverData' value='2'/>
+<enum name='kSoundConverterMixer' value='2048'/>
+<enum name='kSoundDecompressor' value='1935959395'/>
+<enum name='kSoundEffectsType' value='1936615032'/>
+<enum name='kSoundInSource' value='1936289386'/>
+<enum name='kSoundInputDeviceType' value='1936289392'/>
+<enum name='kSoundNotCompressed' value='1313820229'/>
+<enum name='kSoundOutputDeviceType' value='1935959414'/>
+<enum name='kSourcePaused' value='1'/>
+<enum name='kStereoIn' value='8'/>
+<enum name='kStereoOut' value='2048'/>
+<enum name='kTVFMTunerSource' value='1953916525'/>
+<enum name='kTwosComplement' value='1953984371'/>
+<enum name='kULawCompression' value='1970037111'/>
+<enum name='kUNIXsdevSubType' value='1970155896'/>
+<enum name='kUSBSubType' value='1970496032'/>
+<enum name='kUseOptionalOutputDevice' value='-1'/>
+<enum name='kVMAwareMixer' value='8192'/>
+<enum name='kVMAwareness' value='2097152'/>
+<enum name='kVariableDurationDVAudioFormat' value='1986295393'/>
+<enum name='kWaveInSnifferSubType' value='2003399534'/>
+<enum name='kWaveInSubType' value='2002876009'/>
+<enum name='kWaveOutSnifferSubType' value='2003792750'/>
+<enum name='kWaveOutSubType' value='2002876015'/>
+<enum name='kWhitSubType' value='2003331444'/>
+<enum name='kZoomVideoSource' value='2054582371'/>
+<enum name='leftOverBlockSize' value='32'/>
+<enum name='linkSoundComponentsCmd' value='53'/>
+<enum name='notCompressed' value='0'/>
+<enum name='nullCmd' value='0'/>
+<enum name='pauseCmd' value='11'/>
+<enum name='quietCmd' value='3'/>
+<enum name='rate11025hz' value='722534400'/>
+<enum name='rate11khz' value='729236945'/>
+<enum name='rate16khz' value='1048576000'/>
+<enum name='rate22050hz' value='1445068800'/>
+<enum name='rate22khz' value='1458473891'/>
+<enum name='rate32khz' value='2097152000'/>
+<enum name='rate44khz' value='-1404829696'/>
+<enum name='rate48khz' value='-1149239296'/>
+<enum name='rate8khz' value='524288000'/>
+<enum name='rateMultiplierCmd' value='86'/>
+<enum name='reInitCmd' value='5'/>
+<enum name='resumeCmd' value='12'/>
+<enum name='sampledSynth' value='5'/>
+<enum name='scheduledSoundCmd' value='52'/>
+<enum name='secondSoundFormat' value='2'/>
+<enum name='siAGCOnOff' value='1634165536'/>
+<enum name='siAVDisplayBehavior' value='1635148898'/>
+<enum name='siActiveChannels' value='1667785059'/>
+<enum name='siActiveLevels' value='1819107683'/>
+<enum name='siAsync' value='1634957678'/>
+<enum name='siAudioCodecPropertyInfo' value='1936746862'/>
+<enum name='siAudioCodecPropertyValue' value='1936750177'/>
+<enum name='siBestQuality' value='1650815860'/>
+<enum name='siBetterQuality' value='1650816114'/>
+<enum name='siCDQuality' value='1667506208'/>
+<enum name='siChannelAvailable' value='1667785078'/>
+<enum name='siClientAcceptsVBR' value='1668702834'/>
+<enum name='siCloseDriver' value='1668050803'/>
+<enum name='siCompressionAvailable' value='1668112758'/>
+<enum name='siCompressionChannels' value='1668309876'/>
+<enum name='siCompressionConfiguration' value='1667458663'/>
+<enum name='siCompressionFactor' value='1668114017'/>
+<enum name='siCompressionHeader' value='1668114532'/>
+<enum name='siCompressionInputRateList' value='1668445292'/>
+<enum name='siCompressionMaxPacketSize' value='1668118640'/>
+<enum name='siCompressionNames' value='1668178285'/>
+<enum name='siCompressionOutputSampleRate' value='1668248180'/>
+<enum name='siCompressionParams' value='1702257015'/>
+<enum name='siCompressionSampleRate' value='1668313716'/>
+<enum name='siCompressionType' value='1668246896'/>
+<enum name='siContinuous' value='1668247156'/>
+<enum name='siDecompressionConfiguration' value='1684235879'/>
+<enum name='siDecompressionParams' value='2002876005'/>
+<enum name='siDeviceBufferInfo' value='1684171118'/>
+<enum name='siDeviceConnected' value='1684238190'/>
+<enum name='siDeviceIcon' value='1768124270'/>
+<enum name='siDeviceIsConnected' value='1'/>
+<enum name='siDeviceName' value='1851878757'/>
+<enum name='siDeviceNotConnected' value='0'/>
+<enum name='siDontKnowIfConnected' value='-1'/>
+<enum name='siEQSpectrumBands' value='1701933922'/>
+<enum name='siEQSpectrumLevels' value='1701932150'/>
+<enum name='siEQSpectrumOnOff' value='1701932143'/>
+<enum name='siEQSpectrumResolution' value='1701933683'/>
+<enum name='siEQToneControlGain' value='1701934183'/>
+<enum name='siEQToneControlOnOff' value='1701934179'/>
+<enum name='siGoodQuality' value='1735356260'/>
+<enum name='siHALAudioDeviceID' value='1751935332'/>
+<enum name='siHALAudioDeviceUniqueID' value='1752525156'/>
+<enum name='siHardwareBalance' value='1751277932'/>
+<enum name='siHardwareBalanceSteps' value='1751280755'/>
+<enum name='siHardwareBass' value='1751277939'/>
+<enum name='siHardwareBassSteps' value='1751282548'/>
+<enum name='siHardwareBusy' value='1752654451'/>
+<enum name='siHardwareFormat' value='1752655469'/>
+<enum name='siHardwareMute' value='1752003956'/>
+<enum name='siHardwareMuteNoPrefs' value='1752002160'/>
+<enum name='siHardwareTreble' value='1752461922'/>
+<enum name='siHardwareTrebleSteps' value='1752659059'/>
+<enum name='siHardwareVolume' value='1752592236'/>
+<enum name='siHardwareVolumeSteps' value='1752396912'/>
+<enum name='siHeadphoneMute' value='1886221684'/>
+<enum name='siHeadphoneVolume' value='1886809964'/>
+<enum name='siHeadphoneVolumeSteps' value='1751413620'/>
+<enum name='siInitializeDriver' value='1768843636'/>
+<enum name='siInputAvailable' value='1768841590'/>
+<enum name='siInputGain' value='1734437230'/>
+<enum name='siInputSource' value='1936684402'/>
+<enum name='siInputSourceNames' value='1936613741'/>
+<enum name='siLevelMeterOnOff' value='1819108724'/>
+<enum name='siMediaContextID' value='1970628964'/>
+<enum name='siModemGain' value='1835491689'/>
+<enum name='siMonitorAvailable' value='1835950454'/>
+<enum name='siMonitorSource' value='1836019315'/>
+<enum name='siNoneQuality' value='1852796517'/>
+<enum name='siNumberChannels' value='1667785070'/>
+<enum name='siOSTypeInputAvailable' value='1768841590'/>
+<enum name='siOSTypeInputSource' value='1768845428'/>
+<enum name='siOptionsDialog' value='1869640804'/>
+<enum name='siOutputDeviceName' value='1869504877'/>
+<enum name='siOutputLatency' value='1869378661'/>
+<enum name='siPauseRecording' value='1885435251'/>
+<enum name='siPlayThruOnOff' value='1886155880'/>
+<enum name='siPostMixerSoundComponent' value='1886612856'/>
+<enum name='siPreMixerSoundComponent' value='1886547320'/>
+<enum name='siQuality' value='1903518060'/>
+<enum name='siRateConverterRollOffSlope' value='1919116386'/>
+<enum name='siRateMultiplier' value='1919776108'/>
+<enum name='siReadPermission' value='0'/>
+<enum name='siRecordingQuality' value='1903518060'/>
+<enum name='siSSpCPULoadLimit' value='862219372'/>
+<enum name='siSSpLocalization' value='862218598'/>
+<enum name='siSSpSpeakerSetup' value='862221172'/>
+<enum name='siSampleRate' value='1936875892'/>
+<enum name='siSampleRateAvailable' value='1936875894'/>
+<enum name='siSampleSize' value='1936943482'/>
+<enum name='siSampleSizeAvailable' value='1936941430'/>
+<enum name='siSetupCDAudio' value='1937072996'/>
+<enum name='siSetupModemAudio' value='1937075556'/>
+<enum name='siSlopeAndIntercept' value='1718378864'/>
+<enum name='siSoundClock' value='1935895659'/>
+<enum name='siSourceIsExhausted' value='1936876408'/>
+<enum name='siSpeakerMute' value='1936553332'/>
+<enum name='siSpeakerVolume' value='1937141612'/>
+<enum name='siStereoInputGain' value='1936154985'/>
+<enum name='siSubwooferMute' value='1651340660'/>
+<enum name='siSupportedExtendedFlags' value='1702389356'/>
+<enum name='siTerminalType' value='1953790320'/>
+<enum name='siTwosComplementOnOff' value='1953984371'/>
+<enum name='siUseThisSoundClock' value='1935895651'/>
+<enum name='siUserInterruptProc' value='1970496882'/>
+<enum name='siVendorProduct' value='1987080815'/>
+<enum name='siVolume' value='1987013749'/>
+<enum name='siVoxRecordInfo' value='1987016818'/>
+<enum name='siVoxStopInfo' value='1987016819'/>
+<enum name='siWideStereo' value='2003395685'/>
+<enum name='siWritePermission' value='1'/>
+<enum name='sixToOne' value='4'/>
+<enum name='sixToOnePacketSize' value='8'/>
+<enum name='soundCmd' value='80'/>
+<enum name='soundListRsrc' value='1936614432'/>
+<enum name='stateBlockSize' value='64'/>
+<enum name='stdQLength' value='128'/>
+<enum name='stdSH' value='0'/>
+<enum name='syncCmd' value='14'/>
+<enum name='sysBeepDisable' value='0'/>
+<enum name='sysBeepEnable' value='1'/>
+<enum name='sysBeepSynchronous' value='2'/>
+<enum name='threeToOne' value='3'/>
+<enum name='threeToOnePacketSize' value='16'/>
+<enum name='twoToOne' value='1'/>
+<enum name='unitTypeNoSelection' value='65535'/>
+<enum name='unitTypeSeconds' value='0'/>
+<enum name='variableCompression' value='-2'/>
+<enum name='versionCmd' value='25'/>
+<enum name='volumeCmd' value='46'/>
+<enum name='waitCmd' value='10'/>
+<function name='CloseMixerSoundComponent'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<retval type='s'/>
+</function>
+<function name='DisposeSICompletionUPP'>
+<arg function_pointer='true' type='^?'>
+<retval type='v'/>
+</arg>
+</function>
+<function name='DisposeSIInterruptUPP'>
+<arg function_pointer='true' type='^?'>
+<retval type='v'/>
+</arg>
+</function>
+<function name='DisposeSndCallBackUPP'>
+<arg function_pointer='true' type='^?'>
+<retval type='v'/>
+</arg>
+</function>
+<function name='DisposeSoundConverterFillBufferDataUPP'>
+<arg function_pointer='true' type='^?'>
+<retval type='B'/>
+</arg>
+</function>
+<function name='DisposeSoundParamUPP'>
+<arg function_pointer='true' type='^?'>
+<retval type='B'/>
+</arg>
+</function>
+<function name='GetCompressionInfo'>
+<arg type='s'/>
+<arg type='L'/>
+<arg type='s'/>
+<arg type='s'/>
+<arg type='^{CompressionInfo=lIsSSSSS}'/>
+<retval type='s'/>
+</function>
+<function name='GetCompressionName'>
+<arg type='L'/>
+<arg type='*'/>
+<retval type='s'/>
+</function>
+<function name='GetDefaultOutputVolume'>
+<arg type='^l'/>
+<retval type='s'/>
+</function>
+<function name='GetSoundHeaderOffset'>
+<arg type='^^{SndListResource}'/>
+<arg type='^l'/>
+<retval type='s'/>
+</function>
+<function name='GetSoundOutputInfo'>
+<arg type='^{ComponentRecord=[1l]}'/>
+<arg type='L'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='GetSoundPreference'>
+<arg type='L'/>
+<arg type='*'/>
+<arg type='^*'/>
+<retval type='s'/>
+</function>
+<function name='GetSysBeepVolume'>
+<arg type='^l'/>
+<retval type='s'/>
+</function>
+<function name='InvokeSICompletionUPP'>
+<arg type='^{SPB=lLLL*^?^?lsl}'/>
+<arg function_pointer='true' type='^?'>
+<retval type='v'/>
+</arg>
+</function>
+<function name='InvokeSIInterruptUPP'>
+<arg type='^{SPB=lLLL*^?^?lsl}'/>
+<arg type='*'/>
+<arg type='s'/>
+<arg type='l'/>
+<arg function_pointer='true' type='^?'>
+<retval type='v'/>
+</arg>
+</function>
+<function name='InvokeSndCallBackUPP'>
+<arg type='^{SndChannel=^{SndChannel}*^?ll{SndCommand=Ssl}ssss[128{SndCommand=Ssl}]}'/>
+<arg type='^{SndCommand=Ssl}'/>
+<arg function_pointer='true' type='^?'>
+<retval type='v'/>
+</arg>
+</function>
+<function name='InvokeSoundConverterFillBufferDataUPP'>
+<arg type='^^{SoundComponentData}'/>
+<arg type='^v'/>
+<arg function_pointer='true' type='^?'>
+<retval type='B'/>
+</arg>
+<retval type='B'/>
+</function>
+<function name='InvokeSoundParamUPP'>
+<arg type='^^{SoundParamBlock}'/>
+<arg function_pointer='true' type='^?'>
+<retval type='B'/>
+</arg>
+<retval type='B'/>
+</function>
+<function name='NewSICompletionUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{SPB=lLLL*^?^?lsl}'/>
+<retval type='v'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<retval type='v'/>
+</retval>
+</function>
+<function name='NewSIInterruptUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{SPB=lLLL*^?^?lsl}'/>
+<arg type='*'/>
+<arg type='s'/>
+<arg type='l'/>
+<retval type='v'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<retval type='v'/>
+</retval>
+</function>
+<function name='NewSndCallBackUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{SndChannel=^{SndChannel}*^?ll{SndCommand=Ssl}ssss[128{SndCommand=Ssl}]}'/>
+<arg type='^{SndCommand=Ssl}'/>
+<retval type='v'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<retval type='v'/>
+</retval>
+</function>
+<function name='NewSoundConverterFillBufferDataUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^^{SoundComponentData}'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<retval type='B'/>
+</retval>
+</function>
+<function name='NewSoundParamUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^^{SoundParamBlock}'/>
+<retval type='B'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<retval type='B'/>
+</retval>
+</function>
+<function name='OpenMixerSoundComponent'>
+<arg type='^{SoundComponentData=lIssIl*l}'/>
+<arg type='l'/>
+<arg type='^^{ComponentInstanceRecord}'/>
+<retval type='s'/>
+</function>
+<function name='ParseAIFFHeader'>
+<arg type='s'/>
+<arg type='^{SoundComponentData=lIssIl*l}'/>
+<arg type='^L'/>
+<arg type='^L'/>
+<retval type='s'/>
+</function>
+<function name='ParseSndHeader'>
+<arg type='^^{SndListResource}'/>
+<arg type='^{SoundComponentData=lIssIl*l}'/>
+<arg type='^L'/>
+<arg type='^L'/>
+<retval type='s'/>
+</function>
+<function name='SPBBytesToMilliseconds'>
+<arg type='l'/>
+<arg type='^l'/>
+<retval type='s'/>
+</function>
+<function name='SPBCloseDevice'>
+<arg type='l'/>
+<retval type='s'/>
+</function>
+<function name='SPBGetDeviceInfo'>
+<arg type='l'/>
+<arg type='L'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='SPBGetIndexedDevice'>
+<arg type='s'/>
+<arg type='*'/>
+<arg type='^^*'/>
+<retval type='s'/>
+</function>
+<function name='SPBGetRecordingStatus'>
+<arg type='l'/>
+<arg type='^s'/>
+<arg type='^s'/>
+<arg type='^L'/>
+<arg type='^L'/>
+<arg type='^L'/>
+<arg type='^L'/>
+<retval type='s'/>
+</function>
+<function name='SPBMillisecondsToBytes'>
+<arg type='l'/>
+<arg type='^l'/>
+<retval type='s'/>
+</function>
+<function name='SPBOpenDevice'>
+<arg type='*'/>
+<arg type='s'/>
+<arg type='^l'/>
+<retval type='s'/>
+</function>
+<function name='SPBPauseRecording'>
+<arg type='l'/>
+<retval type='s'/>
+</function>
+<function name='SPBRecord'>
+<arg type='^{SPB=lLLL*^?^?lsl}'/>
+<arg type='B'/>
+<retval type='s'/>
+</function>
+<function name='SPBResumeRecording'>
+<arg type='l'/>
+<retval type='s'/>
+</function>
+<function name='SPBSetDeviceInfo'>
+<arg type='l'/>
+<arg type='L'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='SPBSignInDevice'>
+<arg type='s'/>
+<arg type='*'/>
+<retval type='s'/>
+</function>
+<function name='SPBSignOutDevice'>
+<arg type='s'/>
+<retval type='s'/>
+</function>
+<function name='SPBStopRecording'>
+<arg type='l'/>
+<retval type='s'/>
+</function>
+<function name='SPBVersion'>
+<retval type='{NumVersion=CCCC}'/>
+</function>
+<function name='SetDefaultOutputVolume'>
+<arg type='l'/>
+<retval type='s'/>
+</function>
+<function name='SetSoundOutputInfo'>
+<arg type='^{ComponentRecord=[1l]}'/>
+<arg type='L'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='SetSoundPreference'>
+<arg type='L'/>
+<arg type='*'/>
+<arg type='^*'/>
+<retval type='s'/>
+</function>
+<function name='SetSysBeepVolume'>
+<arg type='l'/>
+<retval type='s'/>
+</function>
+<function name='SetupAIFFHeader'>
+<arg type='s'/>
+<arg type='s'/>
+<arg type='L'/>
+<arg type='s'/>
+<arg type='L'/>
+<arg type='L'/>
+<arg type='L'/>
+<retval type='s'/>
+</function>
+<function name='SetupSndHeader'>
+<arg type='^^{SndListResource}'/>
+<arg type='s'/>
+<arg type='L'/>
+<arg type='s'/>
+<arg type='L'/>
+<arg type='s'/>
+<arg type='L'/>
+<arg type='^s'/>
+<retval type='s'/>
+</function>
+<function name='SndChannelStatus'>
+<arg type='^{SndChannel=^{SndChannel}*^?ll{SndCommand=Ssl}ssss[128{SndCommand=Ssl}]}'/>
+<arg type='s'/>
+<arg type='^{SCStatus=IIIBBBBLl}'/>
+<retval type='s'/>
+</function>
+<function name='SndDisposeChannel'>
+<arg type='^{SndChannel=^{SndChannel}*^?ll{SndCommand=Ssl}ssss[128{SndCommand=Ssl}]}'/>
+<arg type='B'/>
+<retval type='s'/>
+</function>
+<function name='SndDoCommand'>
+<arg type='^{SndChannel=^{SndChannel}*^?ll{SndCommand=Ssl}ssss[128{SndCommand=Ssl}]}'/>
+<arg type='^{SndCommand=Ssl}'/>
+<arg type='B'/>
+<retval type='s'/>
+</function>
+<function name='SndDoImmediate'>
+<arg type='^{SndChannel=^{SndChannel}*^?ll{SndCommand=Ssl}ssss[128{SndCommand=Ssl}]}'/>
+<arg type='^{SndCommand=Ssl}'/>
+<retval type='s'/>
+</function>
+<function name='SndGetInfo'>
+<arg type='^{SndChannel=^{SndChannel}*^?ll{SndCommand=Ssl}ssss[128{SndCommand=Ssl}]}'/>
+<arg type='L'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='SndGetSysBeepState'>
+<arg type='^s'/>
+</function>
+<function name='SndInputGetDeviceInfo'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='L'/>
+<arg type='^v'/>
+<retval type='l'/>
+</function>
+<function name='SndInputGetStatus'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='^s'/>
+<arg type='^L'/>
+<arg type='^L'/>
+<retval type='l'/>
+</function>
+<function name='SndInputInitHardware'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<retval type='l'/>
+</function>
+<function name='SndInputPauseRecording'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<retval type='l'/>
+</function>
+<function name='SndInputReadAsync'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='^{SndInputCmpParam=^?^?ssLL**}'/>
+<retval type='l'/>
+</function>
+<function name='SndInputReadSync'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='^{SndInputCmpParam=^?^?ssLL**}'/>
+<retval type='l'/>
+</function>
+<function name='SndInputResumeRecording'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<retval type='l'/>
+</function>
+<function name='SndInputSetDeviceInfo'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='L'/>
+<arg type='^v'/>
+<retval type='l'/>
+</function>
+<function name='SndInputStopRecording'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<retval type='l'/>
+</function>
+<function name='SndManagerStatus'>
+<arg type='s'/>
+<arg type='^{SMStatus=sss}'/>
+<retval type='s'/>
+</function>
+<function name='SndNewChannel'>
+<arg type='^^{SndChannel}'/>
+<arg type='s'/>
+<arg type='l'/>
+<arg function_pointer='true' type='^?'>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='SndPlay'>
+<arg type='^{SndChannel=^{SndChannel}*^?ll{SndCommand=Ssl}ssss[128{SndCommand=Ssl}]}'/>
+<arg type='^^{SndListResource}'/>
+<arg type='B'/>
+<retval type='s'/>
+</function>
+<function name='SndRecord'>
+<arg function_pointer='true' type='^?'>
+<retval type='B'/>
+</arg>
+<arg type='{Point=ss}'/>
+<arg type='L'/>
+<arg type='^^^{SndListResource}'/>
+<retval type='s'/>
+</function>
+<function name='SndSetInfo'>
+<arg type='^{SndChannel=^{SndChannel}*^?ll{SndCommand=Ssl}ssss[128{SndCommand=Ssl}]}'/>
+<arg type='L'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='SndSetSysBeepState'>
+<arg type='s'/>
+<retval type='s'/>
+</function>
+<function name='SndSoundManagerVersion'>
+<retval type='{NumVersion=CCCC}'/>
+</function>
+<function name='SoundComponentAddSource'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='^^{OpaqueSoundSource}'/>
+<retval type='l'/>
+</function>
+<function name='SoundComponentGetInfo'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='^{OpaqueSoundSource=}'/>
+<arg type='L'/>
+<arg type='^v'/>
+<retval type='l'/>
+</function>
+<function name='SoundComponentGetSource'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='^{OpaqueSoundSource=}'/>
+<arg type='^^{ComponentInstanceRecord}'/>
+<retval type='l'/>
+</function>
+<function name='SoundComponentGetSourceData'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='^^{SoundComponentData}'/>
+<retval type='l'/>
+</function>
+<function name='SoundComponentInitOutputDevice'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='l'/>
+<retval type='l'/>
+</function>
+<function name='SoundComponentPauseSource'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='s'/>
+<arg type='^^{OpaqueSoundSource}'/>
+<retval type='l'/>
+</function>
+<function name='SoundComponentPlaySourceBuffer'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='^{OpaqueSoundSource=}'/>
+<arg type='^{SoundParamBlock=l{SoundComponentData=lIssIl*l}Issl^{ComponentInstanceRecord}^?^?ls}'/>
+<arg type='l'/>
+<retval type='l'/>
+</function>
+<function name='SoundComponentRemoveSource'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='^{OpaqueSoundSource=}'/>
+<retval type='l'/>
+</function>
+<function name='SoundComponentSetInfo'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='^{OpaqueSoundSource=}'/>
+<arg type='L'/>
+<arg type='^v'/>
+<retval type='l'/>
+</function>
+<function name='SoundComponentSetOutput'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='^{SoundComponentData=lIssIl*l}'/>
+<arg type='^^{SoundComponentData}'/>
+<retval type='l'/>
+</function>
+<function name='SoundComponentSetSource'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='^{OpaqueSoundSource=}'/>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<retval type='l'/>
+</function>
+<function name='SoundComponentStartSource'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='s'/>
+<arg type='^^{OpaqueSoundSource}'/>
+<retval type='l'/>
+</function>
+<function name='SoundComponentStopSource'>
+<arg type='^{ComponentInstanceRecord=[1l]}'/>
+<arg type='s'/>
+<arg type='^^{OpaqueSoundSource}'/>
+<retval type='l'/>
+</function>
+<function name='SoundConverterBeginConversion'>
+<arg type='^{OpaqueSoundConverter=}'/>
+<retval type='s'/>
+</function>
+<function name='SoundConverterClose'>
+<arg type='^{OpaqueSoundConverter=}'/>
+<retval type='s'/>
+</function>
+<function name='SoundConverterConvertBuffer'>
+<arg type='^{OpaqueSoundConverter=}'/>
+<arg type='^v'/>
+<arg type='L'/>
+<arg type='^v'/>
+<arg type='^L'/>
+<arg type='^L'/>
+<retval type='s'/>
+</function>
+<function name='SoundConverterEndConversion'>
+<arg type='^{OpaqueSoundConverter=}'/>
+<arg type='^v'/>
+<arg type='^L'/>
+<arg type='^L'/>
+<retval type='s'/>
+</function>
+<function name='SoundConverterFillBuffer'>
+<arg type='^{OpaqueSoundConverter=}'/>
+<arg function_pointer='true' type='^?'>
+<retval type='B'/>
+</arg>
+<arg type='^v'/>
+<arg type='^v'/>
+<arg type='L'/>
+<arg type='^L'/>
+<arg type='^L'/>
+<arg type='^L'/>
+<retval type='s'/>
+</function>
+<function name='SoundConverterGetBufferSizes'>
+<arg type='^{OpaqueSoundConverter=}'/>
+<arg type='L'/>
+<arg type='^L'/>
+<arg type='^L'/>
+<arg type='^L'/>
+<retval type='s'/>
+</function>
+<function name='SoundConverterGetInfo'>
+<arg type='^{OpaqueSoundConverter=}'/>
+<arg type='L'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='SoundConverterOpen'>
+<arg type='^{SoundComponentData=lIssIl*l}'/>
+<arg type='^{SoundComponentData=lIssIl*l}'/>
+<arg type='^^{OpaqueSoundConverter}'/>
+<retval type='s'/>
+</function>
+<function name='SoundConverterSetInfo'>
+<arg type='^{OpaqueSoundConverter=}'/>
+<arg type='L'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='SoundManagerGetInfo'>
+<arg type='L'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='SoundManagerSetInfo'>
+<arg type='L'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='SysBeep'>
+<arg type='s'/>
+</function>
+<function name='UnsignedFixedMulDiv'>
+<arg type='L'/>
+<arg type='L'/>
+<arg type='L'/>
+<retval type='L'/>
+</function>
+</signatures>

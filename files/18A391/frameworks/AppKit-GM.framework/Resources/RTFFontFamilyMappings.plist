@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>swiss</key>
+	<array>
+		<string>Helvetica</string>
+		<string>Arial</string>
+		<string>Lucida Sans Unicode</string>
+		<string>Impact</string>
+		<string>Lucida Console</string>
+		<string>ITC Avant Garde Gothic</string>
+		<string>Century Gothic</string>
+		<string>Formata</string>
+		<string>Barmeno</string>
+		<string>Optima</string>
+		<string>Arial Black</string>
+		<string>Arial Narrow</string>
+		<string>Arial Rounded MT Bold</string>
+		<string>Haettenschweiler</string>
+		<string>Britannic Bold</string>
+		<string>HeiseiKakuGoHelvetica</string>
+	</array>
+	<key>roman</key>
+	<array>
+		<string>Times</string>
+		<string>Times New Roman</string>
+		<string>Palatino</string>
+		<string>Wide Latin</string>
+		<string>AdobeGaramond</string>
+		<string>Garamond</string>
+		<string>New Century Schoolbook</string>
+		<string>ITC Bookman</string>
+		<string>Adobe Caslon</string>
+		<string>Americana</string>
+		<string>Book Antiqua</string>
+		<string>Bookman Old Style</string>
+		<string>HeiseiMinTimes</string>
+	</array>
+	<key>modern</key>
+	<array>
+		<string>Ohlfs</string>
+		<string>Courier</string>
+		<string>Courier New</string>
+		<string>MS LineDraw</string>
+		<string>FixedHeiseiKakuGoCourier</string>
+		<string>FixedHeiseiMinCourier</string>
+	</array>
+	<key>script</key>
+	<array>
+		<string>Cursive</string>
+		<string>Tekton</string>
+		<string>Kaufmann</string>
+		<string>Park Avenue</string>
+		<string>ITC Zapf Chancery</string>
+		<string>Brush Script MT</string>
+		<string>Matura MT Script Capitals</string>
+	</array>
+	<key>decor</key>
+	<array>
+		<string>Blackoak</string>
+		<string>Lithos</string>
+		<string>Trajan</string>
+		<string>Poetica</string>
+		<string>Parisian</string>
+		<string>Algerian</string>
+		<string>Playbill</string>
+		<string>Braggadocio</string>
+		<string>Desdemona</string>
+		<string>Colonna MT</string>
+		<string>Kino MT</string>
+	</array>
+	<key>tech</key>
+	<array>
+		<string>Symbol</string>
+		<string>Wingdings</string>
+		<string>ITC Zapf Dingbats</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,306 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/Security.framework'/>
+<depends_on path='/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<struct name='URLCallbackInfo' type='{URLCallbackInfo=&quot;version&quot;I&quot;urlRef&quot;^{OpaqueURLReference}&quot;property&quot;*&quot;currentSize&quot;I&quot;systemEvent&quot;^{EventRecord}}'/>
+<opaque name='URLReference' type='^{OpaqueURLReference=}'/>
+<string_constant name='kURLAuthType' value='URLAuthType'/>
+<string_constant name='kURLCertificate' value='URLCertificate'/>
+<string_constant name='kURLCharacterSet' value='URLCharacterSet'/>
+<string_constant name='kURLConnectTimeout' value='URLConnectTimeout'/>
+<string_constant name='kURLFileCreator' value='URLFileCreator'/>
+<string_constant name='kURLFileType' value='URLFileType'/>
+<string_constant name='kURLHTTPRedirectedURL' value='URLHTTPRedirectedURL'/>
+<string_constant name='kURLHTTPRequestBody' value='URLHTTPRequestBody'/>
+<string_constant name='kURLHTTPRequestHeader' value='URLHTTPRequestHeader'/>
+<string_constant name='kURLHTTPRequestMethod' value='URLHTTPRequestMethod'/>
+<string_constant name='kURLHTTPRespHeader' value='URLHTTPRespHeader'/>
+<string_constant name='kURLHTTPUserAgent' value='URLHTTPUserAgent'/>
+<string_constant name='kURLHost' value='URLHost'/>
+<string_constant name='kURLIsSecure' value='URLIsSecure'/>
+<string_constant name='kURLLastModifiedTime' value='URLLastModifiedTime'/>
+<string_constant name='kURLMIMEType' value='URLMIMEType'/>
+<string_constant name='kURLPassword' value='URLPassword'/>
+<string_constant name='kURLResourceName' value='URLResourceName'/>
+<string_constant name='kURLResourceSize' value='URLResourceSize'/>
+<string_constant name='kURLSSLCipherSuite' value='URLSSLCipherSuite'/>
+<string_constant name='kURLStatusString' value='URLStatusString'/>
+<string_constant name='kURLTotalItems' value='URLTotalItems'/>
+<string_constant name='kURLURL' value='URLString'/>
+<string_constant name='kURLUserName' value='URLUserName'/>
+<enum name='kURLAbortInitiatedEvent' value='8'/>
+<enum name='kURLAbortInitiatedMask' value='128'/>
+<enum name='kURLAbortingState' value='8'/>
+<enum name='kURLAllBufferEventsMask' value='1048608'/>
+<enum name='kURLAllEventsMask' value='-1'/>
+<enum name='kURLAllNonBufferEventsMask' value='-536869935'/>
+<enum name='kURLBinHexFileFlag' value='2'/>
+<enum name='kURLCompletedEvent' value='9'/>
+<enum name='kURLCompletedEventMask' value='256'/>
+<enum name='kURLCompletedState' value='9'/>
+<enum name='kURLConnectingState' value='3'/>
+<enum name='kURLDataAvailableEvent' value='21'/>
+<enum name='kURLDataAvailableEventMask' value='1048576'/>
+<enum name='kURLDataAvailableState' value='21'/>
+<enum name='kURLDebinhexOnlyFlag' value='2048'/>
+<enum name='kURLDirectoryListingFlag' value='256'/>
+<enum name='kURLDisplayAuthFlag' value='16'/>
+<enum name='kURLDisplayProgressFlag' value='8'/>
+<enum name='kURLDoNotDeleteOnErrorFlag' value='4096'/>
+<enum name='kURLDoNotTryAnonymousFlag' value='128'/>
+<enum name='kURLDownloadingEvent' value='5'/>
+<enum name='kURLDownloadingMask' value='16'/>
+<enum name='kURLDownloadingState' value='5'/>
+<enum name='kURLErrorOccurredEvent' value='7'/>
+<enum name='kURLErrorOccurredEventMask' value='64'/>
+<enum name='kURLErrorOccurredState' value='7'/>
+<enum name='kURLExpandAndVerifyFlag' value='512'/>
+<enum name='kURLExpandFileFlag' value='4'/>
+<enum name='kURLInitiatedEvent' value='1'/>
+<enum name='kURLInitiatedEventMask' value='1'/>
+<enum name='kURLInitiatingState' value='1'/>
+<enum name='kURLIsDirectoryHintFlag' value='64'/>
+<enum name='kURLLookingUpHostState' value='2'/>
+<enum name='kURLNoAutoRedirectFlag' value='1024'/>
+<enum name='kURLNullState' value='0'/>
+<enum name='kURLPercentEvent' value='30'/>
+<enum name='kURLPercentEventMask' value='536870912'/>
+<enum name='kURLPeriodicEvent' value='31'/>
+<enum name='kURLPeriodicEventMask' value='1073741824'/>
+<enum name='kURLPropertyChangedEvent' value='32'/>
+<enum name='kURLPropertyChangedEventMask' value='-2147483648'/>
+<enum name='kURLReplaceExistingFlag' value='1'/>
+<enum name='kURLReservedFlag' value='2147483648'/>
+<enum name='kURLResourceFoundEvent' value='4'/>
+<enum name='kURLResourceFoundEventMask' value='8'/>
+<enum name='kURLResourceFoundState' value='4'/>
+<enum name='kURLResumeDownloadFlag' value='8192'/>
+<enum name='kURLSystemEvent' value='29'/>
+<enum name='kURLSystemEventMask' value='268435456'/>
+<enum name='kURLTransactionCompleteEvent' value='6'/>
+<enum name='kURLTransactionCompleteEventMask' value='32'/>
+<enum name='kURLTransactionCompleteState' value='6'/>
+<enum name='kURLUploadFlag' value='32'/>
+<enum name='kURLUploadingEvent' value='10'/>
+<enum name='kURLUploadingMask' value='512'/>
+<enum name='kURLUploadingState' value='10'/>
+<enum name='kUserNameAndPasswordFlag' value='1'/>
+<enum name='typeSecIdentityRef' value='1936286841'/>
+<function name='DisposeURLNotifyUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^v'/>
+<arg type='L' type64='I'/>
+<arg type='^{URLCallbackInfo=I^{OpaqueURLReference}*I^{EventRecord}}'/>
+<retval type='l' type64='i'/>
+</arg>
+</function>
+<function name='DisposeURLSystemEventUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^v'/>
+<arg type='^{EventRecord=SLI{Point=ss}S}' type64='^{EventRecord=SQI{Point=ss}S}'/>
+<retval type='l' type64='i'/>
+</arg>
+</function>
+<function name='InvokeURLNotifyUPP'>
+<arg type='^v'/>
+<arg type='L' type64='I'/>
+<arg type='^{URLCallbackInfo=I^{OpaqueURLReference}*I^{EventRecord}}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^v'/>
+<arg type='L' type64='I'/>
+<arg type='^{URLCallbackInfo=I^{OpaqueURLReference}*I^{EventRecord}}'/>
+<retval type='l' type64='i'/>
+</arg>
+<retval type='l' type64='i'/>
+</function>
+<function name='InvokeURLSystemEventUPP'>
+<arg type='^v'/>
+<arg type='^{EventRecord=SLI{Point=ss}S}' type64='^{EventRecord=SQI{Point=ss}S}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^v'/>
+<arg type='^{EventRecord=SLI{Point=ss}S}' type64='^{EventRecord=SQI{Point=ss}S}'/>
+<retval type='l' type64='i'/>
+</arg>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCAddAppleSharePassword'>
+<arg type='^[16C]'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCAddGenericPassword'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCAddInternetPassword'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='S'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCAddInternetPasswordWithPath'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='S'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCAddItem'>
+<arg type='^{OpaqueSecKeychainItemRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCChangeSettings'>
+<arg type='^{OpaqueSecKeychainRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCCreateKeychain'>
+<arg type='*'/>
+<arg type='^^{OpaqueSecKeychainRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCUnlock'>
+<arg type='^{OpaqueSecKeychainRef=}'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='NewURLNotifyUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^v'/>
+<arg type='L' type64='I'/>
+<arg type='^{URLCallbackInfo=I^{OpaqueURLReference}*I^{EventRecord}}'/>
+<retval type='l' type64='i'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<arg type='^v'/>
+<arg type='L' type64='I'/>
+<arg type='^{URLCallbackInfo=I^{OpaqueURLReference}*I^{EventRecord}}'/>
+<retval type='l' type64='i'/>
+</retval>
+</function>
+<function name='NewURLSystemEventUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^v'/>
+<arg type='^{EventRecord=SLI{Point=ss}S}' type64='^{EventRecord=SQI{Point=ss}S}'/>
+<retval type='l' type64='i'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<arg type='^v'/>
+<arg type='^{EventRecord=SLI{Point=ss}S}' type64='^{EventRecord=SQI{Point=ss}S}'/>
+<retval type='l' type64='i'/>
+</retval>
+</function>
+<function name='SecChooseIdentity'>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFArray=}'/>
+<arg type='^^{OpaqueSecIdentityRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='SecChooseIdentityAsSheet'>
+<arg type='^{OpaqueWindowPtr=}'/>
+<arg type='^{OpaqueEventTargetRef=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFArray=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='SecDisplayCertificate'>
+<arg type='^{OpaqueSecCertificateRef=}'/>
+<arg type='^{__CFArray=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='SecDisplayCertificateGroup'>
+<arg type='^{cssm_certgroup=III(?=^{cssm_data}^{cssm_encoded_cert}^{cssm_parsed_cert}^{cssm_cert_pair})I^v}'/>
+<arg type='^{__CFArray=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='SecEditTrust'>
+<arg type='^{__CFString=}'/>
+<arg type='^{OpaqueSecTrustRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='SecEditTrustAsSheet'>
+<arg type='^{OpaqueWindowPtr=}'/>
+<arg type='^{OpaqueEventTargetRef=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{OpaqueSecTrustRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='kcaddapplesharepassword'>
+<arg type='^[16C]'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='kcaddgenericpassword'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='kcaddinternetpassword'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='S'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='kcaddinternetpasswordwithpath'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='S'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='kccreatekeychain'>
+<arg type='*'/>
+<arg type='^^{OpaqueSecKeychainRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='kcunlock'>
+<arg type='^{OpaqueSecKeychainRef=}'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+</signatures>

@@ -1,0 +1,220 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <object name="rootObject" class="NSCustomObject" id="1">
+  </object>
+  <array count="24" name="allObjects">
+    <object class="IBCarbonMenuItem" id="195">
+      <string name="title">아이콘</string>
+      <ostype name="command">icon</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonButton" id="180">
+      <ostype name="controlSignature">tcfg</ostype>
+      <int name="controlID">6</int>
+      <ostype name="command">ok  </ostype>
+      <int name="buttonType">1</int>
+      <string name="title">완료</string>
+      <string name="viewFrame">374 189 70 20 </string>
+      <string name="bounds">189 374 209 444 </string>
+    </object>
+    <object class="IBCarbonCheckBox" id="207">
+      <ostype name="controlSignature">tcfg</ostype>
+      <int name="controlID">8</int>
+      <ostype name="command">smal</ostype>
+      <string name="title">작은 크기 사용</string>
+      <string name="viewFrame">196 190 130 18 </string>
+      <string name="bounds">190 196 208 326 </string>
+    </object>
+    <object class="IBCarbonRootControl" id="167">
+      <string name="viewFrame">0 0 464 229 </string>
+      <array count="9" name="subviews">
+        <reference idRef="180"/>
+        <object class="IBCarbonStaticText" id="181">
+          <ostype name="controlSignature">tcfg</ostype>
+          <int name="controlID">5</int>
+          <string name="title">보기</string>
+          <string name="viewFrame">20 192 30 16 </string>
+          <string name="bounds">192 20 208 50 </string>
+        </object>
+        <object class="IBCarbonPopupButton" id="183">
+          <ostype name="controlSignature">tcfg</ostype>
+          <int name="controlID">1</int>
+          <ostype name="command">dmod</ostype>
+          <object name="menu" class="IBCarbonMenu" id="185">
+            <string name="title">팝업:</string>
+            <array count="3" name="items">
+              <object class="IBCarbonMenuItem" id="184">
+                <string name="title">아이콘 및 텍스트</string>
+                <string name="helpTagText"></string>
+                <string name="extendedHelpTagText"></string>
+              </object>
+              <object class="IBCarbonMenuItem" id="182">
+                <string name="title">아이콘</string>
+                <string name="helpTagText"></string>
+                <string name="extendedHelpTagText"></string>
+              </object>
+              <object class="IBCarbonMenuItem" id="186">
+                <string name="title">텍스트</string>
+                <string name="helpTagText"></string>
+                <string name="extendedHelpTagText"></string>
+              </object>
+            </array>
+          </object>
+          <string name="viewFrame">53 189 137 20 </string>
+          <string name="bounds">189 53 209 190 </string>
+        </object>
+        <object class="IBCarbonSeparator" id="188">
+          <ostype name="controlSignature">tcfg</ostype>
+          <int name="controlID">4</int>
+          <string name="viewFrame">0 175 478 1 </string>
+          <string name="bounds">175 0 176 478 </string>
+        </object>
+        <object class="IBCarbonStaticText" id="189">
+          <int name="fontStyle">4</int>
+          <string name="title">자주 사용하는 항목을 도구 막대로 드래그하십시오.</string>
+          <string name="viewFrame">20 20 306 17 </string>
+          <string name="bounds">20 20 37 326 </string>
+        </object>
+        <object class="IBCarbonStaticText" id="190">
+          <ostype name="controlSignature">tcfg</ostype>
+          <int name="controlID">7</int>
+          <int name="fontStyle">4</int>
+          <string name="title">또는 기본 설정을 도구 막대로 드래그하십시오.</string>
+          <int name="justification">-1</int>
+          <string name="viewFrame">20 97 286 16 </string>
+          <string name="bounds">97 20 113 306 </string>
+        </object>
+        <object class="IBCarbonCustom" id="191">
+          <ostype name="controlSignature">tcfg</ostype>
+          <int name="controlID">2</int>
+          <string name="classID">com.apple.hitoolbarview</string>
+          <string name="viewFrame">20 44 424 36 </string>
+          <string name="bounds">44 20 80 444 </string>
+        </object>
+        <object class="IBCarbonCustom" id="192">
+          <ostype name="controlSignature">tcfg</ostype>
+          <int name="controlID">3</int>
+          <string name="classID">com.apple.hitoolbarview</string>
+          <string name="viewFrame">20 121 424 40 </string>
+          <string name="bounds">121 20 161 444 </string>
+        </object>
+        <reference idRef="207"/>
+      </array>
+      <string name="bounds">0 0 229 464 </string>
+    </object>
+    <reference idRef="183"/>
+    <reference idRef="191"/>
+    <reference idRef="186"/>
+    <reference idRef="185"/>
+    <object class="IBCarbonWindow" id="166">
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <boolean name="doesNotCycle">TRUE</boolean>
+      <int name="carbonWindowClass">11</int>
+      <int name="themeBrush">50</int>
+      <int name="scalingMode">1048576</int>
+      <string name="title">도구 막대 구성</string>
+      <reference name="rootControl" idRef="167"/>
+      <string name="windowRect">91 83 320 547 </string>
+      <string name="ScreenRectAtEncodeTime">0 0 768 1024 </string>
+    </object>
+    <object class="IBCarbonMenuItem" id="206">
+      <boolean name="separator">TRUE</boolean>
+      <ostype name="command">cfgs</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="197">
+      <boolean name="separator">TRUE</boolean>
+      <ostype name="command">dszs</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <reference idRef="192"/>
+    <reference idRef="188"/>
+    <object class="IBCarbonMenuItem" id="194">
+      <string name="title">아이콘 및 텍스트</string>
+      <ostype name="command">ictx</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="209">
+      <string name="title">도구 막대 가리기</string>
+      <ostype name="command">hdtb</ostype>
+    </object>
+    <object class="IBCarbonMenuItem" id="198">
+      <string name="title">도구 막대 사용자화...</string>
+      <ostype name="command">tcfg</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="196">
+      <string name="title">텍스트</string>
+      <ostype name="command">text</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <reference idRef="184"/>
+    <object class="IBCarbonMenuItem" id="204">
+      <string name="title">작은 크기 사용</string>
+      <ostype name="command">smic</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <reference idRef="189"/>
+    <reference idRef="182"/>
+    <reference idRef="181"/>
+    <object class="IBCarbonMenu" id="193">
+      <string name="title">Menu</string>
+      <array count="8" name="items">
+        <reference idRef="194"/>
+        <reference idRef="195"/>
+        <reference idRef="196"/>
+        <reference idRef="209"/>
+        <reference idRef="197"/>
+        <reference idRef="204"/>
+        <reference idRef="206"/>
+        <reference idRef="198"/>
+      </array>
+    </object>
+    <reference idRef="190"/>
+  </array>
+  <array count="24" name="allParents">
+    <reference idRef="193"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="166"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="185"/>
+    <reference idRef="183"/>
+    <reference idRef="1"/>
+    <reference idRef="193"/>
+    <reference idRef="193"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="193"/>
+    <reference idRef="193"/>
+    <reference idRef="193"/>
+    <reference idRef="193"/>
+    <reference idRef="185"/>
+    <reference idRef="193"/>
+    <reference idRef="167"/>
+    <reference idRef="185"/>
+    <reference idRef="167"/>
+    <reference idRef="1"/>
+    <reference idRef="167"/>
+  </array>
+  <dictionary count="3" name="nameTable">
+    <string>ContextMenu</string>
+    <reference idRef="193"/>
+    <string>File&apos;s Owner</string>
+    <reference idRef="1"/>
+    <string>Sheet</string>
+    <reference idRef="166"/>
+  </dictionary>
+  <string name="targetFramework">IBCarbonFramework</string>
+  <unsigned_int name="nextObjectID">210</unsigned_int>
+</object>

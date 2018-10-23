@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <object name="rootObject" class="NSCustomObject" id="1">
+  </object>
+  <array count="2" name="allObjects">
+    <object class="IBCarbonWindow" id="282">
+      <boolean name="hasCollapseBox">FALSE</boolean>
+      <boolean name="liveResize">TRUE</boolean>
+      <int name="carbonWindowClass">5</int>
+      <int name="themeBrush">15</int>
+      <string name="title">도움말</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="283">
+        <string name="bounds">0 0 124 236 </string>
+      </object>
+      <string name="windowRect">210 300 334 536 </string>
+      <string name="ScreenRectAtEncodeTime">0 0 768 1024 </string>
+    </object>
+    <reference idRef="283"/>
+  </array>
+  <array count="2" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="282"/>
+  </array>
+  <dictionary count="2" name="nameTable">
+    <string>File&apos;s Owner</string>
+    <reference idRef="1"/>
+    <string>HelpInspector</string>
+    <reference idRef="282"/>
+  </dictionary>
+  <string name="targetFramework">IBCarbonFramework</string>
+  <unsigned_int name="nextObjectID">284</unsigned_int>
+</object>

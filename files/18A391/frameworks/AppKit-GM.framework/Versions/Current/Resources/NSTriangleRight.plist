@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1**</key>
+	<dict>
+		<key>image</key>
+		<string>NSTriangleNormalDown</string>
+	</dict>
+	<key>0**</key>
+	<dict>
+		<key>image</key>
+		<string>NSTriangleNormalRight</string>
+	</dict>
+	<key>1hi</key>
+	<dict>
+		<key>image</key>
+		<string>NSTrianglePressedDown</string>
+	</dict>
+	<key>0hi</key>
+	<dict>
+		<key>image</key>
+		<string>NSTrianglePressedRight</string>
+	</dict>
+	<key>1ho</key>
+	<dict>
+		<key>image</key>
+		<string>NSTriangleNormalDown</string>
+	</dict>
+	<key>0ho</key>
+	<dict>
+		<key>image</key>
+		<string>NSTriangleNormalRight</string>
+	</dict>
+</dict>
+</plist>

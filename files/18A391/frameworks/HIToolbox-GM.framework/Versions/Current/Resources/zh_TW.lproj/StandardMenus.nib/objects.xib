@@ -1,0 +1,521 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <object name="rootObject" class="NSCustomObject" id="1">
+  </object>
+  <array count="58" name="allObjects">
+    <object class="IBCarbonMenuItem" id="309">
+      <boolean name="separator">TRUE</boolean>
+    </object>
+    <object class="IBCarbonMenuItem" id="293">
+      <string name="title">系統資訊⋯</string>
+      <boolean name="dynamic">TRUE</boolean>
+      <boolean name="updateSingleItem">TRUE</boolean>
+      <int name="keyEquivalentModifier">1572864</int>
+      <ostype name="command">spro</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="283">
+      <string name="title">向後循環</string>
+      <boolean name="hidden">TRUE</boolean>
+      <int name="keyEquivalentModifier">1179648</int>
+      <ostype name="command">rotb</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="220">
+      <string name="title">關於這台 Mac</string>
+      <boolean name="dynamic">TRUE</boolean>
+      <boolean name="updateSingleItem">TRUE</boolean>
+      <ostype name="command">abtm</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="250">
+      <string name="title">網路偏好設定⋯</string>
+      <ostype name="command">nprf</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="271">
+      <string name="title">將此程式所有視窗移至最前</string>
+      <boolean name="dynamic">TRUE</boolean>
+      <ostype name="command">bfrt</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="221">
+      <string name="title">App Store⋯</string>
+      <ostype name="command">soft</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="270">
+      <boolean name="separator">TRUE</boolean>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="241">
+      <string name="title">最近使用過的項目</string>
+      <ostype name="command">rcnt</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+      <object name="submenu" class="IBCarbonMenu" id="242">
+        <string name="title">最近使用過的項目</string>
+        <array count="7" name="items">
+          <object class="IBCarbonMenuItem" id="243">
+            <string name="title">應用程式</string>
+            <boolean name="sectionHeader">TRUE</boolean>
+            <ostype name="command">apps</ostype>
+            <string name="helpTagText"></string>
+            <string name="extendedHelpTagText"></string>
+          </object>
+          <object class="IBCarbonMenuItem" id="244">
+            <boolean name="separator">TRUE</boolean>
+            <ostype name="command">apsp</ostype>
+            <string name="helpTagText"></string>
+            <string name="extendedHelpTagText"></string>
+          </object>
+          <object class="IBCarbonMenuItem" id="245">
+            <string name="title">文件</string>
+            <boolean name="sectionHeader">TRUE</boolean>
+            <ostype name="command">docs</ostype>
+            <string name="helpTagText"></string>
+            <string name="extendedHelpTagText"></string>
+          </object>
+          <object class="IBCarbonMenuItem" id="246">
+            <boolean name="separator">TRUE</boolean>
+            <ostype name="command">dcsp</ostype>
+            <string name="helpTagText"></string>
+            <string name="extendedHelpTagText"></string>
+          </object>
+          <object class="IBCarbonMenuItem" id="292">
+            <string name="title">伺服器</string>
+            <boolean name="sectionHeader">TRUE</boolean>
+            <ostype name="command">serv</ostype>
+            <string name="helpTagText"></string>
+            <string name="extendedHelpTagText"></string>
+          </object>
+          <object class="IBCarbonMenuItem" id="291">
+            <boolean name="separator">TRUE</boolean>
+            <ostype name="command">srsp</ostype>
+            <string name="helpTagText"></string>
+            <string name="extendedHelpTagText"></string>
+          </object>
+          <object class="IBCarbonMenuItem" id="247">
+            <string name="title">清除選單</string>
+            <ostype name="command">clri</ostype>
+            <string name="helpTagText"></string>
+            <string name="extendedHelpTagText"></string>
+          </object>
+        </array>
+      </object>
+    </object>
+    <object class="IBCarbonMenuItem" id="288">
+      <string name="title">強制結束-%@</string>
+      <string name="keyEquivalent">&#27;</string>
+      <boolean name="dynamic">TRUE</boolean>
+      <int name="keyEquivalentModifier">1703936</int>
+      <ostype name="command">exit</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenu" id="266">
+      <string name="title">選單</string>
+      <array count="10" name="items">
+        <object class="IBCarbonMenuItem" id="267">
+          <string name="title">縮到最小</string>
+          <string name="keyEquivalent">m</string>
+          <boolean name="dynamic">TRUE</boolean>
+          <ostype name="command">mini</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="269">
+          <string name="title">將全部縮到最小</string>
+          <string name="keyEquivalent">m</string>
+          <boolean name="dynamic">TRUE</boolean>
+          <int name="keyEquivalentModifier">1572864</int>
+          <ostype name="command">mina</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="268">
+          <string name="title">縮放</string>
+          <ostype name="command">zoom</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="282">
+          <string name="title">循環檢視視窗</string>
+          <boolean name="hidden">TRUE</boolean>
+          <ostype name="command">rotw</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <reference idRef="283"/>
+        <reference idRef="270"/>
+        <reference idRef="271"/>
+        <object class="IBCarbonMenuItem" id="272">
+          <string name="title">於前方排列</string>
+          <boolean name="dynamic">TRUE</boolean>
+          <int name="keyEquivalentModifier">1572864</int>
+          <ostype name="command">frnt</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="273">
+          <boolean name="separator">TRUE</boolean>
+          <string name="title">視窗列表分隔符號</string>
+          <boolean name="hidden">TRUE</boolean>
+          <ostype name="command">wldv</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="290">
+          <boolean name="separator">TRUE</boolean>
+          <string name="title">視窗列表終端機</string>
+          <boolean name="hidden">TRUE</boolean>
+          <ostype name="command">wlst</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+      </array>
+    </object>
+    <reference idRef="282"/>
+    <object class="IBCarbonMenuItem" id="286">
+      <string name="title">登出 - %@</string>
+      <string name="keyEquivalent">Q</string>
+      <boolean name="dynamic">TRUE</boolean>
+      <int name="keyEquivalentModifier">1703936</int>
+      <ostype name="command">rlgo</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="234">
+      <string name="title">強制結束⋯</string>
+      <string name="keyEquivalent">&#27;</string>
+      <boolean name="dynamic">TRUE</boolean>
+      <int name="keyEquivalentModifier">1572864</int>
+      <ostype name="command">apwn</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="251">
+      <boolean name="separator">TRUE</boolean>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <reference idRef="246"/>
+    <object class="IBCarbonMenu" id="252">
+      <string name="title">選單</string>
+      <int name="menuID">-20213</int>
+      <array count="10" name="items">
+        <object class="IBCarbonMenuItem" id="253">
+          <string name="title">偏好設定⋯</string>
+          <string name="keyEquivalent">,</string>
+          <boolean name="disabled">TRUE</boolean>
+          <boolean name="hidden">TRUE</boolean>
+          <ostype name="command">pref</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="255">
+          <boolean name="separator">TRUE</boolean>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="265">
+          <string name="title">服務</string>
+          <ostype name="command">serv</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="259">
+          <boolean name="separator">TRUE</boolean>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="254">
+          <string name="title">隱藏</string>
+          <string name="keyEquivalent">h</string>
+          <ostype name="command">hide</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="260">
+          <string name="title">隱藏其他</string>
+          <string name="keyEquivalent">h</string>
+          <int name="keyEquivalentModifier">1572864</int>
+          <ostype name="command">hido</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="261">
+          <string name="title">顯示全部</string>
+          <ostype name="command">shal</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="262">
+          <boolean name="separator">TRUE</boolean>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="263">
+          <string name="title">結束</string>
+          <string name="keyEquivalent">q</string>
+          <boolean name="dynamic">TRUE</boolean>
+          <ostype name="command">quit</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <object class="IBCarbonMenuItem" id="303">
+          <string name="title">結束並保留視窗</string>
+          <string name="keyEquivalent">q</string>
+          <boolean name="dynamic">TRUE</boolean>
+          <int name="keyEquivalentModifier">1572864</int>
+          <ostype name="command">qukw</ostype>
+        </object>
+      </array>
+    </object>
+    <object class="IBCarbonMenuItem" id="281">
+      <string name="title">隱藏輔助說明檢閱器</string>
+      <boolean name="hidden">TRUE</boolean>
+      <ostype name="command">hins</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="248">
+      <string name="title">位置</string>
+      <ostype name="command">loca</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+      <object name="submenu" class="IBCarbonMenu" id="249">
+        <string name="title">位置</string>
+        <array count="2" name="items">
+          <reference idRef="251"/>
+          <reference idRef="250"/>
+        </array>
+      </object>
+    </object>
+    <reference idRef="261"/>
+    <object class="IBCarbonMenuItem" id="236">
+      <string name="title">睡眠</string>
+      <ostype name="command">slep</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="231">
+      <boolean name="separator">TRUE</boolean>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <reference idRef="242"/>
+    <reference idRef="260"/>
+    <reference idRef="272"/>
+    <reference idRef="259"/>
+    <reference idRef="244"/>
+    <reference idRef="273"/>
+    <reference idRef="268"/>
+    <object class="IBCarbonMenuItem" id="284">
+      <string name="title">重新開機</string>
+      <boolean name="dynamic">TRUE</boolean>
+      <int name="keyEquivalentModifier">1572864</int>
+      <ostype name="command">rest</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="222">
+      <boolean name="separator">TRUE</boolean>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <reference idRef="262"/>
+    <object class="IBCarbonMenuItem" id="235">
+      <boolean name="separator">TRUE</boolean>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <reference idRef="263"/>
+    <object class="IBCarbonMenuItem" id="223">
+      <string name="title">系統偏好設定⋯</string>
+      <ostype name="command">sysp</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <reference idRef="292"/>
+    <reference idRef="290"/>
+    <object class="IBCarbonMenuItem" id="285">
+      <string name="title">關機</string>
+      <boolean name="dynamic">TRUE</boolean>
+      <int name="keyEquivalentModifier">1572864</int>
+      <ostype name="command">shut</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <reference idRef="267"/>
+    <reference idRef="303"/>
+    <reference idRef="265"/>
+    <object class="IBCarbonMenuItem" id="280">
+      <string name="title">顯示輔助說明檢閱器</string>
+      <ostype name="command">sins</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenuItem" id="238">
+      <string name="title">關機⋯</string>
+      <boolean name="dynamic">TRUE</boolean>
+      <boolean name="notPreviousAlternate">TRUE</boolean>
+      <ostype name="command">rsdn</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <reference idRef="243"/>
+    <reference idRef="255"/>
+    <reference idRef="249"/>
+    <object class="IBCarbonMenuItem" id="240">
+      <string name="title">登出 - %@⋯</string>
+      <string name="keyEquivalent">Q</string>
+      <boolean name="dynamic">TRUE</boolean>
+      <int name="keyEquivalentModifier">1179648</int>
+      <ostype name="command">logo</ostype>
+      <string name="helpTagText"></string>
+      <string name="extendedHelpTagText"></string>
+    </object>
+    <object class="IBCarbonMenu" id="196">
+      <string name="title">選單</string>
+      <int name="menuID">-21629</int>
+      <array count="21" name="items">
+        <reference idRef="220"/>
+        <reference idRef="293"/>
+        <reference idRef="222"/>
+        <reference idRef="223"/>
+        <reference idRef="248"/>
+        <reference idRef="221"/>
+        <reference idRef="231"/>
+        <reference idRef="241"/>
+        <object class="IBCarbonMenuItem" id="233">
+          <boolean name="separator">TRUE</boolean>
+          <ostype name="command">rctd</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <reference idRef="234"/>
+        <reference idRef="288"/>
+        <reference idRef="235"/>
+        <reference idRef="236"/>
+        <object class="IBCarbonMenuItem" id="237">
+          <string name="title">重新開機⋯</string>
+          <boolean name="dynamic">TRUE</boolean>
+          <ostype name="command">rrst</ostype>
+          <string name="helpTagText"></string>
+          <string name="extendedHelpTagText"></string>
+        </object>
+        <reference idRef="284"/>
+        <reference idRef="238"/>
+        <reference idRef="285"/>
+        <reference idRef="309"/>
+        <object class="IBCarbonMenuItem" id="311">
+          <string name="title">鎖定螢幕</string>
+          <string name="keyEquivalent">q</string>
+          <boolean name="notPreviousAlternate">TRUE</boolean>
+          <int name="keyEquivalentModifier">1310720</int>
+          <ostype name="command">lock</ostype>
+        </object>
+        <reference idRef="240"/>
+        <reference idRef="286"/>
+      </array>
+    </object>
+    <reference idRef="269"/>
+    <reference idRef="311"/>
+    <reference idRef="245"/>
+    <reference idRef="254"/>
+    <reference idRef="233"/>
+    <reference idRef="247"/>
+    <reference idRef="291"/>
+    <object class="IBCarbonMenu" id="279">
+      <string name="title">選單</string>
+      <array count="2" name="items">
+        <reference idRef="280"/>
+        <reference idRef="281"/>
+      </array>
+    </object>
+    <reference idRef="237"/>
+    <reference idRef="253"/>
+  </array>
+  <array count="58" name="allParents">
+    <reference idRef="196"/>
+    <reference idRef="196"/>
+    <reference idRef="266"/>
+    <reference idRef="196"/>
+    <reference idRef="249"/>
+    <reference idRef="266"/>
+    <reference idRef="196"/>
+    <reference idRef="266"/>
+    <reference idRef="196"/>
+    <reference idRef="196"/>
+    <reference idRef="1"/>
+    <reference idRef="266"/>
+    <reference idRef="196"/>
+    <reference idRef="196"/>
+    <reference idRef="249"/>
+    <reference idRef="242"/>
+    <reference idRef="1"/>
+    <reference idRef="279"/>
+    <reference idRef="196"/>
+    <reference idRef="252"/>
+    <reference idRef="196"/>
+    <reference idRef="196"/>
+    <reference idRef="241"/>
+    <reference idRef="252"/>
+    <reference idRef="266"/>
+    <reference idRef="252"/>
+    <reference idRef="242"/>
+    <reference idRef="266"/>
+    <reference idRef="266"/>
+    <reference idRef="196"/>
+    <reference idRef="196"/>
+    <reference idRef="252"/>
+    <reference idRef="196"/>
+    <reference idRef="252"/>
+    <reference idRef="196"/>
+    <reference idRef="242"/>
+    <reference idRef="266"/>
+    <reference idRef="196"/>
+    <reference idRef="266"/>
+    <reference idRef="252"/>
+    <reference idRef="252"/>
+    <reference idRef="279"/>
+    <reference idRef="196"/>
+    <reference idRef="242"/>
+    <reference idRef="252"/>
+    <reference idRef="248"/>
+    <reference idRef="196"/>
+    <reference idRef="1"/>
+    <reference idRef="266"/>
+    <reference idRef="196"/>
+    <reference idRef="242"/>
+    <reference idRef="252"/>
+    <reference idRef="196"/>
+    <reference idRef="242"/>
+    <reference idRef="242"/>
+    <reference idRef="1"/>
+    <reference idRef="196"/>
+    <reference idRef="252"/>
+  </array>
+  <dictionary count="5" name="nameTable">
+    <string>Apple</string>
+    <reference idRef="196"/>
+    <string>Application</string>
+    <reference idRef="252"/>
+    <string>File&apos;s Owner</string>
+    <reference idRef="1"/>
+    <string>Help</string>
+    <reference idRef="279"/>
+    <string>Window</string>
+    <reference idRef="266"/>
+  </dictionary>
+  <string name="targetFramework">IBCarbonFramework</string>
+  <unsigned_int name="nextObjectID">312</unsigned_int>
+</object>
