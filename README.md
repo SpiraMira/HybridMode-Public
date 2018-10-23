@@ -4,11 +4,12 @@
 
 **Creds to main collaborators:**
 
-- [tiehfood](https://github.com/tiehfood) for the CoreUI inspiration
-- [arqueox](https://github.com/arqueox) for testing and participation
-- [Julian Marius Fairfax](https://github.com/Julian-Marius-Fairfax)
-- [Tim](https://github.com/TimothyRLaMora734)
-- [webg3](https://github.com/webg3)
+- [tiehfood](https://github.com/tiehfood) for the excellent CoreUI inspiration and analysis
+- Testing and collaboration
+  - [arqueox](https://github.com/arqueox)
+  - [Julian Marius Fairfax](https://github.com/Julian-Marius-Fairfax)
+  - [TimothyRLaMora734](https://github.com/TimothyRLaMora734)
+  - [webg3](https://github.com/webg3)
 - and all other members of the private repo (where the sausage is made...)
 
 Motivated by all the folks on dosdude1's Macrumors 10.14 Mojave Unsupported Forum
