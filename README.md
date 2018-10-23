@@ -1,14 +1,15 @@
 # HybridMode Patchers
 
-**Fix Mojave Light Mode on unsupported machines**
+ Various Fixes for Mojave Light Mode on unsupported macs.
 
-Creds to main collaborators :
+**Creds to main collaborators:**
 
-- [tiehfood](https://github.com/tiehfood) for the CoureUI inspiration
-- [arqueox] (https://github.com/arqueox)
+- [tiehfood](https://github.com/tiehfood) for the CoreUI inspiration
+- [arqueox](https://github.com/arqueox) for testing and participation
 - [Julian Marius Fairfax](https://github.com/Julian-Marius-Fairfax)
 - [Tim](https://github.com/TimothyRLaMora734)
-- and others...
+- [webg3](https://github.com/webg3)
+- and all other members of the private repo (where the sausage is made...)
 
 Motivated by all the folks on dosdude1's Macrumors 10.14 Mojave Unsupported Forum
 
@@ -16,22 +17,22 @@ Motivated by [Pike](https://pikeralpha.wordpress.com/2017/01/30/4398)
 
 ## Screen Shots
 
-* "flat" Mode
-
-![alt tag](Resources/ScreenShot-LightMode.png)
-
-![alt tag](Resources/ScreenShot-DarkMode.png)
-
-* "hybrid" Light with solid menubars
+- "hybrid" Light with solid menubar
 
 ![alt tag](Resources/hybrid1.png)
 
 ![alt tag](Resources/hybrid2.png)
 
+*- "flat" Mode with solid menubar
+
+![alt tag](Resources/ScreenShot-LightMode.png)
+
+![alt tag](Resources/ScreenShot-DarkMode.png)
+
 ## History
 
-* October 8, 2018 : 
-  * start of beta testing
+- October 23, 2018:
+  - repo goes public with solid menubar, flat mode and new hybrid mode with CoreUI patches
 
 ## Compatibility Information
 
@@ -95,8 +96,9 @@ If the system no longer boots:
 
 ## TODOs (in no particular order)
 
-* develop scripts and wrappers
-* add a GUI app to wrap this all up neatly
-* keep track of tested machines and gpus
-* add more documentation
-* add more screenshots
+- develop scripts and wrappers (in development)
+- add a GUI app to wrap this all up neatly (in design)
+- keep track of tested machines and gpus (in development)
+- add more documentation
+- add more screenshots
+- publish repo
