@@ -1,4 +1,4 @@
-# HybridMode Patchers
+# Hybrid Mode Patchers
 
  Various Fixes for Mojave Light Mode on unsupported macs.
 
@@ -33,17 +33,6 @@ So be considerate and follow normal ettiquette when filing issues and problems.
 
 ![alt tag](Resources/coreuihybrid-dark-1.png)
 
-### Various UI Element Comparisons
-
-| Light Mode | Dark Mode |
-|--|--|
-| ![screen shot 2018-10-22 at 5 24 56 pm](https://user-images.githubusercontent.com/286122/47322881-99f77480-d627-11e8-8981-46ead4471ffa.png) | ![screen shot 2018-10-22 at 5 25 12 pm](https://user-images.githubusercontent.com/286122/47322887-a11e8280-d627-11e8-851a-487f133a1b1d.png) |
-| | |
-
-| Light Mode | Dark Mode |
-|--|--|
-| ![screen shot 2018-10-22 at 9 08 16 am](https://user-images.githubusercontent.com/286122/47294325-be792f80-d5da-11e8-9e89-a5566dfd172b.png) | ![screen shot 2018-10-22 at 9 08 00 am](https://user-images.githubusercontent.com/286122/47294324-be792f80-d5da-11e8-9c9d-1a25b1d11c1f.png) |
-
 ### FullScreen "Flat" Light Mode with solid menubar
 
 ![alt tag](Resources/ScreenShot-LightMode.png)
@@ -51,6 +40,21 @@ So be considerate and follow normal ettiquette when filing issues and problems.
 ### FullScreen "Flat" Dark with solid menubar
 
 ![alt tag](Resources/ScreenShot-DarkMode.png)
+
+### Various UI Element Comparisons
+
+#### TableView Sidebars
+
+| Light Mode | Dark Mode |
+|--|--|
+| ![screen shot 2018-10-22 at 5 24 56 pm](https://user-images.githubusercontent.com/286122/47322881-99f77480-d627-11e8-8981-46ead4471ffa.png) | ![screen shot 2018-10-22 at 5 25 12 pm](https://user-images.githubusercontent.com/286122/47322887-a11e8280-d627-11e8-851a-487f133a1b1d.png) |
+| | |
+
+#### SpotLight
+
+| Light Mode | Dark Mode |
+|--|--|
+| ![screen shot 2018-10-22 at 9 08 16 am](https://user-images.githubusercontent.com/286122/47294325-be792f80-d5da-11e8-9e89-a5566dfd172b.png) | ![screen shot 2018-10-22 at 9 08 00 am](https://user-images.githubusercontent.com/286122/47294324-be792f80-d5da-11e8-9c9d-1a25b1d11c1f.png) |
 
 ## History
 
@@ -65,7 +69,7 @@ Some key frameworks have been pacthed to provide the following effects:
 |--|--|--|
 | Solid menu bar| HIToolbox | a solid menu bar, white in Light and black in Dark.  For a consistent menu bar presentation |
 | Flat appearance with limited transparency | AppKit| To reduce transparency across the board (Light and Dark) without the Accessibility/Preferences shortcomings (Dock, Notification panels etc.) |
-| Hybrid transparency | CoreUI | turns vibrancy ON for key UI elements by switching to other "materials" (in SystemAppearance.car) that seem to work on our old systems and GPUs. |
+| Hybrid transparency | CoreUI | Fixes Light Mode Vibrancy for key UI elements by switching to other "materials" (in SystemAppearance.car) that seem to work on our old systems and GPUs. |
 
 ## Who This Is For
 
