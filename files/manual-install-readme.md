@@ -62,7 +62,7 @@ If the system no longer boots:
 - Important: Navigate to your boot volume's root directory:  something like /Volumes/[your Boot Volume Name here]
 - Navigate to to your framework's "Current" directory and locate the application binary you want to revert. Examples:
   - For AppKit ```cd /S*/L*/Frameworks/AppKit.framework/Versions/Current```
-  - For HIToolbox ```cd /S*/L*/Frameworks/Carbon.framework/Frameworks/HITToolbox.framework/VersionsCurrent```
+  - For HIToolbox ```cd /S*/L*/Frameworks/Carbon.framework/Frameworks/HITToolbox.framework/Versions/Current```
   - For CoreUI ```cd /S*/L*/PrivateFrameworks/CoreUI.framework/Versions/Current```
 - Locate your application backup (**You did back it up - right?**)
 - Overwrite the current application with the backup

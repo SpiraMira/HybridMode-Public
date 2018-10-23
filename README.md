@@ -17,15 +17,21 @@ Motivated by [Pike](https://pikeralpha.wordpress.com/2017/01/30/4398)
 
 ## Screen Shots
 
-- "hybrid" Light with solid menubar
+### "Hybrid" Light with solid menubar
 
-![alt tag](Resources/hybrid1.png)
+![alt tag](Resources/coreuihybrid-light-1.png)
 
-![alt tag](Resources/hybrid2.png)
+![alt tag](Resources/coreuihybrid-light-2.png)
 
-*- "flat" Mode with solid menubar
+### "Hybrid" Dark with solid menubar
+
+![alt tag](Resources/coreuihybrid-dark-1.png)
+
+### "Flat" Light with solid menubar
 
 ![alt tag](Resources/ScreenShot-LightMode.png)
+
+### "Flat" Dark with solid menubar
 
 ![alt tag](Resources/ScreenShot-DarkMode.png)
 
@@ -86,7 +92,7 @@ If the system no longer boots:
 - Important: Navigate to your boot volume's root directory:  something like /Volumes/[your Boot Volume Name here]
 - Navigate to to your framework's "Current" directory and locate the application binary you want to revert. Examples:
   - For AppKit ```cd /S*/L*/Frameworks/AppKit.framework/Versions/Current```
-  - For HIToolbox ```cd /S*/L*/Frameworks/Carbon.framework/Frameworks/HITToolbox.framework/VersionsCurrent```
+  - For HIToolbox ```cd /S*/L*/Frameworks/Carbon.framework/Frameworks/HITToolbox.framework/Versions/Current```
   - For CoreUI ```cd /S*/L*/PrivateFrameworks/CoreUI.framework/Versions/Current```
 - Locate your application backup (**You did back it up - right?**)
 - Overwrite the current application with the backup
