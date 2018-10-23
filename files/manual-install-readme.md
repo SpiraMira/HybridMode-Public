@@ -1,27 +1,16 @@
 # HybridMode Patchers : Manual Instructions
-
-## Screenshots
-
-### "Hybrid Mode
-
-TODO
-
-### "Flat" Mode + menubar fix
-
-TODO
-
 ## Compatibility Information
 
-see [compatibility table](compatibility.md)
+see [compatibility table](files/compatibility.md)
 
-## How to use
+## How To Use
 
-**NOTE: These instructions are for experienced users. You must be comfortable with the Terminal and shell command lines**
+**NOTE: These instructions are for experienced users. You must be comfortable with the Terminal and shell command lines.**
 **General purpose installers and wrappers are still in development.  Stay Tuned for upcoming releases**
 
-1. Disable [SIP](https://developer.apple.com/library/content/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html)[*](https://en.wikipedia.org/wiki/System_Integrity_Protection)
-2. Check the [compatibility table](compatibility.md) and select the fix you want to apply
-3. Download the latest stable releases from the ```files``` folder
+1. Disable [SIP] (If it isn't already)(https://developer.apple.com/library/content/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html)[*](https://en.wikipedia.org/wiki/System_Integrity_Protection)
+2. Check the [compatibility table](files/compatibility.md) and select the fix you want to apply
+3. Download the latest stable releases from the [files folder](files)
 4. Navigate to the proper directory.  Example:
   - For HIToolbox : ```cd /S*/L*/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Versions/Current```
   - For AppKit : ```cd /S*/L*/Frameworks/AppKit.framework/Versions/Current```
@@ -29,9 +18,9 @@ see [compatibility table](compatibility.md)
 5. Backup the original applications in a safe place (or rename to *.bak)
 - ```sudo cp [file] [file].bak```
 6. Copy the downloaded patched application to its native location
-  - HIToolboxXYZ-12345A : /S*/L*/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Versions/Current/HIToolbox
-  - AppKitXYZ-12345A : /S*/L*/Frameworks/AppKit.framework/Versions/Current/AppKit
-  - CoreUIXYZ-12345A : /S*/L*/PrivateFrameworks/CoreUI.framework/Versions/Current/CoreUI
+  - For HIToolbox : /S*/L*/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Versions/Current/HIToolbox
+  - For AppKit: /S*/L*/Frameworks/AppKit.framework/Versions/Current/AppKit
+  - For CoreUI: /S*/L*/PrivateFrameworks/CoreUI.framework/Versions/Current/CoreUI
 7. Restart your device
 8. Voilà - profit!
 
@@ -68,3 +57,4 @@ If the system no longer boots:
 - Overwrite the current application with the backup
 - restart youre computer
   -```reboot```
+
