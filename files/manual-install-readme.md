@@ -10,7 +10,7 @@ see [compatibility table](files/compatibility.md)
 
 1. Disable [SIP] (If it isn't already)(https://developer.apple.com/library/content/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html)[*](https://en.wikipedia.org/wiki/System_Integrity_Protection)
 2. Check the [compatibility table](files/compatibility.md) and select the fix you want to apply
-3. Download the latest stable releases from the [files folder](files)
+3. Download the latest stable releases from [here](https://github.com/SpiraMira/HybridMode-Public/releases)
 4. Navigate to the proper directory.  Example:
   - For HIToolbox : ```cd /S*/L*/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Versions/Current```
   - For AppKit : ```cd /S*/L*/Frameworks/AppKit.framework/Versions/Current```
