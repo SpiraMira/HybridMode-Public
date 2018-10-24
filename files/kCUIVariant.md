@@ -1,6 +1,6 @@
 # The following table should help us track kCUIxxxVariant mods and their effects (or side-effects)
 
-## CoreUIHybrid Version 0.4 : + Better Spotlight + Better Selection +Sheet + Revert WindowBackground + Revert Bezel
+## CoreUIHybrid Version 1.0 : + Better Spotlight + Better Selection +Sheet + Revert WindowBackground + Revert Bezel
 
 | index| variant | Intent | original | patched | Effect | Dark Mode Side Effect | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
