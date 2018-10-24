@@ -6,6 +6,8 @@ This is a labor of love for most of us.  Taking a lot of time out of our busy sc
 The effort to debug, test, patch, distribute and (ultimately) maintain all of this is hard and priceless...
 So be considerate and follow normal ettiquette when filing issues and problems.
 
+**NOTE: scripted installs are still in development.  For the moment, the official latest binaries can be found in [Releases](https://github.com/SpiraMira/HybridMode-Public/releases). See below for manual installation instructions (all pretty straightforward once you understand the workflow)**
+
 **Creds to main collaborators:**
 
 - Development
@@ -58,6 +60,9 @@ So be considerate and follow normal ettiquette when filing issues and problems.
 
 ## History
 
+- October 24, 2018:
+  - updated the hardware-compatibility-list with models tested in the private repo
+  - updated the checksums for CoreUI
 - October 23, 2018:
   - repo goes public with solid menubar, flat mode and new hybrid mode with CoreUI patches
 
