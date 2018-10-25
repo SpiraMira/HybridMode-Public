@@ -1,7 +1,7 @@
 # HybridMode Patchers : Manual Instructions
 ## Compatibility Information
 
-see [compatibility table](files/compatibility.md)
+see [compatibility table](compatibility.md)
 
 ## How To Use
 
@@ -9,7 +9,7 @@ see [compatibility table](files/compatibility.md)
 **General purpose installers and wrappers are still in development.  Stay Tuned for upcoming releases**
 
 1. Disable [SIP] (If it isn't already)(https://developer.apple.com/library/content/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html)[*](https://en.wikipedia.org/wiki/System_Integrity_Protection)
-2. Check the [compatibility table](files/compatibility.md) and select the fix you want to apply
+2. Check the [compatibility table](compatibility.md) and select the fix you want to apply
 3. Download the latest stable releases from [here](https://github.com/SpiraMira/HybridMode-Public/releases)
 4. Navigate to the proper directory.  Example:
   - For HIToolbox : ```cd /S*/L*/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Versions/Current```
