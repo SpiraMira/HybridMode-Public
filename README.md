@@ -6,7 +6,9 @@ This is a labor of love for most of us.  Taking a lot of time out of our busy sc
 The effort to debug, test, patch, distribute and (ultimately) maintain all of this is hard and priceless...
 So be considerate and follow normal ettiquette when filing issues and problems.
 
-**IMPORTANT NOTE**: The Latest Releases currently **ONLY support 64 bit apps**.  Subsequent releases will integrate the 32 bit variants - You have been warned.
+Please READ this entire page carefully before proceeding.
+
+**NOTE**: Release v1.1 [here](https://github.com/SpiraMira/HybridMode-Public/releases) has full 32 bit support so they are now Universal "fat" binaries.  Enjoy (Added a Light Mode screenshot of Steam as proof)
 
 **NOTE**: scripted installs are still in development.  For the moment, the official latest binaries can be found in [Releases](https://github.com/SpiraMira/HybridMode-Public/releases). See below for manual installation instructions (all pretty straightforward once you understand the workflow)
 
@@ -30,6 +32,10 @@ So be considerate and follow normal ettiquette when filing issues and problems.
 ![alt tag](Resources/coreuihybrid-light-1.png)
 
 ![alt tag](Resources/coreuihybrid-light-2.png)
+
+Running 32 bit app Steam...
+
+![alt tag](Resources/coreuihybrid-light-3.png)
 
 ### FullScreen "Hybrid" Dark Mode with solid menubar
 
@@ -62,6 +68,8 @@ So be considerate and follow normal ettiquette when filing issues and problems.
 
 ## History
 
+- October 25, 2018:
+  - Released Universal Binaries (32+64bit support)
 - October 24, 2018:
   - updated the hardware-compatibility-list with models tested in the private repo
   - updated the checksums for CoreUI
