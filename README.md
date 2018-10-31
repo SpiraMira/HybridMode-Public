@@ -6,7 +6,9 @@ This is a labor of love for most of us.  Taking a lot of time out of our busy sc
 The effort to debug, test, patch, distribute and (ultimately) maintain all of this is hard and priceless...
 So be considerate and follow normal ettiquette when filing issues and problems.
 
-Please READ this entire page carefully before proceeding.
+ **Please READ this entire page carefully before proceeding.**
+
+**NOTE**: New versions compatible with the official 10.14.1 Mojave release are in the works. While it seemslike v1.1 will work with 10.14.1 (some brave souls have tested alreaady), I recommend that most of you wait for the official release ETA on or about November 5 2018.
 
 **NOTE**: Release v1.1 [here](https://github.com/SpiraMira/HybridMode-Public/releases) has full 32 bit support so they are now Universal "fat" binaries.  Enjoy (Added a Light Mode screenshot of Steam as proof)
 
