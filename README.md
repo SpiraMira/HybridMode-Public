@@ -93,8 +93,9 @@ Some key frameworks have been pacthed to provide the following effects:
 - You managed to install Mojave on you unsuported mac
 - You have a non-metal GPU (like all the old macbook pros)
 - Light Mode "glitches" : ugly grey menu non-transparent menu bar, ugly grey app sidebars, ugly grey spotlight and tooltips etc.
-- You like Dark Mode also and especially transparency in the Dock, Notifications and other system panels
 - System tweaks from the command line or Preferences>Accessibility don't totally satisfy or are cumbersome
+- You like to switch between modes while keeping a consistent look (without too many hassles)
+- You like Dark Mode also and especially transparency in the Dock, Notifications and other system panels
 
 ## Notes
 
