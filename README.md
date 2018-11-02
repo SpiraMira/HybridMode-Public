@@ -8,9 +8,9 @@ So be considerate and follow normal ettiquette when filing issues and problems.
 
  **Please READ this entire page carefully before proceeding.**
 
-**NEW**: Version v1.2 compatible with the official 10.14.1 Mojave are released from [here](https://github.com/SpiraMira/HybridMode-Public/releases)
+**NEW**: Version v1.2 compatible with the official 10.14.1 Mojave are available [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
 
-**NOTE**: Release v1.1 [here](https://github.com/SpiraMira/HybridMode-Public/releases) has full 32 bit support so they are now Universal "fat" binaries.  Enjoy (Added a Light Mode screenshot of Steam as proof)
+**NOTE**: Release v1.1 [here](https://github.com/SpiraMira/HybridMode-Public/releases) is available for Mojave GM only.
 
 **NOTE**: scripted installs are still in development.  For the moment, the official latest binaries can be found in [Releases](https://github.com/SpiraMira/HybridMode-Public/releases). See below for manual installation instructions (all pretty straightforward once you understand the workflow)
 
@@ -70,6 +70,8 @@ Running 32 bit app Steam...
 
 ## History
 
+- November 2, 2018:
+  - Mojave 10.14.1 compatibility (v1.2)
 - October 25, 2018:
   - Released Universal Binaries (32+64bit support)
 - October 24, 2018:
