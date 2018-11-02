@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>17A405001</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>PMBrowser</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.PMBrowser.framework</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>PMBrowser</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>14.0</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>555.5</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>10L213p</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>10.14</string>
+	<key>DTSDKBuild</key>
+	<string>18A371</string>
+	<key>DTSDKName</key>
+	<string>macosx10.14internal</string>
+	<key>DTXcode</key>
+	<string>1000</string>
+	<key>DTXcodeBuild</key>
+	<string>10L213p</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.14</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 1995-2007, Apple Inc., All Rights Reserved.</string>
+	<key>PPD Search Directories</key>
+	<array>
+		<string>/System/Library/Printers/PPDs/Contents/Resources</string>
+		<string>/Library/Printers/PPDs/Contents/Resources</string>
+		<string>/usr/share/cups/model</string>
+	</array>
+	<key>cupsTypes</key>
+	<array>
+		<string>_ipp._tcp,_cups</string>
+	</array>
+	<key>ionaTypes</key>
+	<array>
+		<string>_ipps._tcp.</string>
+		<string>_printer._tcp.</string>
+		<string>_ipp._tcp.</string>
+		<string>_pdl-datastream._tcp.</string>
+		<string>_riousbprint._tcp.</string>
+		<string>_ipp-tls._tcp.</string>
+	</array>
+</dict>
+</plist>
