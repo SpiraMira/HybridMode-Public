@@ -8,6 +8,8 @@ So be considerate and follow normal ettiquette when filing issues and problems.
 
  **Please READ this entire page carefully before proceeding.**
 
+**NEW**: 11/5/2018 - Version v1.3 is almost feature complete with a host of important fixes for Search bar menus (in Safari, iMessage and other Core Apps), some HUDs (like the brightness and volume huds), more sidebar fixes (notably AppStore), Sidebar inactive selection appearance (currently appears black).  Some progress has been made on the menubar vibrancy front. Not sure if this will be rolled into 1.3 or a later release.  You can check v1.3 status by checking Issues filtered by milestone. Stay tuned (follow this repo).  
+
 **NEW**: Version v1.2 compatible with the official 10.14.1 Mojave are available [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
 
 **NOTE**: Release v1.1 [here](https://github.com/SpiraMira/HybridMode-Public/releases) is available for Mojave GM only.
