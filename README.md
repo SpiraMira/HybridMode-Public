@@ -4,15 +4,11 @@
 
 This is a labor of love for most of us.  Taking a lot of time out of our busy schedules to serve our community.  
 The effort to debug, test, patch, distribute and (ultimately) maintain all of this is hard and priceless...
-So be considerate and follow normal ettiquette when filing issues and problems.
+So be considerate and follow normal nettiquette when filing issues and problems.
 
  **Please READ this entire page carefully before proceeding.**
 
-**NEW**: 11/5/2018 - Version v1.3 is almost feature complete with a host of important fixes for Search bar menus (in Safari, iMessage and other Core Apps), some HUDs (like the brightness and volume huds), more sidebar fixes (notably AppStore), Sidebar inactive selection appearance (currently appears black).  Some progress has been made on the menubar vibrancy front. Not sure if this will be rolled into 1.3 or a later release.  You can check v1.3 status by checking Issues filtered by milestone. Stay tuned (follow this repo).  
-
-**NEW**: Version v1.2 compatible with the official 10.14.1 Mojave are available [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
-
-**NOTE**: Release v1.1 [here](https://github.com/SpiraMira/HybridMode-Public/releases) is available for Mojave GM only.
+**NEW**: 11/9/2018 - Version 1.3 Released with more fixes [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
 
 **NOTE**: scripted installs are still in development.  For the moment, the official latest binaries can be found in [Releases](https://github.com/SpiraMira/HybridMode-Public/releases). See below for manual installation instructions (all pretty straightforward once you understand the workflow)
 
@@ -72,6 +68,8 @@ Running 32 bit app Steam...
 
 ## History
 
+- November 09, 2018:
+  - More UI fixes (v1.3)
 - November 2, 2018:
   - Mojave 10.14.1 compatibility (v1.2)
 - October 25, 2018:
@@ -103,12 +101,11 @@ Some key frameworks have been pacthed to provide the following effects:
 
 ## Notes
 
-- I am currently testing macOS Mojave updates 10.4.1betas
 - Now allowing Feature Requests via Issues or Pull Requesting (will require a github account - don't have one? Shame on you...)
 
 ## Compatibility Information
 
-see [compatibility table](files/compatibility.md)
+TBD
 
 ## How To Use
 
@@ -116,54 +113,61 @@ see [compatibility table](files/compatibility.md)
 **General purpose installers and wrappers are still in development.  Stay Tuned for upcoming releases**
 
 1. Disable [SIP] (If it isn't already)(https://developer.apple.com/library/content/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html)[*](https://en.wikipedia.org/wiki/System_Integrity_Protection)
-2. Check the [compatibility table](files/compatibility.md) and select the fix you want to apply
-3. Download the latest stable releases from [here](https://github.com/SpiraMira/HybridMode-Public/releases)
-4. Navigate to the proper directory.  Example:
+2. Download the latest stable releases from [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
+3. Navigate to the proper directory.  Example:
   - For HIToolbox : ```cd /S*/L*/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Versions/Current```
   - For AppKit : ```cd /S*/L*/Frameworks/AppKit.framework/Versions/Current```
   - For CoreUI : ```cd /S*/L*/PrivateFrameworks/CoreUI.framework/Versions/Current```
-5. Backup the original applications in a safe place (or rename to *.bak)
+4. Backup the original applications in a safe place (or rename to *.bak)
 - ```sudo cp [file] [file].bak```
-6. Copy the downloaded patched application to its native location
+5. Copy the downloaded patched application to its native location
   - For HIToolbox : /S*/L*/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Versions/Current/HIToolbox
   - For AppKit: /S*/L*/Frameworks/AppKit.framework/Versions/Current/AppKit
   - For CoreUI: /S*/L*/PrivateFrameworks/CoreUI.framework/Versions/Current/CoreUI
-7. Restart your device
-8. Voilà - profit!
+6. Restart your device
+7. Voilà - profit!
 
 ## Troubleshootinhg
 
-If the system no longer boots:
+If the system no longer boots, DON'T PANIC nothing here will brick your system.  Recover using one of the following techniques:
 
 - restart in [single-user mode](https://support.apple.com/en-bh/HT201573) or
 - restart in [recovery mode](https://support.apple.com/en-us/HT201314) or
 - restart from an external boot volume (could be your USB stick)
 
-### In Single User Mode (CMD-S)
+### In Single User Mode (CMD-S) [NOTE-This is the preferred and quickest method!]
 
 - Wait for the console messages to end (note: there may be some spurious ones that pop up from time to time)
-- At the prompt mount your volume as read-write (it is read-only by default)
+- At the prompt mount your volume as read-write (it is read-only by default - for you protection)
   - ```mount -uw /```
 - Navigate to to your framework's "Current" directory and locate the application binary you want to revert. Examples:
-  - For AppKit ```cd /S*/L*/Frameworks/AppKit.framework/Versions/Current```
-  - For HIToolbox ```cd /S*/L*/Frameworks/Carbon.framework/Frameworks/HITToolbox.framework/Versions/Current```
-  - For CoreUI ```cd /S*/L*/PrivateFrameworks/CoreUI.framework/Versions/Current```
-- Locate your application backup (**You did back it up - right?**)
-- Overwrite the current application with the backup
+  - For AppKit ```cd /System/Library/Frameworks/AppKit.framework/Versions/Current```
+  - For HIToolbox ```cd /System/Library/Frameworks/Carbon.framework/Frameworks/HITToolbox.framework/Versions/Current```
+  - For CoreUI ```cd /System/Library/PrivateFrameworks/CoreUI.framework/Versions/Current```
+- Locate your application backup (**You DID back it up - right?**)
+- Overwrite the current application with the backup. For example:
+  - ```cp AppKit.bak AppKit``` or
+  - ```cp HIToolbox.bak HIToolbox``` or
+  - ```cp CoreUI.bak CoreUI```
 - restart youre computer
   -```reboot```
+  -You should be good to go!
 
 ### In Recovery Mode (CMD-R) or from a bootable external disk (can be a USB stick) (Press [Option] to select the volume)
 
-- Important: Navigate to your boot volume's root directory:  something like /Volumes/[your Boot Volume Name here]
+- Important: These instructions are basically the same as Single User Mode but YOU MUST navigate to your boot volume's root directory:  something like /Volumes/[your Boot Volume Name here]
 - Navigate to to your framework's "Current" directory and locate the application binary you want to revert. Examples:
-  - For AppKit ```cd /S*/L*/Frameworks/AppKit.framework/Versions/Current```
-  - For HIToolbox ```cd /S*/L*/Frameworks/Carbon.framework/Frameworks/HITToolbox.framework/Versions/Current```
-  - For CoreUI ```cd /S*/L*/PrivateFrameworks/CoreUI.framework/Versions/Current```
-- Locate your application backup (**You did back it up - right?**)
-- Overwrite the current application with the backup
+  - For AppKit ```cd /Volumes/[your Boot Volume Name here]/System/Library/Frameworks/AppKit.framework/Versions/Current```
+  - For HIToolbox ```cd /Volumes/[your Boot Volume Name here]/System/Library/Frameworks/Carbon.framework/Frameworks/HITToolbox.framework/Versions/Current```
+  - For CoreUI ```cd /Volumes/[your Boot Volume Name here]/System/Library/PrivateFrameworks/CoreUI.framework/Versions/Current```
+- Locate your application backup (**You DID back it up - right?**)
+- Overwrite the current application with the backup. For example:
+  - ```cp AppKit.bak AppKit``` or
+  - ```cp HIToolbox.bak HIToolbox``` or
+  - ```cp CoreUI.bak CoreUI```
 - restart youre computer
   -```reboot```
+  -You should be good to go!
 
 
 ## TODOs (in no particular order)

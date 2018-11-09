@@ -16,7 +16,7 @@
 | 10 | Header |  | 10 0A | " | " | NA | None |
 | 11 | MacMediumLight |  | 30 0A | " | " | NA | None |
 | 12 | **Menu** |  | 50 0A | D0 09 | vibrant menu in search bars like Safari  | None | Used #8 |
-| 13 | **MenuBar** |  | 70 0A | D0 09 | vibrant menu in search bars like Safari   | None | Used #8 |
+| 13 | MenuBar |  | 70 0A | | " | " | NA | None |
 | 14 | **Popover** |  | 90 0A | D0 09 | vibrant | None | Used #8 |
 | 15 | **PopoverLabel** |  | B0 0A | D0 09 | vibrant | None |Used #8 |
 | 16 | **ToolTip** |  | D0 0A | D0 09 | vibrant | None | Used #8 |
