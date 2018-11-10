@@ -149,7 +149,7 @@ If the system no longer boots, DON'T PANIC nothing here will brick your system. 
   - ```cp AppKit.bak AppKit``` or
   - ```cp HIToolbox.bak HIToolbox``` or
   - ```cp CoreUI.bak CoreUI```
-- restart youre computer
+- restart your computer
   -```reboot```
   -You should be good to go!
 
@@ -165,7 +165,7 @@ If the system no longer boots, DON'T PANIC nothing here will brick your system. 
   - ```cp AppKit.bak AppKit``` or
   - ```cp HIToolbox.bak HIToolbox``` or
   - ```cp CoreUI.bak CoreUI```
-- restart youre computer
+- restart your computer
   -```reboot```
   -You should be good to go!
 
