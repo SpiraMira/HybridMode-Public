@@ -8,7 +8,9 @@ So be considerate and follow normal nettiquette when filing issues and problems.
 
  **Please READ this entire page carefully before proceeding.**
 
-**NEW**: 11/9/2018 - Version 1.3 Released with more fixes [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
+**NEW**: 12/12/2018 - Version 1.4 for 10.14.2 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
+
+**NEW**: 11/09/2018 - Version 1.3 for 10.14.1 Released with more fixes [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
 
 **NOTE**: scripted installs are still in development.  For the moment, the official latest binaries can be found in [Releases](https://github.com/SpiraMira/HybridMode-Public/releases). See below for manual installation instructions (all pretty straightforward once you understand the workflow)
 
@@ -68,7 +70,10 @@ Running 32 bit app Steam...
 
 ## History
 
+- December 12, 2018:
+  - Compatibile with 10.14.2 (v1.4)
 - November 09, 2018:
+  - Compatible with 10.14.1
   - More UI fixes (v1.3)
 - November 2, 2018:
   - Mojave 10.14.1 compatibility (v1.2)
