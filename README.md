@@ -8,9 +8,11 @@ So be considerate and follow normal nettiquette when filing issues and problems.
 
  **Please READ this entire page carefully before proceeding.**
 
-**NEW**: 12/12/2018 - Version 1.4 for 10.14.2 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
+**NEW**: 12/24/2018 - pre-release Version 1.4.1 for 10.14.2 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/tag/v1.4.1) . Some regressions have been addressed (see the associated release notes)
 
-**NEW**: 11/09/2018 - Version 1.3 for 10.14.1 Released with more fixes [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
+**NOTE**: 12/12/2018 - Version 1.4 for 10.14.2 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
+
+**NOTE**: 11/09/2018 - Version 1.3 for 10.14.1 Released with more fixes [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
 
 **NOTE**: scripted installs are still in development.  For the moment, the official latest binaries can be found in [Releases](https://github.com/SpiraMira/HybridMode-Public/releases). See below for manual installation instructions (all pretty straightforward once you understand the workflow)
 
