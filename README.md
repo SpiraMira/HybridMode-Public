@@ -6,15 +6,15 @@ Various Fixes for Mojave Light Mode on unsupported macs.
 
 **NEW**: 05/09/2019 - Version 1.4.3 for Mojave 10.14.4 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
 
-**NEW**: 05/09/2019 - Version 1.4.2 for Mojave 10.14.3 Released [here](https://github.com/SpiraMira/HybridMode-Public/tag/v1.4.2)
+**NEW**: 05/09/2019 - Version 1.4.2 for Mojave 10.14.3 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/tag/v1.4.2)
 
-12/14/2018 - Version 1.4.1 for 10.14.2 Released [here](https://github.com/SpiraMira/HybridMode-Public/tag/v1.4.1)
+- 12/14/2018 - Version 1.4.1 for Mojave 10.14.2 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/tag/v1.4.1)
 
 * fixes a few v1.4 regressions
 * SpotLight translucency and selections (previously invisible now rendered correctly using the default color - like blue)
 * menubar titles and menu item selections (the rightmost menuy items were previously rendered incorrectly and sometimes invisible)
 
-12/24/2018 - pre-release Version 1.4.1 for 10.14.2 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/tag/v1.4.1) . Some regressions have been addressed (see the associated release notes)
+- 12/24/2018 - pre-release Version 1.4.1 for 10.14.2 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/tag/v1.4.1) . Some regressions have been addressed (see the associated release notes)
 
 **NOTE**: scripted installs are still in development.  For the moment, the official latest binaries can be found in [Releases](https://github.com/SpiraMira/HybridMode-Public/releases). See below for manual installation instructions (all pretty straightforward once you understand the workflow)
 
@@ -74,6 +74,10 @@ Running 32 bit app Steam...
 
 ## History
 
+- April 09, 2019: v1.4.3
+  - Compatible with Mojave 10.14.4
+- April 09, 2019: v1.4.4
+  - Compatible with Mojave 10.14.3
 - December 14, 2018: v1.4.1
   - fixes v1.4 regressions.  See release notes.
   - Compatible with Mojave 10.14.2
