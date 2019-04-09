@@ -2,35 +2,6 @@
 
 Various Fixes for Mojave Light Mode on unsupported macs.
 
-**Please READ this entire page carefully before proceeding.**
-
-**NEW**: 05/09/2019 - Version 1.4.3 for Mojave 10.14.4 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
-
-**NEW**: 05/09/2019 - Version 1.4.2 for Mojave 10.14.3 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/tag/v1.4.2)
-
-- 12/14/2018 - Version 1.4.1 for Mojave 10.14.2 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/tag/v1.4.1)
-  - fixes a few v1.4 regressions
-  - SpotLight translucency and selections (previously invisible now rendered correctly using the default color - like blue)
-  - menubar titles and menu item selections (the rightmost menuy items were previously rendered incorrectly and sometimes invisible)
-
-- 12/24/2018 - pre-release Version 1.4.1 for 10.14.2 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/tag/v1.4.1) 
-  - Some regressions have been addressed (see the associated release notes)
-
-**NOTE**: scripted installs are still in development.  For the moment, the official latest binaries can be found in [Releases](https://github.com/SpiraMira/HybridMode-Public/releases). See below for manual installation instructions (all pretty straightforward once you understand the workflow)
-
-**Creds to main collaborators:**
-
-- Development
-  - [tiehfood](https://github.com/tiehfood) for the **excellent CoreUI inspiration and analysis**
-- General Testing and collaboration
-  - [arqueox](https://github.com/arqueox)
-  - [Julian Marius Fairfax](https://github.com/Julian-Marius-Fairfax)
-  - [TimothyRLaMora734](https://github.com/TimothyRLaMora734)
-  - [webg3](https://github.com/webg3)
-  - [junebeetle](https://github.com/junebeetle)
-- All other members of the private repo (where the sausage is made...)
-- See Additional Creds below
-
 ## Lovely Screen Shots
 
 ### FullScreen "Hybrid" Light Mode with solid menubar
@@ -71,6 +42,35 @@ Running 32 bit app Steam...
 | Light Mode | Dark Mode |
 |--|--|
 | ![screen shot 2018-10-22 at 9 08 16 am](https://user-images.githubusercontent.com/286122/47294325-be792f80-d5da-11e8-9e89-a5566dfd172b.png) | ![screen shot 2018-10-22 at 9 08 00 am](https://user-images.githubusercontent.com/286122/47294324-be792f80-d5da-11e8-9c9d-1a25b1d11c1f.png) |
+
+**Please READ this entire page carefully before proceeding.**
+
+**NEW**: 05/09/2019 - Version 1.4.3 for Mojave 10.14.4 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
+
+**NEW**: 05/09/2019 - Version 1.4.2 for Mojave 10.14.3 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/tag/v1.4.2)
+
+- 12/14/2018 - Version 1.4.1 for Mojave 10.14.2 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/tag/v1.4.1)
+  - fixes a few v1.4 regressions
+  - SpotLight translucency and selections (previously invisible now rendered correctly using the default color - like blue)
+  - menubar titles and menu item selections (the rightmost menuy items were previously rendered incorrectly and sometimes invisible)
+
+- 12/24/2018 - pre-release Version 1.4.1 for 10.14.2 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/tag/v1.4.1) 
+  - Some regressions have been addressed (see the associated release notes)
+
+**NOTE**: scripted installs are still in development.  For the moment, the official latest binaries can be found in [Releases](https://github.com/SpiraMira/HybridMode-Public/releases). See below for manual installation instructions (all pretty straightforward once you understand the workflow)
+
+**Creds to main collaborators:**
+
+- Development
+  - [tiehfood](https://github.com/tiehfood) for the **excellent CoreUI inspiration and analysis**
+- General Testing and collaboration
+  - [arqueox](https://github.com/arqueox)
+  - [Julian Marius Fairfax](https://github.com/Julian-Marius-Fairfax)
+  - [TimothyRLaMora734](https://github.com/TimothyRLaMora734)
+  - [webg3](https://github.com/webg3)
+  - [junebeetle](https://github.com/junebeetle)
+- All other members of the private repo (where the sausage is made...)
+- See Additional Creds below
 
 ## History
 
