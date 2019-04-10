@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<string>Tab</string>
+		<key>allowsBackreferences</key>
+		<false/>
+		<key>regularExpression</key>
+		<string>	</string>
+		<key>replacementString</key>
+		<string>	</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>Paragraph Break</string>
+		<key>allowsBackreferences</key>
+		<false/>
+		<key>regularExpression</key>
+		<string>((?s:(?=(\r\n)|\r|\n).)|\u2029)</string>
+		<key>replacementString</key>
+		<string> </string>
+	</dict>
+	<dict>
+		<key>regularExpression</key>
+		<string>((?s:(?=(\r\n)|\r|\n).)|[\u0085\u2028\u2029])</string>
+		<key>id</key>
+		<string>Line Break</string>
+		<key>replacementString</key>
+		<string>
+</string>
+		<key>allowsBackreferences</key>
+		<true/>
+		<key>shouldFormat</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>regularExpression</key>
+		<string></string>
+		<key>id</key>
+		<string>Page Break</string>
+		<key>replacementString</key>
+		<string></string>
+		<key>allowsBackreferences</key>
+		<false/>
+		<key>shouldFormat</key>
+		<true/>
+	</dict>
+</array>
+</plist>
