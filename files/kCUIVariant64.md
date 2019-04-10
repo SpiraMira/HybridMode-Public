@@ -9,22 +9,18 @@
 | 3  | **Ultralight** |  | A0 EF | E0 EF | better Appstore sidebar and huds   | None | Used #5 |
 | 4  | **MacUltralight** |  | C0 EF | E0 EF | better Appstore sidebar and huds   | None | Used #5 |
 | 5  | MacDark |  | E0 EF  | " | " | NA | None |
-
 | 6  | MacMediumDark |  | 00 F0 | " | " | NA | None |
 | 7  | MacUltradark |  | 20 F0 | " | " | NA | None |
 | 8  | Titlebar |  | 40 F0 | " | " | NA | None |
-
 | 9  | [Selection] |  | 60 F0 | 60 F0 | solid | solid light grey | Used #18 WindowBackground | None
 | 10 | Header |  | 80 F0 | " | " | NA | None |
 | 11 | MacMediumLight |  | A0 F0 | " | " | NA | None |
-
 | 12 | **Menu** |  | C0 F0 | 40 F0 | vibrant menu in search bars like Safari  | None | Used #8 |
 | 13 | MenuBar |  | E0 F0 | | " | " | NA | None |
 | 14 | **Popover** |  | 00 F1 | 40 F0 | vibrant | None | Used #8 |
 | 15 | **PopoverLabel** |  | 20 F1 | 40 F0 | vibrant | None |Used #8 |
 | 16 | **ToolTip** |  | 40 F1 | 40 F0 | vibrant | None | Used #8 |
 | 17 | **Sidebar** |  | 60 F1 | 40 F0 | vibrant | None | Used #8 |
-
 | 18 | WindowBackground |  | 80 F1 | " | "  | NA | None |
 | 19 | **UnderWindowBackground** |  | A0 F1 | D0 09 | fixes sidebar backgrounds  | None | Used #8 |
 | 20 | ContentBackground |  | C0 F1 | " | " | NA | **Caution** - weird side effects while scolling in table views dark and light |
