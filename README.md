@@ -4,9 +4,11 @@ Various Fixes for Mojave Light Mode on unsupported macs.
 
 **Please READ this entire page carefully before proceeding.**
 
-**NEW**: 05/09/2019 - Version 1.4.3 for Mojave 10.14.4 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
+**NEW PRE-RELEASE**: 05/23/2019 - Version 1.5 for Mojave 10.14.5 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/tag/v1.5)
 
-**NEW**: 05/09/2019 - Version 1.4.2 for Mojave 10.14.3 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/tag/v1.4.2)
+04/09/2019 - Version 1.4.3 for Mojave 10.14.4 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/latest)
+
+04/09/2019 - Version 1.4.2 for Mojave 10.14.3 Released [here](https://github.com/SpiraMira/HybridMode-Public/releases/tag/v1.4.2)
 
 ## Lovely Screen Shots
 

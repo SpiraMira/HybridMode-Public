@@ -1,5 +1,54 @@
 # The following table should help us track kCUIxxxVariant mods and their effects (or side-effects)
 
+## Next experiments
+
+- try replacing MacDark with MediumDark and UltraDark (replacements for E0 EF)
+-- tried 00 F0 - same
+- why is MacMediumLight still undefined - try a Dark variant
+- what happens when selection is 1-7?
+- what do 26 and 27 do?
+- **Reverted SpotLight to C0F1 (Solid White) and 80F1 (Solid White)**
+- **Reverted system Bezel to default**
+- **Reverted UltraLight and MacUltraLight**
+
+## CoreUIHybrid Version 1.4.5 : Support for 10.14.5 (18F132)
+
+| index| variant | Intent | original | patched | Effect | Dark Mode Side Effect | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0  | VisualEffectView | Don't touch...
+| 1  | **Light** |  | 60 EF | E0 EF | better Appstore sidebar and huds   | None | Used #5 MacDark|
+| 2  | **MacLight** |  | 80 EF | E0 EF | better Appstore sidebar and huds   | None | Used #5 MacDark|
+| 3  | **Ultralight** |  | A0 EF | " | better Appstore sidebar and huds   | None | Used #5 MacDark|
+| 4  | **MacUltralight** |  | C0 EF | " | better Appstore sidebar and huds   | None | Used #5 MacDark|
+| 5  | MacDark |  | E0 EF  | " | " | NA | None |
+| 6  | MacMediumDark |  | 00 F0 | " | " | NA | None |
+| 7  | MacUltradark |  | 20 F0 | " | " | NA | None |
+| 8  | Titlebar |  | 40 F0 | " | " | NA | The magic formula |
+| 9  | **Selection**] |  | 60 F0 | 80 F1 | solid | solid light grey | Used #18 WindowBackground | No other combos really work and they present corner artifacts
+| 10 | Header |  | 80 F0 | " | " | NA | None |
+| 11 | MacMediumLight |  | A0 F0 | " | " | NA | None |
+| 12 | **Menu** |  | C0 F0 | 40 F0 | vibrant menu in search bars like Safari  | None | Used #8 |
+| 13 | MenuBar |  | E0 F0 | | " | " | NA | None |
+| 14 | **Popover** |  | 00 F1 | 40 F0 | vibrant | None | Used #8 Titebar |
+| 15 | **PopoverLabel** |  | 20 F1 | 40 F0 | vibrant | None |Used #8 Titebar|
+| 16 | **ToolTip** |  | 40 F1 | 40 F0 | vibrant | None | Used #8 Titebar|
+| 17 | **Sidebar** |  | 60 F1 | 40 F0 | vibrant | None | Used #8 Titebar|
+| 18 | WindowBackground |  | 80 F1 | " | "  | NA | None |
+| 19 | **UnderWindowBackground** |  | A0 F1 | 40 F0 | fixes sidebar backgrounds  | None | Used #8 Titebar|
+| 20 | ContentBackground |  | C0 F1 | " | " | NA | **Caution** - weird side effects while scrolling in table views dark and light |
+| 21 | **SpotlightBackground** |  | E0 F1 | 80 F1 | vibrant | None | Used #20 or #18 |
+| 22 | NotificationCenterBackground |  | 00 F2 | " | " | NA | None |
+| 23 | **Sheet** |  | 20 F2 | 40 F0 | solid grey | fixes backgrounds like TimeMachine drop down sheet backgrounds (when u press options) | Used #8 |
+| 24 | HUDWindow |  | 40 F2 | " | " | NA | None |
+| 25 | FullScreenUI |  | 60 F2 | " | " | NA | None |
+| 26 | UnderPageBackground |  | 80 F2 | "" | **Unknown** | **Unknown** | Used #8 |
+| 27 | InlineSidebar |  | A0 F2 | "" | vibrant | **Unknown** | Used #8 |
+| 28 | **MenuBarMenu** |  | C0 F2 | 40 F0 | vibrant menu barsearch | None | Used #8 |
+| 29 | HUDControlsBackground |  | E0 F2 | " | " | NA | None |
+| 30 | **SystemBezel** |  | 00 F3 | 40 F0 | " | NA | None |
+| 31 | LoginWndowControl |  | 20 F3 | " | " | NA | None |
+| 32 | DesktopStack |  | 40 F3 | " | " | NA | None |
+    
 ## CoreUIHybrid Version 1.4.3 : Support for 10.14.4 (18E226)
 
 | index| variant | Intent | original | patched | Effect | Dark Mode Side Effect | Notes |
